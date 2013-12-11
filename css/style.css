@@ -16,9 +16,90 @@ a:hover{
 	color: white;
 }
 section{
-	position: relative;
-	width: 100%;
-}
+     position: relative;
+     width: 100%;
+ }
 section img{
-	width: 100%;
+    width: 100%;
+}
+
+body{
+
+    margin: 0 auto;
+
+    font-family: "Segoe UI", Arial, Helvetical, sans-serif
+
+}
+
+
+
+
+#section1 {
+    background: url(../assets/wiese.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+}
+
+article{
+
+    font-size: 50px;
+    color: white;
+}
+article p{
+
+    font-size: 24px;
+}
+
+#section1 article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+}
+
+#section2 {
+    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#section2 article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+
+}
+#section3{
+    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    background-repeat: no-repeat;
+
+
+}
+
+.logo{
+    width: 15%;
+    position: fixed;
+    z-index: 20;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    border-top: 1px solid darkgrey;
+    background: #2b405c;
+    opacity: 0.8;
 }
