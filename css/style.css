@@ -1,9 +1,14 @@
+/*Style*/
+body{
+	margin: 0;
+}
 nav{
 	padding: 20px;
 	position: fixed;
 	height: 100%;
-	width: inherit;
+	width: 100px;
 	z-index: 1;
+	background-color: white;
 }
 nav a{
 	display: block;
@@ -13,12 +18,26 @@ nav a{
 	line-height: 35px;
 }
 a:hover{
-	color: white;
+	color: gray;
 }
 section{
+	margin-left: 140px;
 	position: relative;
 	width: 100%;
+	height: 700px;
 }
 section img{
 	width: 100%;
+}
+#s1{
+	background-color: gray;
+}
+#s2{
+	background-color: black;
+}
+#s3{
+	background-color: red;
+}
+#s4{
+	background-color: white;
 }
