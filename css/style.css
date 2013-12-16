@@ -81,6 +81,11 @@ article p{
 
 
 }
+#section4{
+	background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed; min-height: 1000px;
+	background-repeat: no-repeat;
+	width: 100%;
+}
 
 .logo{
     width: 15%;
