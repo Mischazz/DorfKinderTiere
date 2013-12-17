@@ -109,18 +109,21 @@ article p{
 .Navigation {
   font-family:Arial, Helvetica, sans-serif;
   line-height:normal;
-  margin-top:20px;
+  margin-top:100px;
   width:250px;
   margin-bottom:30px;
   margin-left: 20px;
-  
+  padding-right: 5px;
+  position:fixed;
+  z-index:10;
+  background-color: white;
 }
 
 /* reset margins and paddings */
 .Navigation * {
   margin: 0;
   padding: 0;
-  
+
 }
 .Navigation ul {
 margin: 0; 
