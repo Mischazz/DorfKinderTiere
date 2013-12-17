@@ -103,3 +103,88 @@ article p{
     background: #2b405c;
     opacity: 0.8;
 }
+
+/* Navigation beginnt hier */
+
+.Navigation {
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:normal;
+  margin-top:20px;
+  width:250px;
+  margin-bottom:30px;
+  margin-left: 20px;
+  
+}
+
+/* reset margins and paddings */
+.Navigation * {
+  margin: 0;
+  padding: 0;
+  
+}
+.Navigation ul {
+margin: 0; 
+padding: 0;
+
+}
+.Navigation ul li {
+    list-style: none;
+    margin: 0; 
+	padding: 0;
+}
+.Navigation ul li a {
+  text-decoration:none;
+}
+.Navigation ul li a img {
+  width:50px;  /* initial width of images, 50% of width */
+  height:50px; /* initial height of images, 50% of height */
+  border:none;
+  
+}
+/* initially, don't show the label inside <span> tag */
+.Navigation ul li a span {
+	font-size:10px;
+	color:grey;
+	display:block;
+    float:right;
+}
+/* initially, don't show the second navigation */
+.Navigation ul li ul {
+	display:none;
+}
+
+.Navigation ul li:hover a span {
+  /* show label on mouse hover */
+  font-size:14px;
+  text-align:center;
+  float:right;
+  color:black;
+}
+
+.Navigation ul li:hover ul {
+  /* show second navigation on mouse hover */
+  font-size:14px;
+  text-align:center;
+  float:right;
+  color:black;
+  display:inline;
+}
+
+/* expand the image to 100% on mouse hover.
+** an image becomes active when mouse hovers it
+** ideally, the image should have same width and height as below 
+*/
+.Navigation ul li:hover a img {
+  width:100px;
+  height:100px;
+}
+/* expand the image next to the right of the active image to 60% using + selector */
+.Navigation ul li:hover + li a img {
+  width:60px;
+  height:60px;
+}
+/* expand the image second to the right of the active image to 55% using + selectors */
+.Navigation ul li:hover + li + li a img {
+  width:55px;
+  height:55px;
+}
