@@ -18,9 +18,12 @@ $(document).ready(function(){
 
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
-
+            $('.footer').hide()
         }); // window scroll Ends
 
     });
+
+
+
 
 });
