@@ -1,39 +1,14 @@
 {
-    "Dorf":
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
-
-        }
-    ,
-    "Berufe":
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
+    "Dorf":{
+        "artikel1":{
+            "header":"",
+            "text":"Nur eine dünne Zeltwand trennt die Kinder nachts von der Natur, sie hören es rascheln, sausen, quieken. War das ein Schwein oder ein Hase? Eine Woche lang leben die Kinder zwischen Tieren und Pflanzen und stellen ihre Lebensmittel selbst her. Dabei helfen ihnen die Erfahrungen der Alten, der Experten und Expertinnen."
         },
 
+        "artikel2":{
 
-
-
-    "Galerie":
-        {
-
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
-
-        }
-
-
-   ,
-
-    "Anmelden":
-
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
+            "header":"Überschrift",
+            "text":"Täglich entscheiden die Kinder im Dorfrat, ob sie als Gärtner, Bauern, Bäcker, Käser, Metzger oder als Köche bei der Versorgung der Dorfgemeinschaft mithelfen wollen. So sammeln die Kinder bei den alltäglichen Aufgaben elementare Erfahrungen in der Gemeinschaft und in der Natur."
 
 
 
@@ -41,44 +16,49 @@
 
 
 
-    ,
 
-    "Wir":
+    },
+    "Berufe":{
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
 
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
-
-
-        }
+    },
 
 
+    "Galerie":{
 
-    ,
-
-    "Andere":
-
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
 
 
+    },
 
-        }
-
-
-
-    ,
-    "Kontakt":
-
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
+    "Anmelden":{
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
 
 
+    },
 
-        }
+    "Wir":{
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
+
+
+    },
+
+    "Andere":{
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
+
+
+    },
+    "Kontakt":{
+        "artikel1":"Hallo im Dorf",
+        "artikel2":"sdfdsfsf"
+
+
+    }
 
 
 

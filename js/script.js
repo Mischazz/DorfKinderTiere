@@ -31,7 +31,7 @@ $(document).ready(function () {
         var $bgobj = $(this); // assigning the object
 
         $(window).scroll(function () {
-            var check = 1
+            var check = 1;
             if (check === 1) {
 
                 $('.footer').hide();
@@ -107,11 +107,37 @@ $(document).ready(function () {
 
 });
 
+
+// Diese Funktion liest die verschiedenen Artikel aus der "Dorf" Rubrik des content.json Files ein und erzeugt entsprechendes HTML
+
 function buildDorf(data) {
+
+    var header = "";
+    var text = "";
 
     _.each(data["Dorf"], function (key, value) {
 
-        var elem = '<div class="artikel">' + key + '</div>'
+
+        _.each(data["Dorf"][value], function (value, key) {
+
+
+            if (key === "header" && value !== "") {
+
+
+                if (key && key === "header") {
+
+                    header = '<h3 class="header">' + value + '</h3>'
+
+                }
+            } else if (key && key === "text") {
+
+                text = value;
+            }
+
+
+        });
+
+        var elem = '<div class="artikel">' + header + '<p>' + text + '</p></div>';
         $('#DasDorf').append(elem);
 
 
