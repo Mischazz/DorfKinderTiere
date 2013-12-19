@@ -1,49 +1,35 @@
 {
-    "Das Dorf": [
+    "Dorf":
         {
             "artikel1": "Hallo im Dorf",
             "artikel2": "sdfdsfsf"
 
 
         }
-    ],
-    "Berufe und der Dorfrat":[
+    ,
+    "Berufe":
         {
             "artikel1": "Hallo im Dorf",
             "artikel2": "sdfdsfsf"
 
-        }
+        },
 
 
-    ],
 
-    "Galerie":[
+
+    "Galerie":
         {
 
             "artikel1": "Hallo im Dorf",
             "artikel2": "sdfdsfsf"
-
-
-        }
-
-
-    ],
-
-    "Anmelden":[
-
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
 
 
         }
 
 
+   ,
 
-    ],
-
-    "Über Uns":[
+    "Anmelden":
 
         {
             "artikel1": "Hallo im Dorf",
@@ -55,22 +41,9 @@
 
 
 
-    ],
+    ,
 
-    "Andere über Uns":[
-
-        {
-            "artikel1": "Hallo im Dorf",
-            "artikel2": "sdfdsfsf"
-
-
-
-        }
-
-
-
-    ],
-    "Kontakt":[
+    "Wir":
 
         {
             "artikel1": "Hallo im Dorf",
@@ -82,7 +55,34 @@
 
 
 
-    ]
+    ,
+
+    "Andere":
+
+        {
+            "artikel1": "Hallo im Dorf",
+            "artikel2": "sdfdsfsf"
+
+
+
+        }
+
+
+
+    ,
+    "Kontakt":
+
+        {
+            "artikel1": "Hallo im Dorf",
+            "artikel2": "sdfdsfsf"
+
+
+
+        }
+
+
+
+
 
 
 

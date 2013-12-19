@@ -1,10 +1,21 @@
 $(document).ready(function () {
 
 
-    $.getJSON( "content.json", function( data ) {
+    $.ajax({
+        type:"GET",
+        dataType:"json",
+        url:'content.json',
 
-        console.log(data["Andere über Uns"]);
 
+        success:function (data) {
+
+
+            buildDorf(data);
+
+        },
+        error:function () {
+            alert('failure');
+        }
     });
 
     if ($(window).scroll) {
@@ -36,7 +47,7 @@ $(document).ready(function () {
             var coords = '50% ' + yPos + 'px';
 
             // Move the background
-            $bgobj.css({ backgroundPosition: coords });
+            $bgobj.css({ backgroundPosition:coords });
 
         }); // window scroll Ends
 
@@ -85,7 +96,7 @@ $(document).ready(function () {
 
         $('html,body').animate({
 
-            scrollTop: $(ziel).offset().top
+            scrollTop:$(ziel).offset().top
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
         }, 1000, function () {
             location.hash = ziel;
@@ -95,3 +106,16 @@ $(document).ready(function () {
 
 
 });
+
+function buildDorf(data) {
+
+    _.each(data["Dorf"], function (key, value) {
+
+        var elem = '<div class="artikel">' + key + '</div>'
+        $('#DasDorf').append(elem);
+
+
+    })
+
+
+}
