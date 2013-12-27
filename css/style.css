@@ -1,23 +1,25 @@
 /*Style*/
-nav{
-	padding: 50px 20px 0 20px;
-	position: fixed;
-	height: 100%;
-	width: 100px;
-	z-index: 1;
-}
-nav a{
-	display: block;
-	text-decoration: none;
-	color: black;
-	font-size: 25px;
-	line-height: 35px;
-}
-a:hover{
-	color: gray;
+nav {
+    padding: 50px 20px 0 20px;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    z-index: 1;
 }
 
-body{
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+a:hover {
+    color: gray;
+}
+
+body {
 
     margin: 0 auto;
 
@@ -25,12 +27,13 @@ body{
 
 }
 
-section{
-	padding-left: 50px;
+section {
+    padding-left: 50px;
 }
 
 #Start {
-    background: url(../assets/wiese.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
     height: 1000px;
     margin: 0 auto;
     width: 100%;
@@ -38,12 +41,13 @@ section{
     position: relative;
 }
 
-article{
+article {
 
     font-size: 50px;
     color: white;
 }
-article p{
+
+article p {
 
     font-size: 24px;
 }
@@ -57,14 +61,15 @@ article p{
 }
 
 #DasDorf {
-    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
     height: 1000px;
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
     position: relative;
-    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 #DasDorf article {
@@ -75,50 +80,56 @@ article p{
     width: 100%;
 
 }
-#Berufe{
-    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed; min-height: 1000px;
+
+#Berufe {
+    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
     background-repeat: no-repeat;
 
-
-}
-#Galerie{
-	background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Anmelden{
-	background: grey 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Wir{
-	background: orange 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Andere{
-	background: blue 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Kontakt{
-	background: red 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
 }
 
-.logo{
+#Galerie {
+    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#Anmelden {
+    background: grey 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#Wir {
+    background: orange 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#Andere {
+    background: blue 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#Kontakt {
+    background: red 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.logo {
     width: 15%;
     position: fixed;
     z-index: 20;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 30px;
     position: fixed;
@@ -132,70 +143,117 @@ article p{
 /* Navigation beginnt hier */
 
 .Navigation {
-  font-family:Arial, Helvetica, sans-serif;
-  line-height:normal;
-  margin-top:100px;
-  width:250px;
-  margin-bottom:30px;
-  margin-left: 20px;
-  padding-right: 5px;
-  position:fixed;
-  z-index:10;
-  background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    padding-right: 5px;
+    position: fixed;
+    top: 30px;
+    z-index: 10;
 }
 
 /* reset margins and paddings */
 .Navigation * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
+
 .Navigation ul {
-margin: 0; 
-padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
+
 .Navigation ul li {
     list-style: none;
-    margin: 0; 
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .Navigation ul li a {
-  text-decoration:none;
+    text-decoration: none;
 }
+
 .Navigation ul li a img {
-  width:50px;  /* initial width of images, 50% of width */
-  height:50px; /* initial height of images, 50% of height */
-  border:none;
-  
+    width: 50px; /* initial width of images, 50% of width */
+    height: 50px; /* initial height of images, 50% of height */
+    border: none;
+
 }
+
 /* initially, don't show the label inside <span> tag */
 .Navigation ul li a span {
-	font-size:10px;
-	color:grey;
-	display:block;
-    float:right;
+    font-size: 10px;
+    color: grey;
+    display: block;
+    float: right;
 }
+
+.Navigation .icon {
+
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+
+}
+
+.Navigation .Dorf {
+
+    background-image: url("../assets/Dorf.png");
+}
+
+.Navigation .Berufe {
+
+    background-image: url("../assets/Berufe.png");
+}
+
+.Navigation .Galerie {
+
+    background-image: url("../assets/Galerie.png");
+}
+
+.Navigation .Anmelden {
+
+    background-image: url("../assets/Anmelden.png");
+}
+
+.Navigation .UeberUns {
+
+    background-image: url("../assets/UeberUns.png");
+}
+
+.Navigation .Andere {
+
+    background-image: url("../assets/Andere.png");
+}
+.Navigation .Kontakt {
+
+    background-image: url("../assets/Kontakt.png");
+}
+
 /* initially, don't show the second navigation */
 .Navigation ul li ul {
-	display:none;
+    display: none;
 }
 
 .Navigation ul li:hover a span {
-  /* show label on mouse hover */
-  font-size:14px;
-  text-align:center;
-  float:right;
-  color:black;
+    /* show label on mouse hover */
+    font-size: 14px;
+    text-align: center;
+    float: right;
+    color: black;
 }
 
 .Navigation ul li:hover ul {
-  /* show second navigation on mouse hover */
-  font-size:14px;
-  text-align:center;
-  float:right;
-  color:black;
-  display:inline;
+    /* show second navigation on mouse hover */
+    font-size: 14px;
+    text-align: center;
+    float: right;
+    color: black;
+    display: inline;
 }
 
 /* expand the image to 100% on mouse hover.
@@ -203,16 +261,18 @@ padding: 0;
 ** ideally, the image should have same width and height as below 
 */
 .Navigation ul li:hover a img {
-  width:100px;
-  height:100px;
+    width: 100px;
+    height: 100px;
 }
+
 /* expand the image next to the right of the active image to 60% using + selector */
 .Navigation ul li:hover + li a img {
-  width:60px;
-  height:60px;
+    width: 60px;
+    height: 60px;
 }
+
 /* expand the image second to the right of the active image to 55% using + selectors */
 .Navigation ul li:hover + li + li a img {
-  width:55px;
-  height:55px;
+    width: 55px;
+    height: 55px;
 }
