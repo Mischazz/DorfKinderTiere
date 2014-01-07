@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
 
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 2800) {
+
+            $('.bottomMenu').fadeIn(800);
+
+        } else {
+            $('.bottomMenu').fadeOut();
+        }
+    });
+
     $.ajax({
         type:"GET",
         dataType:"json",
@@ -114,6 +126,7 @@ function buildDorf(data) {
 
     var header = "";
     var text = "";
+    var counter=0;
 
     _.each(data["Dorf"], function (key, value) {
 
@@ -132,12 +145,13 @@ function buildDorf(data) {
             } else if (key && key === "text") {
 
                 text = value;
+                counter++;
             }
 
 
         });
 
-        var elem = '<div class="artikel">' + header + '<p>' + text + '</p></div>';
+        var elem = '<div class="artikel artikel'+counter+'">' + header + '<p>' + text + '</p></div>';
         $('#DasDorf').append(elem);
 
 

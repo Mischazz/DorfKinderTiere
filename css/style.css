@@ -34,10 +34,10 @@ section {
 #Start {
     background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
     min-height: 1000px;
-    height: 1000px;
+    height: 1500px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1920px;
+
     position: relative;
 }
 
@@ -61,12 +61,14 @@ article p {
 }
 
 #DasDorf {
-    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
+    background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
+
     min-height: 1000px;
-    height: 1000px;
+    height: 2500px;
     margin: 0 auto;
+    padding: 20px;
     width: 100%;
-    max-width: 1920px;
+
     position: relative;
     -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
@@ -81,47 +83,47 @@ article p {
 
 }
 
-#Berufe {
-    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
+/*#Berufe {*/
+/*background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
 
-}
+/*}*/
 
-#Galerie {
-    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/*#Galerie {*/
+/*background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
 
-#Anmelden {
-    background: grey 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/*#Anmelden {*/
+/*background: grey 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
 
-#Wir {
-    background: orange 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/*#Wir {*/
+/*background: orange 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
 
-#Andere {
-    background: blue 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/*#Andere {*/
+/*background: blue 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
 
-#Kontakt {
-    background: red 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/*#Kontakt {*/
+/*background: red 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
 
 .logo {
     width: 15%;
@@ -229,6 +231,7 @@ article p {
 
     background-image: url("../assets/Andere.png");
 }
+
 .Navigation .Kontakt {
 
     background-image: url("../assets/Kontakt.png");
@@ -275,4 +278,115 @@ article p {
 .Navigation ul li:hover + li + li a img {
     width: 55px;
     height: 55px;
+}
+
+#DasDorf .header {
+    color: #EA5E0F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#DasDorf .artikel .header {
+    color: #EA5E0F;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#DasDorf .artikel {
+
+    width: 460px;
+    border: 3px solid grey;
+    border-radius: 100px;
+    padding: 30px;
+
+    background-color: aliceblue;
+    opacity: 0.65;
+    box-shadow: 0px 1px 7px aliceblue
+}
+
+#DasDorf .artikel1 {
+    border-color: #775CA2;
+
+}
+
+#DasDorf .artikel2 {
+    position: absolute;
+    right: 5%;
+    border-color: #B91704;
+}
+
+#DasDorf .artikel3 {
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    border-color: #89E08D;
+}
+#DasDorf .artikel4 {
+    position: absolute;
+    width: 500px;
+    left: 15%;
+    top: 40%;
+    border-color: #FFE581;
+}
+#DasDorf .artikel5 {
+    position: absolute;
+
+    left: 69%;
+    top: 30%;
+    border-color: #FF9C30;
+}
+
+#DasDorf .artikel6 {
+    position: absolute;
+
+    left: 5%;
+    top: 60%;
+    border-color: #89E08D;
+}
+#DasDorf .artikel7 {
+    position: absolute;
+
+    left: 58%;
+    top: 58%;
+    border-color: #88B8FF;
+}
+
+#DasDorf .img {
+
+    border: 3px solid grey;
+    border-radius: 100px;
+}
+#DasDorf .img.img1 {
+    position: absolute;
+    left: 40%;
+
+}
+#DasDorf .img.img2 {
+    position: absolute;
+    right: 35%;
+    top: 25%;
+
+}
+#DasDorf .img.img3 {
+    position: absolute;
+    right: 45%;
+    top: 40%;
+
+}
+#DasDorf .img.img4 {
+    position: absolute;
+    right: 55%;
+    top: 58%;
+
+}
+.bottomMenu{
+    width: 400px;
+    height: 180px;
+
+   background-image: url("../assets/Zitat1.png")  ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 40px;
+    top: 85%;
 }
