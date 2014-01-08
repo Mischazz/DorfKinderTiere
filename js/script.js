@@ -2,16 +2,6 @@ $(document).ready(function () {
 
 
 
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 2800) {
-
-            $('.bottomMenu').fadeIn(800);
-
-        } else {
-            $('.bottomMenu').fadeOut();
-        }
-    });
 
     $.ajax({
         type:"GET",
@@ -23,6 +13,11 @@ $(document).ready(function () {
 
 
             buildDorf(data);
+
+            showFirstArticles();
+            showSecondArticles();
+            showZitat1();
+            buildCircles(data)
 
         },
         error:function () {
@@ -126,7 +121,7 @@ function buildDorf(data) {
 
     var header = "";
     var text = "";
-    var counter=0;
+    var counter = 0;
 
     _.each(data["Dorf"], function (key, value) {
 
@@ -151,11 +146,99 @@ function buildDorf(data) {
 
         });
 
-        var elem = '<div class="artikel artikel'+counter+'">' + header + '<p>' + text + '</p></div>';
+        var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
         $('#DasDorf').append(elem);
 
 
     })
 
 
+}
+function buildCircles(data) {
+
+    var header = "";
+    var text = "";
+    var counter = 0;
+
+    _.each(data["Circle"], function (key, value) {
+
+
+            _.each(data["Circle"][value], function (value, key) {
+
+
+                if (key === "header" && value !== "") {
+
+
+                    if (key && key === "header") {
+
+                        header = '<h3 class="header">' + value + '</h3>'
+
+                    }
+                } else if (key && key === "text") {
+
+                    text = value;
+                    counter++;
+                }
+
+
+            });
+
+
+
+        var elem = '<div class="circleBase circleType1" id="circle' + counter + '">' + header + '<p>' + text + '</p></div>';
+        $('#DasDorf').append(elem);
+        header= ""
+
+    })
+
+
+}
+
+
+function showFirstArticles() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 1100) {
+
+            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeIn(800);
+
+        }
+        else {
+            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeOut();
+        }
+    });
+
+}
+function showSecondArticles() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 1300) {
+
+            $('.artikel4, .artikel5, .artikel6,.artikel7,.img4, .img5, .img6, .img7, .img8 ').fadeIn(800);
+
+        }
+        else {
+            $('.artikel4, .artikel5, .artikel6,.artikel7, .img4, .img5, .img6, .img7, .img8').fadeOut();
+        }
+    });
+}
+
+function showZitat1() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 2200) {
+
+            $('.zitat1').fadeIn(800);
+
+        }
+        else {
+            $('.zitat1').fadeOut();
+        }
+    });
 }

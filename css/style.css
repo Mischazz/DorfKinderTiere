@@ -64,7 +64,7 @@ article p {
     background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
 
     min-height: 1000px;
-    height: 2500px;
+    height: 5000px;
     margin: 0 auto;
     padding: 20px;
     width: 100%;
@@ -293,7 +293,7 @@ article p {
 }
 
 #DasDorf .artikel {
-
+    display: none;
     width: 460px;
     border: 3px solid grey;
     border-radius: 100px;
@@ -318,21 +318,23 @@ article p {
 #DasDorf .artikel3 {
     position: absolute;
     left: 7%;
-    top: 20%;
+    top: 400px;
     border-color: #89E08D;
 }
+
 #DasDorf .artikel4 {
     position: absolute;
     width: 500px;
     left: 15%;
-    top: 40%;
+    top: 850px;
     border-color: #FFE581;
 }
+
 #DasDorf .artikel5 {
     position: absolute;
 
     left: 69%;
-    top: 30%;
+    top: 840px;
     border-color: #FF9C30;
 }
 
@@ -340,53 +342,278 @@ article p {
     position: absolute;
 
     left: 5%;
-    top: 60%;
+    top: 1350px;
     border-color: #89E08D;
 }
+
 #DasDorf .artikel7 {
     position: absolute;
 
     left: 58%;
-    top: 58%;
+    top: 1600px;
     border-color: #88B8FF;
 }
 
 #DasDorf .img {
-
+    position: absolute;
+    display: none;
     border: 3px solid grey;
     border-radius: 100px;
 }
+
 #DasDorf .img.img1 {
-    position: absolute;
+
     left: 40%;
 
 }
+
 #DasDorf .img.img2 {
-    position: absolute;
+
     right: 35%;
-    top: 25%;
+    top: 500px;
 
 }
+
 #DasDorf .img.img3 {
-    position: absolute;
+
     right: 45%;
-    top: 40%;
+    top: 1160px;
 
 }
+
 #DasDorf .img.img4 {
-    position: absolute;
+
     right: 55%;
-    top: 58%;
+    top: 1500px;
 
 }
-.bottomMenu{
+
+#DasDorf .img.img5 {
+
+    left: 10%;
+    top: 3750px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img6 {
+
+    left: 30%;
+    top: 3600px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img7 {
+
+    left: 50%;
+    top: 3600px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img8 {
+
+    left: 70%;
+    top: 3750px;
+    border-radius: 50px;
+
+}
+
+.zitat1 {
     width: 400px;
     height: 180px;
 
-   background-image: url("../assets/Zitat1.png")  ;
+    background-image: url("../assets/Zitat1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     right: 40px;
-    top: 85%;
+    top: 1450px;
+}
+
+.zitat2 {
+    background: #f0f8ff;
+
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 3370px;
+    left: 0%;
+    opacity: 0.65;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+
+}
+
+.zitat3 {
+    box-sizing: border-box;
+    width: 400px;
+
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-left: 2px solid #88B8FF;
+    border-bottom-left-radius: 20px;
+
+    border-top-left-radius: 20px;
+    position: absolute;
+    top: 3070px;
+    right: 1%;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+
+}
+
+.zitat3 img {
+
+    width: 100%;
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-left: 2px solid #88B8FF;
+    border-top-left-radius: 18px;
+}
+
+.zitat3 .text {
+    padding: 20px;
+    padding-right: 30px;
+    margin-top: -3px;
+    background: #f0f8ff;
+    opacity: 0.65;
+    border-bottom-left-radius: 18px;
+}
+
+.zitat4 {
+
+    box-sizing: border-box;
+    width: 280px;
+
+    border-bottom: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+
+    border-bottom-right-radius: 20px;
+
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 2530px;
+    left: 0%;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+}
+.zitat4 img{
+
+    width: 100%;
+    border-top: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+    border-top-right-radius: 18px;
+
+}
+.zitat4 .text{
+    padding: 20px;
+    background: aliceblue;
+    opacity: 0.65;
+}
+
+#ArbeitHeader.header {
+
+    position: absolute;
+    top: 2200px;
+    left: 35%;
+}
+
+.circleBase {
+    border-radius: 50%;
+}
+
+.circleType1 {
+    width: 350px;
+    height: 350px;
+    background-color: aliceblue;
+    opacity: 0.65;
+    border: 3px solid red;
+    padding: 55px;
+    box-sizing: border-box;
+}
+
+#DasDorf .circleType1 .header {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#DasDorf .circleType1 p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#circle1 {
+    position: absolute;
+    top: 2400px;
+    left: 36%;
+}
+
+#circle2 {
+    position: absolute;
+    top: 2750px;
+    left: 20%;
+}
+
+#circle3 {
+    position: absolute;
+    top: 2750px;
+    left: 52%;
+}
+
+#circle4 {
+    position: absolute;
+    top: 3120px;
+    left: 36%;
+}
+
+#circle5 {
+    position: absolute;
+    top: 4070px;
+    left: 8%;
+    width: 340px;
+    height: 340px;
+
+}
+
+#circle6 {
+    position: absolute;
+    top: 3870px;
+    left: 25%;
+    width: 400px;
+    height: 400px;
+    padding-left: 90px;
+
+}
+
+#circle7 {
+    position: absolute;
+    top: 3870px;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    padding-left: 90px;
+
+}
+
+#circle8 {
+    position: absolute;
+    top: 4070px;
+    left: 70%;
+    width: 340px;
+    height: 340px;
+
 }
