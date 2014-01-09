@@ -83,12 +83,12 @@ article p {
 
 }
 
-/*#Berufe {*/
-/*background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
+#Berufe {
+    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
+    background-repeat: no-repeat;
 
-/*}*/
+}
 
 /*#Galerie {*/
 /*background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;*/
@@ -512,7 +512,8 @@ article p {
     font-weight: bold;
     color: #EA5E0F;
 }
-.zitat4 img{
+
+.zitat4 img {
 
     width: 100%;
     border-top: 2px solid #88B8FF;
@@ -520,7 +521,8 @@ article p {
     border-top-right-radius: 18px;
 
 }
-.zitat4 .text{
+
+.zitat4 .text {
     padding: 20px;
     background: aliceblue;
     opacity: 0.65;
@@ -544,9 +546,10 @@ article p {
     background-color: aliceblue;
     opacity: 0.65;
     border: 3px solid red;
-        /*box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
 }
-#DasDorf .circleType1 .wrapper{
+
+#DasDorf .circleType1 .wrapper {
     padding: 59px;
 }
 
@@ -617,5 +620,168 @@ article p {
     left: 70%;
     width: 340px;
     height: 340px;
+
+}
+
+.verticalTest {
+
+    width: 3000px;
+    height: 500px;
+    background: red;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: black;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box:nth-child(2n+2) {
+    background: #ffd700;
+}
+
+@media screen and (max-width: 1280px) {
+
+    #DasDorf {
+
+        height: 5800px;
+
+    }
+
+    #DasDorf .artikel {
+
+        width: 280px;
+    }
+
+    #DasDorf .img.img3 {
+        right: 34%;
+        top: 1160px;
+    }
+
+    #DasDorf .img.img4 {
+        right: 45%;
+        top: 1580px;
+    }
+
+    #DasDorf .artikel4 {
+
+        top: 940px;
+
+    }
+
+    #DasDorf .artikel6 {
+
+        top: 1800px;
+
+    }
+
+    #DasDorf .artikel7 {
+
+        width: 320px;
+        top: 1760px;
+    }
+
+    #ArbeitHeader.header {
+        top: 2700px;
+    }
+
+    #circle1 {
+
+        top: 3000px;
+    }
+
+    #circle2 {
+
+        top: 3370px;
+
+    }
+
+    #circle3 {
+
+        top: 3370px;
+    }
+
+    #circle4 {
+
+        top: 3780px;
+
+    }
+
+    #circle5 {
+
+        top: 4700px;
+        left: 32%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #circle6 {
+        top: 4290px;
+        left: 32%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #circle7 {
+
+        top: 4475px;
+        left: 58%;
+        width: 390px;
+        height: 390px;
+    }
+
+    #circle8 {
+        position: absolute;
+        top: 5060px;
+        left: 50%;
+        width: 350px;
+        height: 350px;
+
+    }
+
+    #DasDorf .img.img5 {
+        left: 5%;
+        top: 4300px;
+
+    }
+
+    #DasDorf .img.img6 {
+
+        top: 4570px;
+        left: 5%;
+
+    }
+
+    #DasDorf .img.img7 {
+
+        top: 4840px;
+        left: 5%;
+
+    }
+
+    #DasDorf .img.img8 {
+        left: 5%;
+        top: 5110px;
+    }
+
+    .zitat2 {
+
+        top: 3950px;
+
+    }
+
+    .zitat3 {
+        width: 250px;
+        top: 2800px;
+    }
+    .zitat4{
+        width: 220px;
+        top: 2700px;
+    }
 
 }
