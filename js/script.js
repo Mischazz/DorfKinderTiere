@@ -18,6 +18,10 @@ $(document).ready(function () {
             showSecondArticles();
             showZitat1();
             buildCircles(data)
+            showZitat2();
+            showZitat4();
+            showImages();
+            showCircles();
 
         },
         error:function () {
@@ -185,7 +189,7 @@ function buildCircles(data) {
 
 
 
-        var elem = '<div class="circleBase circleType1" id="circle' + counter + '">' + header + '<p>' + text + '</p></div>';
+        var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> '+ header + '<p>' + text + '</p></div></div>';
         $('#DasDorf').append(elem);
         header= ""
 
@@ -218,11 +222,11 @@ function showSecondArticles() {
         console.log(y)
         if (y > 1300) {
 
-            $('.artikel4, .artikel5, .artikel6,.artikel7,.img4, .img5, .img6, .img7, .img8 ').fadeIn(800);
+            $('.artikel4, .artikel5, .artikel6,.artikel7,.img4 ').fadeIn(800);
 
         }
         else {
-            $('.artikel4, .artikel5, .artikel6,.artikel7, .img4, .img5, .img6, .img7, .img8').fadeOut();
+            $('.artikel4, .artikel5, .artikel6,.artikel7, .img4').fadeOut();
         }
     });
 }
@@ -234,11 +238,99 @@ function showZitat1() {
         console.log(y)
         if (y > 2200) {
 
-            $('.zitat1').fadeIn(800);
-
+//            $('.zitat1').fadeIn(800);
+            $('.zitat1').show('slide', {direction: 'right'}, 1000);
         }
         else {
             $('.zitat1').fadeOut();
+        }
+    });
+}
+function showZitat2() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 3900) {
+
+//            $('.zitat1').fadeIn(800);
+            $('.zitat2').show('slide', {direction: 'left'}, 1000);
+            $('.zitat3').show('slide', {direction: 'right'}, 1000);
+        }
+        else {
+            $('.zitat2').hide('slide', {direction: 'left'}, 1000);;
+            $('.zitat3').hide('slide', {direction: 'right'}, 1000);;
+        }
+    });
+}
+
+function showImages() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 4200) {
+
+//            $('.zitat1').fadeIn(800);
+            $('.img5').fadeIn(1000);
+            $('.img6').fadeIn(2300);
+            $('.img7').fadeIn(3500);
+            $('.img8').fadeIn(4700);
+        }
+        else {
+            $('.img5, .img6, .img7, .img8').fadeOut(1000);
+        }
+    });
+}
+function showCircles() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 4500) {
+
+//            $('.zitat1').fadeIn(800);
+            $('#circle5').show('slide', {direction: 'up'}, 1000);
+            $('#circle6').show('slide', {direction: 'left'}, 1000);
+            $('#circle7').show('slide', {direction: 'right'}, 1000);
+            $('#circle8').show('slide', {direction: 'down'}, 1000);
+        }
+        else {
+
+            $('#circle5').hide('slide', {direction: 'up'}, 1000);
+            $('#circle6').hide('slide', {direction: 'left'}, 1000);
+            $('#circle7').hide('slide', {direction: 'right'}, 1000);
+            $('#circle8').hide('slide', {direction: 'down'}, 1000);
+        }
+
+        
+    });
+}
+
+
+
+function showZitat4() {
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        console.log(y)
+        if (y > 3500) {
+
+//            $('.zitat1').fadeIn(800);
+            $('.zitat4').show('slide', {direction: 'left'}, 1000);
+
+            $('#circle1').show('slide', {direction: 'up'}, 1000);
+            $('#circle2').show('slide', {direction: 'left'}, 1000);
+            $('#circle3').show('slide', {direction: 'right'}, 1000);
+            $('#circle4').show('slide', {direction: 'down'}, 1000);
+        }
+        else {
+            $('.zitat4').hide('slide', {direction: 'left'}, 1000);
+
+            $('#circle1').hide('slide', {direction: 'up'}, 1000);
+            $('#circle2').hide('slide', {direction: 'left'}, 1000);
+            $('#circle3').hide('slide', {direction: 'right'}, 1000);
+            $('#circle4').hide('slide', {direction: 'down'}, 1000);
         }
     });
 }

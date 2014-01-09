@@ -355,6 +355,7 @@ article p {
 }
 
 #DasDorf .img {
+
     position: absolute;
     display: none;
     border: 3px solid grey;
@@ -534,6 +535,7 @@ article p {
 
 .circleBase {
     border-radius: 50%;
+    display: none;
 }
 
 .circleType1 {
@@ -542,8 +544,10 @@ article p {
     background-color: aliceblue;
     opacity: 0.65;
     border: 3px solid red;
-    padding: 55px;
-    box-sizing: border-box;
+        /*box-sizing: border-box;*/
+}
+#DasDorf .circleType1 .wrapper{
+    padding: 59px;
 }
 
 #DasDorf .circleType1 .header {
@@ -595,7 +599,6 @@ article p {
     left: 25%;
     width: 400px;
     height: 400px;
-    padding-left: 90px;
 
 }
 
@@ -605,7 +608,6 @@ article p {
     left: 50%;
     width: 400px;
     height: 400px;
-    padding-left: 90px;
 
 }
 
