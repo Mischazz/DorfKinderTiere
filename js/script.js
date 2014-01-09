@@ -22,6 +22,7 @@ $(document).ready(function () {
             showZitat4();
             showImages();
             showCircles();
+            verticalScroll();
 
         },
         error:function () {
@@ -303,7 +304,7 @@ function showCircles() {
             $('#circle8').hide('slide', {direction: 'down'}, 1000);
         }
 
-        
+
     });
 }
 
@@ -333,4 +334,14 @@ function showZitat4() {
             $('#circle4').hide('slide', {direction: 'down'}, 1000);
         }
     });
+}
+function verticalScroll(){
+
+$(".verticalTest").mousewheel(function(event, delta) {
+
+    this.scrollLeft -= (delta * 1);
+
+    event.preventDefault();
+
+});
 }

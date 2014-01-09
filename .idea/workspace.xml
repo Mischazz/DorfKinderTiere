@@ -30,17 +30,28 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="66" selection-start="178" selection-end="178" vertical-scroll-proportion="9.873418">
+            <state line="161" column="27" selection-start="6451" selection-end="6451" vertical-scroll-proportion="-10.07595">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="610" column="0" selection-start="9627" selection-end="9627" vertical-scroll-proportion="-20.054546">
+            <state line="781" column="4" selection-start="11596" selection-end="11596" vertical-scroll-proportion="0.8968186">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-mousewheel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery-mousewheel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="200" column="4" selection-start="7340" selection-end="7340" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#7340#7496#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="305" column="8" selection-start="7218" selection-end="7218" vertical-scroll-proportion="0.64285713">
+            <state line="341" column="33" selection-start="8281" selection-end="8281" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,9 +130,10 @@
       <list>
         <option value="$PROJECT_DIR$/js/underscore.js" />
         <option value="$PROJECT_DIR$/content.json" />
+        <option value="$PROJECT_DIR$/js/jquery-mousewheel.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -323,13 +335,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="19" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="0" selection-start="2962" selection-end="2962" vertical-scroll-proportion="0.0">
@@ -419,23 +424,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-mousewheel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="4" selection-start="7340" selection-end="7340" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#7340#7496#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="341" column="33" selection-start="8281" selection-end="8281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="66" selection-start="178" selection-end="178" vertical-scroll-proportion="9.873418">
+        <state line="161" column="27" selection-start="6451" selection-end="6451" vertical-scroll-proportion="-10.07595">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="610" column="0" selection-start="9627" selection-end="9627" vertical-scroll-proportion="-20.054546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="8" selection-start="7218" selection-end="7218" vertical-scroll-proportion="0.64285713">
+        <state line="781" column="4" selection-start="11596" selection-end="11596" vertical-scroll-proportion="0.8968186">
           <folding />
         </state>
       </provider>
