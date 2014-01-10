@@ -307,7 +307,10 @@ article p {
 
     background-color: aliceblue;
     opacity: 0.65;
-    box-shadow: 0px 1px 7px aliceblue
+    box-shadow: 0px 1px 7px aliceblue;
+    position: absolute;
+    top: 230px;
+    right: 30%;
 }
 
 .DasDorf .artikel1 {
@@ -318,6 +321,7 @@ article p {
 .DasDorf .artikel2 {
     position: absolute;
     right: 5%;
+    top:420px;
     border-color: #B91704;
 }
 
@@ -337,19 +341,24 @@ article p {
 }
 
 .DasDorf .artikel5 {
-    position: absolute;
 
-    left: 69%;
-    top: 130px;
-    border-color: #FF9C30;
-}
-
-.DasDorf .artikel6 {
     position: absolute;
 
     left: 35%;
     top: 350px;
     border-color: #89E08D;
+}
+
+.DasDorf .artikel6 {
+    position: absolute;
+
+    left: 69%;
+    top: 130px;
+    border-color: #FF9C30;
+
+
+
+
 }
 
 .DasDorf .artikel7 {
@@ -363,28 +372,28 @@ article p {
 .DasDorf .img {
 
     position: absolute;
-    display: none;
     border: 3px solid grey;
     border-radius: 100px;
 }
 
 .DasDorf .img.img1 {
 
-    left: 40%;
+   top: 90px;
+    right: 10%;
 
 }
 
 .DasDorf .img.img2 {
 
-    right: 35%;
-    top: 500px;
+    right: 32%;
+    top: 700px;
 
 }
 
 .DasDorf .img.img3 {
 
-    right: 45%;
-    top: 1160px;
+    left: 34%;
+    top: 700px;
 
 }
 
@@ -397,24 +406,24 @@ article p {
 
 .DasDorf .img.img5 {
 
-    left: 10%;
-    top: 3750px;
+    left: 40%;
+    top: 90px;
     border-radius: 50px;
 
 }
 
 .DasDorf .img.img6 {
 
-    left: 30%;
-    top: 3600px;
+    left: 2%;
+
     border-radius: 50px;
 
 }
 
 .DasDorf .img.img7 {
 
-    left: 50%;
-    top: 3600px;
+    left: 17%;
+    top: 830px;
     border-radius: 50px;
 
 }
