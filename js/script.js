@@ -20,18 +20,17 @@ $(document).ready(function () {
             $.fn.fullpage();
 
 
-                buildDorf(data);
+            buildDorf(data);
 
-                showFirstArticles();
-                showSecondArticles();
-                showZitat1();
-                buildCircles(data)
-                showZitat2();
-                showZitat4();
-                showImages();
-                showCircles();
-                verticalScroll();
-
+            showFirstArticles();
+            showSecondArticles();
+            showZitat1();
+            buildCircles(data)
+            showZitat2();
+            showZitat4();
+            showImages();
+            showCircles();
+            verticalScroll();
 
 
         },
@@ -39,7 +38,6 @@ $(document).ready(function () {
             alert('failure');
         }
     });
-
 
 
     if ($(window).scroll) {
@@ -53,7 +51,6 @@ $(document).ready(function () {
 
     // Cache the Window object
     $window = $(window);
-
 
 
 //    $('section[data-type="background"]').each(function () {
@@ -83,7 +80,6 @@ $(document).ready(function () {
 //    });
 
 
-
     //
     // Scrollen zu dem Ankerpunkt
     //
@@ -107,9 +103,9 @@ $(document).ready(function () {
     // Galerie Albumvorschau
     //
     $('img').animate({transform: 'rotate(30deg)'});
-    $('.content img').each(function() {
-        var random = Math.floor(Math.random()*41)-20;
-        $(this).animate({ transform : 'rotate(40deg)'});
+    $('.content img').each(function () {
+        var random = Math.floor(Math.random() * 41) - 20;
+        $(this).animate({ transform: 'rotate(40deg)'});
     });
 
 
@@ -125,6 +121,7 @@ function buildDorf(data) {
     var counter = 0;
     var type = "";
     var globalVal = ""
+    var elementType = ""
     _.each(data["Dorf"], function (key, value) {
         type = value;
         globalVal = value;
@@ -132,6 +129,14 @@ function buildDorf(data) {
         _.each(data["Dorf"][value], function (value, key) {
 
             _.each(data["Dorf"][globalVal][key], function (value, key) {
+
+                if (key === "type" && value == "article") {
+                  ;
+                    elementType = value;
+
+                } else if(key === "type" && value == "circle"){
+                    elementType = "circle";
+            }
 
                 if (key === "header" && value !== "") {
 
@@ -148,12 +153,17 @@ function buildDorf(data) {
                 }
 
             })
-            var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
+
+            if (elementType === "article") {
+                var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
+            }else{
+                var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
+
+            }
 
             $('#' + type).append(elem);
+            header = "";
         });
-
-
 
 
     })
@@ -165,6 +175,8 @@ function buildCircles(data) {
     var header = "";
     var text = "";
     var counter = 0;
+    var globalVal = ""
+
 
     _.each(data["Circle"], function (key, value) {
 
@@ -189,10 +201,10 @@ function buildCircles(data) {
 
         });
 
-
         var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
         $('#DasDorf').append(elem);
         header = ""
+
 
     })
 
