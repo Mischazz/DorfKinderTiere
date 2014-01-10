@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/fulPage.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style_pp.css"> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.transform-0.8.0.min.js"></script>
 
 </head>
 <body>
@@ -169,17 +170,19 @@
 
 <!--</div>-->
 <div id="Berufe" name="section3" data-type="background" data-speed="4" class="section">
-    <article></article>
+    
 </div>
 <div id="Galerie" name="section4" data-type="background" data-speed="4" class="section">
-    <article></article>
-    <div class="gallery_main">
-        <div id="pp_gallery" class="pp_gallery">
+    
+
+    <div id="pp_gallery" class="pp_gallery section">
+            
             <div id="pp_loading" class="pp_loading"></div>
             <div id="pp_next" class="pp_next"></div>
             <div id="pp_prev" class="pp_prev"></div>
             <div id="pp_thumbContainer">
-                <div class="album album1">
+
+                <div class="album">
                     <div class="content">
                         <img src="images/album1/thumbs/1.jpg" alt="images/album1/1.jpg" />
                         <span>The Sixties by Tetsumo</span>
@@ -196,55 +199,12 @@
                         <img src="images/album1/thumbs/4.jpg" alt="images/album1/4.jpg" />
                         <span>The Sixties by Tetsumo</span>
                     </div>
-                    <div class="descr">
-                        The Sixties
-                    </div>
-                </div>
-                <div class="album album2" >
                     <div class="content">
-                        <img src="images/album2/thumbs/1.jpg" alt="images/album1/5.jpg" />
+                        <img src="images/album1/thumbs/5.jpg" alt="images/album1/5.jpg" />
                         <span>The Sixties by Tetsumo</span>
                     </div>
                     <div class="content">
-                        <img src="images/album2/thumbs/2.jpg" alt="images/album1/6.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="content">
-                        <img src="images/album2/thumbs/3.jpg" alt="images/album1/6.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="descr">
-                        The Sixties
-                    </div>
-                </div>
-                <div class="album album3" >
-                    <div class="content">
-                        <img src="images/album2/thumbs/1.jpg" alt="images/album1/5.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="content">
-                        <img src="images/album2/thumbs/2.jpg" alt="images/album1/6.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="content">
-                        <img src="images/album2/thumbs/3.jpg" alt="images/album1/6.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="descr">
-                        The Sixties
-                    </div>
-                </div>
-                <div class="album album4" >
-                    <div class="content">
-                        <img src="images/album2/thumbs/1.jpg" alt="images/album1/5.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="content">
-                        <img src="images/album2/thumbs/2.jpg" alt="images/album1/6.jpg" />
-                        <span>The Sixties by Tetsumo</span>
-                    </div>
-                    <div class="content">
-                        <img src="images/album2/thumbs/3.jpg" alt="images/album1/6.jpg" />
+                        <img src="images/album1/thumbs/6.jpg" alt="images/album1/6.jpg" />
                         <span>The Sixties by Tetsumo</span>
                     </div>
                     <div class="descr">
@@ -252,17 +212,42 @@
                     </div>
                 </div>
 
-                
-                <!-- <div class="pp_back">Albums</div> -->
- <!--                <div id="pp_preview" class="pp_preview">
-                    <img src="images/album1/1.jpg" />
-                    <div class="pp_descr"><span>Description</span></div>
-                </div> -->
+                <div class="album">
+                    <div class="content">
+                        <img src="images/album2/thumbs/1.jpg" alt="images/album2/1.jpg" />
+                        <span>Butterfly Girl</span>
+                    </div>
+                    <div class="content">
+                        <img src="images/album2/thumbs/2.jpg" alt="images/album2/2.jpg" />
+                        <span>Mmmmmmh Strawberries</span>
+                    </div>
+                    <div class="content">
+                        <img src="images/album2/thumbs/3.jpg" alt="images/album2/3.jpg" />
+                        <span>Polaroid in Picture</span>
+                    </div>
+                    <div class="content">
+                        <img src="images/album2/thumbs/4.jpg" alt="images/album2/4.jpg" />
+                        <span>Girl with brown hair</span>
+                    </div>
+                    <div class="content">
+                        <img src="images/album2/thumbs/5.jpg" alt="images/album2/5.jpg" />
+                        <span>Hair up</span>
+                    </div>
+                    <div class="content">
+                        <img src="images/album2/thumbs/6.jpg" alt="images/album2/6.jpg" />
+                        <span>Smiling Girl</span>
+                    </div>
+                    <div class="descr">
+                        Portraits
+                    </div>
+                </div>
+
+                <div id="pp_back" class="pp_back">Albums</div>
             </div>
-
         </div>
     </div>
-</div>
+
+
 <div id="Anmelden" name="section4" data-type="background" data-speed="4" class="section">
     <article></article>
 </div>
@@ -280,11 +265,13 @@
 <footer class="footer">FOOTER</footer>
 
 
-<script src="js/jquery-2.0.3.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery-mousewheel.js"></script>
-<script src="js/FullPage.js"></script>
-<script src="js/underscore.js"></script>
+<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-mousewheel.js"></script>
+<script type="text/javascript" src="js/FullPage.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Note_this_400.font.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 </body>
