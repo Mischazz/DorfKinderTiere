@@ -78,19 +78,21 @@
             }
 
 
-        }
-
-    },
-
-    "Circle": {
+        },
 
 
-        "circle3": {
+
+    "section5":{
+
+
+        "circle5": {
+            "type": "circleSlide",
 
             "header": "",
             "text": "Sie erleben, wie den Schweinen, Hühnern, Enten, Gänsen und Schafen durch den Anbau verschiedener Pflanzen, die sie mögen, der 'Tisch gedeckt' wird und die Tiere ihr Futter selbst ernten. Was das eine nicht frisst, mag das andere gern. So lernen die Kinder unmittelbar durch eigenes Beobachten und Erleben, was Symbiotische Landwirtschaft bedeutet."
         },
-        "circle4": {
+        "circle6": {
+            "type": "circleSlide",
 
             "header": "",
             "text": "Zwischen den einzelnen Koppeln dient ein Hochbeet und ein Hügelbeet als zusätzliche Anbaufläche. Hier werden Gemüse und Kräuter angepflanzt. Die Kinder erledigen selbstständig die Gartenarbeit und ernten das Gemüse für das gemeinsame Mittagessen."
@@ -98,18 +100,23 @@
 
 
         "circle7": {
+            "type":"circleSlide",
 
             "header": "Jung und Alt lernen voneinander",
             "text": "Kinder, ihr könnt das, wir helfen euch dabei! Das ist die Rolle der älteren und erfahrenen Menschen, die mit den Kindern die verschiedenen 'Berufe' ausüben.<br> Im Dorf für Kinder und Tiere sind es nicht die Pädagoginnen und Pädagonen, die den Kindern die Arbeiten zeigen. Jung und Alt lernen voneinander und erfahren etwas über die Freuden und Sorgen der jeweils anderen Generation. So entstehen Gespräche über früher und heute.    "
         },
         "circle8": {
+            "type": "circleSlide",
 
             "header": "Ein anderer Alltag",
             "text": "Bei diesem ursprünglichen Leben und all den alltäglichen Tätigkeiten, die die Kinder selber verrichten, erleben sie Abenteuer, erfinden neue Spiele und gewinnen mit allen Sinnen Eindrücke über die Zusammenhänge in der Natur und deren Auswirkungen auf uns Menschen."
         }
 
 
+
+    }
     },
+
     "Berufe": {
         "artikel1": "Hallo im Dorf",
         "artikel2": "sdfdsfsf"

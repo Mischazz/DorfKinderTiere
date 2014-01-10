@@ -122,6 +122,7 @@ function buildDorf(data) {
     var type = "";
     var globalVal = ""
     var elementType = ""
+    var slideCount = 0;
     _.each(data["Dorf"], function (key, value) {
         type = value;
         globalVal = value;
@@ -130,13 +131,16 @@ function buildDorf(data) {
 
             _.each(data["Dorf"][globalVal][key], function (value, key) {
 
-                if (key === "type" && value == "article") {
-                  ;
+                if (key === "type" && value === "article") {
+                    ;
                     elementType = value;
 
-                } else if(key === "type" && value == "circle"){
-                    elementType = "circle";
-            }
+                } else if (key === "type" && value === "circle") {
+                    elementType = value;
+                } else if (key === "type" && value === "circleSlide") {
+                    elementType = value;
+                    slideCount++;
+                }
 
                 if (key === "header" && value !== "") {
 
@@ -156,13 +160,21 @@ function buildDorf(data) {
 
             if (elementType === "article") {
                 var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
-            }else{
+
+                $('#' + type).append(elem);
+                header = "";
+            } else if (elementType === "circle") {
+                var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
+                $('#' + type).append(elem);
+                header = "";
+            }else if(elementType === "circleSlide"){
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
 
+                $('.slide'+slideCount).append(elem);
+                header = "";
             }
 
-            $('#' + type).append(elem);
-            header = "";
+
         });
 
 

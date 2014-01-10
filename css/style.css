@@ -602,6 +602,36 @@ article p {
 
 
 }
+#circle12,#circle13,#circle14,#circle15{
+
+    position: absolute;
+    top: 250px;
+
+    width: 600px;
+    height: 600px;
+}
+#circle12{
+    left: 8%;
+}
+#circle12 p,#circle13 p{
+
+    margin-top: 190px;
+}
+#circle13{
+    left: 33%;
+}
+#circle14{
+    left: 58%;
+
+}
+#circle14 .header,#circle15 .header{
+    
+    margin-top: 180px;
+}
+#circle15{
+
+    left: 83%;
+}
 
 /*.verticalTest {*/
 
