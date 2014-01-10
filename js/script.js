@@ -8,14 +8,14 @@ $(document).ready(function () {
     // });
 
 
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: 'content.json',
 
-        $.ajax({
-            type:"GET",
-            dataType:"json",
-            url:'content.json',
 
+        success: function (data) {
 
-            success:function (data) {
 
 
                 buildDorf(data);
@@ -30,11 +30,14 @@ $(document).ready(function () {
                 showCircles();
                 verticalScroll();
 
-            },
-            error:function () {
-                alert('failure');
-            }
-        });
+
+
+        },
+        error: function () {
+            alert('failure');
+        }
+    });
+
 
 
     if ($(window).scroll) {
@@ -50,64 +53,33 @@ $(document).ready(function () {
     $window = $(window);
 
 
-    // $('section[data-type="background"]').each(function () {
-    //     var $bgobj = $(this); // assigning the object
 
-    //     $(window).scroll(function () {
-    //         var check = 1;
-    //         if (check === 1) {
+//    $('section[data-type="background"]').each(function () {
+//        var $bgobj = $(this); // assigning the object
+//
+//        $(window).scroll(function () {
+//            var check = 1;
+//            if (check === 1) {
+//
+//                $('.footer').hide();
+//
+//            }
+//
+//
+//            // Scroll the background at var speed
+//            // the yPos is a negative value because we're scrolling it UP!
+//            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+//
+//            // Put together our final background position
+//            var coords = '50% ' + yPos + 'px';
+//
+//            // Move the background
+//            $bgobj.css({ backgroundPosition:coords });
+//
+//        }); // window scroll Ends
+//
+//    });
 
-    //             $('.footer').hide();
-
-    //         }
-
-
-    //         // Scroll the background at var speed
-    //         // the yPos is a negative value because we're scrolling it UP!
-    //         var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-    //         // Put together our final background position
-    //         var coords = '50% ' + yPos + 'px';
-
-    //         // Move the background
-    //         $bgobj.css({ backgroundPosition:coords });
-
-    //     }); // window scroll Ends
-
-    // });
-
-
-
-    //
-    // Automatisches scrollen zur nächsten Section
-    //
-
-    $(window).scroll(function() {
-        var lastScrollTop = 0;
-        var st = $(this).scrollTop();
-
-        $('section').each(function() {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-            var elemViewTop = $(this).offset().top;
-
-            console.log("docViewBottom" + docViewBottom);
-            console.log("elemViewTop " + elemViewTop + " " + $(this).attr('name'));
-            console.log("docViewTop" + docViewTop);
-            if (docViewTop > elemViewTop > docViewBottom) {
-
-                console.log("blja" + $this.attr('name'));
-            }
-
-        });
-
-            if (st > lastScrollTop){
-
-            } else {
-              // upscroll code
-            }
-        lastScrollTop = st;
-    });
 
 
     //
@@ -121,7 +93,7 @@ $(document).ready(function () {
 
         $('html,body').animate({
 
-            scrollTop:$(ziel).offset().top
+            scrollTop: $(ziel).offset().top
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
         }, 1000, function () {
             location.hash = ziel;
@@ -149,11 +121,53 @@ function buildDorf(data) {
     var header = "";
     var text = "";
     var counter = 0;
-
+    var type = "";
+    var globalVal = ""
     _.each(data["Dorf"], function (key, value) {
-
+        type = value;
+        globalVal = value;
 
         _.each(data["Dorf"][value], function (value, key) {
+
+            _.each(data["Dorf"][globalVal][key], function (value, key) {
+
+                if (key === "header" && value !== "") {
+
+
+                    if (key && key === "header") {
+
+                        header = '<h3 class="header">' + value + '</h3>'
+
+                    }
+                } else if (key && key === "text") {
+
+                    text = value;
+                    counter++;
+                }
+
+            })
+            var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
+
+            $('#' + type).append(elem);
+        });
+
+
+
+
+    })
+
+
+}
+function buildCircles(data) {
+
+    var header = "";
+    var text = "";
+    var counter = 0;
+
+    _.each(data["Circle"], function (key, value) {
+
+
+        _.each(data["Circle"][value], function (value, key) {
 
 
             if (key === "header" && value !== "") {
@@ -173,48 +187,10 @@ function buildDorf(data) {
 
         });
 
-        var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
+
+        var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
         $('#DasDorf').append(elem);
-
-
-    })
-
-
-}
-function buildCircles(data) {
-
-    var header = "";
-    var text = "";
-    var counter = 0;
-
-    _.each(data["Circle"], function (key, value) {
-
-
-            _.each(data["Circle"][value], function (value, key) {
-
-
-                if (key === "header" && value !== "") {
-
-
-                    if (key && key === "header") {
-
-                        header = '<h3 class="header">' + value + '</h3>'
-
-                    }
-                } else if (key && key === "text") {
-
-                    text = value;
-                    counter++;
-                }
-
-
-            });
-
-
-
-        var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> '+ header + '<p>' + text + '</p></div></div>';
-        $('#DasDorf').append(elem);
-        header= ""
+        header = ""
 
     })
 
@@ -226,7 +202,7 @@ function showFirstArticles() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 1100) {
 
             $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeIn(800);
@@ -242,7 +218,7 @@ function showSecondArticles() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 1300) {
 
             $('.artikel4, .artikel5, .artikel6,.artikel7,.img4 ').fadeIn(800);
@@ -258,7 +234,7 @@ function showZitat1() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 2200) {
 
 //            $('.zitat1').fadeIn(800);
@@ -273,7 +249,7 @@ function showZitat2() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 3900) {
 
 //            $('.zitat1').fadeIn(800);
@@ -281,8 +257,10 @@ function showZitat2() {
             $('.zitat3').show('slide', {direction: 'right'}, 1000);
         }
         else {
-            $('.zitat2').hide('slide', {direction: 'left'}, 1000);;
-            $('.zitat3').hide('slide', {direction: 'right'}, 1000);;
+            $('.zitat2').hide('slide', {direction: 'left'}, 1000);
+            ;
+            $('.zitat3').hide('slide', {direction: 'right'}, 1000);
+            ;
         }
     });
 }
@@ -291,7 +269,7 @@ function showImages() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 4200) {
 
 //            $('.zitat1').fadeIn(800);
@@ -309,7 +287,7 @@ function showCircles() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 4500) {
 
 //            $('.zitat1').fadeIn(800);
@@ -331,12 +309,11 @@ function showCircles() {
 }
 
 
-
 function showZitat4() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        console.log(y)
+
         if (y > 3500) {
 
 //            $('.zitat1').fadeIn(800);
@@ -357,13 +334,15 @@ function showZitat4() {
         }
     });
 }
-function verticalScroll(){
+function verticalScroll() {
 
-$(".verticalTest").mousewheel(function(event, delta) {
+    $(".verticalTest").mousewheel(function (event, delta) {
 
-    this.scrollLeft -= (delta * 1);
+        this.scrollLeft -= (delta * 100);
 
-    event.preventDefault();
+        event.preventDefault();
 
-});
+    });
 }
+
+
