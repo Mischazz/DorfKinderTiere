@@ -20,18 +20,17 @@ $(document).ready(function () {
             $.fn.fullpage();
 
 
-                buildDorf(data);
+            buildDorf(data);
 
-                showFirstArticles();
-                showSecondArticles();
-                showZitat1();
-                buildCircles(data)
-                showZitat2();
-                showZitat4();
-                showImages();
-                showCircles();
-                verticalScroll();
-
+            showFirstArticles();
+            showSecondArticles();
+            showZitat1();
+            buildCircles(data)
+            showZitat2();
+            showZitat4();
+            showImages();
+            showCircles();
+            verticalScroll();
 
 
         },
@@ -39,7 +38,6 @@ $(document).ready(function () {
             alert('failure');
         }
     });
-
 
 
     if ($(window).scroll) {
@@ -53,7 +51,6 @@ $(document).ready(function () {
 
     // Cache the Window object
     $window = $(window);
-
 
 
 //    $('section[data-type="background"]').each(function () {
@@ -81,7 +78,6 @@ $(document).ready(function () {
 //        }); // window scroll Ends
 //
 //    });
-
 
 
     //
@@ -427,6 +423,7 @@ $(document).ready(function () {
                     }
                     $image.css({'width':theImage.width+'px','height':theImage.height+'px'});
                 }
+
 });
 
 
@@ -439,6 +436,8 @@ function buildDorf(data) {
     var counter = 0;
     var type = "";
     var globalVal = ""
+    var elementType = ""
+    var slideCount = 0;
     _.each(data["Dorf"], function (key, value) {
         type = value;
         globalVal = value;
@@ -446,6 +445,17 @@ function buildDorf(data) {
         _.each(data["Dorf"][value], function (value, key) {
 
             _.each(data["Dorf"][globalVal][key], function (value, key) {
+
+                if (key === "type" && value === "article") {
+                    ;
+                    elementType = value;
+
+                } else if (key === "type" && value === "circle") {
+                    elementType = value;
+                } else if (key === "type" && value === "circleSlide") {
+                    elementType = value;
+                    slideCount++;
+                }
 
                 if (key === "header" && value !== "") {
 
@@ -462,12 +472,25 @@ function buildDorf(data) {
                 }
 
             })
-            var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
 
-            $('#' + type).append(elem);
+            if (elementType === "article") {
+                var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
+
+                $('#' + type).append(elem);
+                header = "";
+            } else if (elementType === "circle") {
+                var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
+                $('#' + type).append(elem);
+                header = "";
+            }else if(elementType === "circleSlide"){
+                var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
+
+                $('.slide'+slideCount).append(elem);
+                header = "";
+            }
+
+
         });
-
-
 
 
     })
@@ -479,6 +502,8 @@ function buildCircles(data) {
     var header = "";
     var text = "";
     var counter = 0;
+    var globalVal = ""
+
 
     _.each(data["Circle"], function (key, value) {
 
@@ -503,10 +528,10 @@ function buildCircles(data) {
 
         });
 
-
         var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
         $('#DasDorf').append(elem);
         header = ""
+
 
     })
 

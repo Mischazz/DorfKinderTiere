@@ -3,20 +3,21 @@
         "section2": {
 
             "artikel1": {
+                "type": "article",
                 "header": "",
                 "text": "Nur eine dünne Zeltwand trennt die Kinder nachts von der Natur, sie hören es rascheln, sausen, quieken. War das ein Schwein oder ein Hase? Eine Woche lang leben die Kinder zwischen Tieren und Pflanzen und stellen ihre Lebensmittel selbst her. Dabei helfen ihnen die Erfahrungen der Alten, der Experten und Expertinnen."
             },
 
 
             "artikel2": {
-
+                "type": "article",
                 "header": "",
                 "text": "Täglich entscheiden die Kinder im Dorfrat, ob sie als Gärtner, Bauern, Bäcker, Käser, Metzger oder als Köche bei der Versorgung der Dorfgemeinschaft mithelfen wollen. So sammeln die Kinder bei den alltäglichen Aufgaben elementare Erfahrungen in der Gemeinschaft und in der Natur."
 
 
             },
             "artikel3": {
-
+               " type": "article",
                 "header": "Natur erleben und Selbstversorgung als Gemeinschaftserfahrung",
                 "text": "Im Dorf für Kinder und Tiere können sich die Kinder durch eigenes Erforschen und Handeln selbst in einer Gemeinschaft und in der Natur ausprobieren. Sie erfahren sich als ein beurteilendes und entscheidendes Individuum, das die Gesellschaft wesentlich gestalten kann. Ihre Erfahrungen helfen ihnen, Verantwortung für sich und andere sowie für eine nachhaltige Zukunft zu übernehmen. <br> Das Dorf für Kinder und Tiere folgt vier ganzheitlichen Grundprinzipien, die wesentliche Erfahrungen möglich machen:"
 
@@ -27,76 +28,95 @@
 
 
             "artikel4": {
-
+               " type": "article",
                 "header": "1. Eigenverantwortliches, nachhaltiges Landwirtschaften und Leben",
                 "text": "Im Dorf lernen die Kinder einfache Energie- und Verwertungskreisläufe kennen, die im Sinne eines ökologischen Wirtschaftens konzipiert sind. Dabei werden die Produkte der Natur möglichst schonend genutzt und dennoch die Bedürfnisse der Bewohner und Bewohnerinnen befriedigt. <br>  Bei all diesen Tätigkeiten können die Kinder durch das ursprüngliche und ökologische Landwirtschaften <br><br> - unmittelbare Begegnungen mit Nutztieren und der Natur haben <br> - einfache Kreisläufe der Natur kennen lernen <br> - neue Lebensstile erproben und das Konsumverhalten reflektieren <br> - Spielmöglichkeiten in der 'Wildnis' entdecken"
 
             },
             "artikel5": {
-
+               " type": "article",
                 "header": "2. Eigenhändige Herstellung gesunder Lebensmittel",
                 "text": "Jeden Vormittag verrichten die Kinder als Gärtner, Bauern, Bäcker, Käser, Metzger und als Köche ihre Arbeit, damit die Dorfgemeinschaft versorgt ist. Dabei lernen sie exemplarisch ganzheitliche Prozesse der Lebensmittelherstellung kennen. Die handwerklichen Tätigkeiten üben alltägliches und motorisches Geschick. Die täglichen neuen Erfahrungen werfen bei den Kindern neue Fragen auf: Wieso flockt die Milch aus, was ist denn Buttermilch? Wieso kann man die Haut bei der Wurst essen und wieso wird Sauerteig sauer? So wächst das Bedürfnis, die biochemischen Prozesse zu verstehen und Antworten auf die Fragen zu finden. <br><br><br>Die handwerkliche Lebensmittelherstellung im Dorf für Kinder und Tiere ermöglicht<br><br> - etwas über die Pflege und Versorgung von Nutztieren, Obst und &nbsp          Gemüse zu erfahren <br> - ganzheitliche Herstellungsprozesse kennen zu lernen<br> - einfache Lebensmittel selber machen zu können<br> - geschicktes Hantieren im Alltag zu erlernen<br> - Fragen zu stellen, zu beobachten und zuzuhören"
 
             },
             "artikel6": {
-
+               " type": "article",
                 "header": "3. Gemeinsame Organisation eines solidarischen Arbeitsalltags",
                 "text": "Beim täglichen Dorfrat argumentieren die Kinder miteinander. Sie versuchen gerecht zu sein und müssen Lösungen für Interessenskonflikte finden, damit alle Berufe ausgeführt werden. Die Moderation der Sitzungen übernehmen die Kinder selbst und merken, wie schwierig es manchmal ist, eine Versammlung zu leiten. Die Freiwilligkeit bildet die Grundlage aller Aktivitäten und erlaubt den Kindern ein hohes Maß an Kreativität und kooperativer Zusammenarbeit. Sie übernehmen unmittelbar Verantwortung für sich und andere.<br><br><br>Die Kinder erlernen durch die Selbstorganisation im Dorf für Kinder und Tiere<br><br> - selber eine Versammlung zu leiten<br> - sich und andere zu motivieren<br> - Lösungsansätze für Interessenskonflikte auszuprobieren<br> - sich sowohl als Individuum als auch als Teil der ganzen  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Gemeinschaft zu erleben<br> - die Dimensionen von Verantwortung für die Gemeinschaft zu &nbsp &nbsp &nbsp  begreifen<br> - alltägliche Arbeiten als wesentlich für die Gemeinschaft zu &nbsp &nbsp &nbsp &nbsp &nbsp  erkennen"
-            },
-            "artikel7": {
+            }
 
+        },
+
+        "section4": {
+
+
+            "artikel7": {
+                "type": "article",
                 "header": "4. Generationenübergreifendes Lernen",
                 "text": "Nicht die Pädagogen und Pädagoginnen zeigen den Kindern die Arbeiten in der Landwirtschaft, im Garten und in der Lebensmittelherstellung, sondern hauptsächlich die Experten und Expertinnen. Sie begleiten die Kinder und geben ihre jahrelange Berufs- und Lebenserfahrung und ihr Wissen weiter. Grundlegend bei diesem 'Dialog der Generationen' ist das gegenseitige voneinander Lernen.<br><br>Das generationenübergreifende Lernen ermöglicht den Kindern<br><br> - verschiedene Berufsfelder kennen zu lernen<br> - ältere Menschen zu respektieren<br> - handwerkliches Wissen zu erlangen<br><br>Das generationenübergreifende Lernen ermöglicht den Älteren<br><br> - erfahrungsgebundenes zukunftsfähiges Wissen weiterzugeben<br> - die Sorgen, Wünsche und Freuden der Kinder kennen zu &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  lernen<br> - ihre Lebenserfahrungen weiter zu geben, ihre Werte zu &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  vermitteln und so aktiv die Gesellschaft von morgen mit zu &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp gestalten"
 
+            },
+            "circle1": {
+                "type": "circle",
+                "header": "Mitten in der Natur",
+                "text": "Auf den Weiden und Wiesen des Dorfes für Kinder und Tiere leben heimische Nutztierrassen in freier Haltung und in einer Symbiotischen Landwirtschaft. Und die Kinder sind mittendrin. Sie kümmern sich verantwortungsvoll um die Landwirtschaft und die Tiere."
+            },
+            "circle2": {
+                "type": "circle",
+                "header": "Lebensmittel selber machen",
+                "text": "Jeden Vormittag verrichten die Kinder ihre Berufe, die sie im Dorfrat gewählt haben. Sie arbeiten als Gärtner, Bauern, Bäcker, Käser, Metzger und als Köche und helfen so mit bei der Versorgung der Dorfgemeinschaft."
+            },
+            "circle3": {
+                "type": "circle",
+                "header": "Handwerkliches Geschick",
+                "text": "Die Kinder helfen nicht nur bei der Lebensmittelherstellung, sondern üben auch bei den handwerklichen Arbeiten ihr alltägliches und motorisches Geschick – das Handtieren mit Messern, Töpfen und Kochhitze sowie das Spülen, Saubermachen und Aufräumen, damit es am nächsten Tag gleich weiter gehen kann."
+            },
+            "circle4": {
+                "type": "circle",
+                "header": "Kreisläufe der Natur",
+                "text": "Täglich decken die Kinder den Tisch. Nach dem Essen wird wieder aufgeräumt und gespült, die Essensreste werden sorgfältig aufbewahrt und weiter verwertet oder zu Kompost umgewandelt und der Natur als Dünger zurück gegeben. Geplant ist eine Warmwasserbereitung mit Hilfe von Sonnenenergie. "
             }
-        }
 
-    },
 
-    "Circle": {
-        "circle1": {
-
-            "header": "Mitten in der Natur",
-            "text": "Auf den Weiden und Wiesen des Dorfes für Kinder und Tiere leben heimische Nutztierrassen in freier Haltung und in einer Symbiotischen Landwirtschaft. Und die Kinder sind mittendrin. Sie kümmern sich verantwortungsvoll um die Landwirtschaft und die Tiere."
         },
-        "circle2": {
 
-            "header": "Lebensmittel selber machen",
-            "text": "Jeden Vormittag verrichten die Kinder ihre Berufe, die sie im Dorfrat gewählt haben. Sie arbeiten als Gärtner, Bauern, Bäcker, Käser, Metzger und als Köche und helfen so mit bei der Versorgung der Dorfgemeinschaft."
-        },
-        "circle3": {
+
+
+    "section5":{
+
+
+        "circle5": {
+            "type": "circleSlide",
 
             "header": "",
             "text": "Sie erleben, wie den Schweinen, Hühnern, Enten, Gänsen und Schafen durch den Anbau verschiedener Pflanzen, die sie mögen, der 'Tisch gedeckt' wird und die Tiere ihr Futter selbst ernten. Was das eine nicht frisst, mag das andere gern. So lernen die Kinder unmittelbar durch eigenes Beobachten und Erleben, was Symbiotische Landwirtschaft bedeutet."
         },
-        "circle4": {
+        "circle6": {
+            "type": "circleSlide",
 
             "header": "",
             "text": "Zwischen den einzelnen Koppeln dient ein Hochbeet und ein Hügelbeet als zusätzliche Anbaufläche. Hier werden Gemüse und Kräuter angepflanzt. Die Kinder erledigen selbstständig die Gartenarbeit und ernten das Gemüse für das gemeinsame Mittagessen."
         },
-        "circle5": {
 
-            "header": "Handwerkliches Geschick",
-            "text": "Die Kinder helfen nicht nur bei der Lebensmittelherstellung, sondern üben auch bei den handwerklichen Arbeiten ihr alltägliches und motorisches Geschick – das Handtieren mit Messern, Töpfen und Kochhitze sowie das Spülen, Saubermachen und Aufräumen, damit es am nächsten Tag gleich weiter gehen kann."
-        },
-        "circle6": {
 
-            "header": "Kreisläufe der Natur",
-            "text": "Täglich decken die Kinder den Tisch. Nach dem Essen wird wieder aufgeräumt und gespült, die Essensreste werden sorgfältig aufbewahrt und weiter verwertet oder zu Kompost umgewandelt und der Natur als Dünger zurück gegeben. Geplant ist eine Warmwasserbereitung mit Hilfe von Sonnenenergie. "
-        },
         "circle7": {
+            "type":"circleSlide",
 
             "header": "Jung und Alt lernen voneinander",
             "text": "Kinder, ihr könnt das, wir helfen euch dabei! Das ist die Rolle der älteren und erfahrenen Menschen, die mit den Kindern die verschiedenen 'Berufe' ausüben.<br> Im Dorf für Kinder und Tiere sind es nicht die Pädagoginnen und Pädagonen, die den Kindern die Arbeiten zeigen. Jung und Alt lernen voneinander und erfahren etwas über die Freuden und Sorgen der jeweils anderen Generation. So entstehen Gespräche über früher und heute.    "
         },
         "circle8": {
+            "type": "circleSlide",
 
             "header": "Ein anderer Alltag",
             "text": "Bei diesem ursprünglichen Leben und all den alltäglichen Tätigkeiten, die die Kinder selber verrichten, erleben sie Abenteuer, erfinden neue Spiele und gewinnen mit allen Sinnen Eindrücke über die Zusammenhänge in der Natur und deren Auswirkungen auf uns Menschen."
         }
 
 
+
+    }
     },
+
     "Berufe": {
         "artikel1": "Hallo im Dorf",
         "artikel2": "sdfdsfsf"
