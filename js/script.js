@@ -9,32 +9,32 @@ $(document).ready(function () {
 
 
 
-    $.ajax({
-        type:"GET",
-        dataType:"json",
-        url:'content.json',
+        $.ajax({
+            type:"GET",
+            dataType:"json",
+            url:'content.json',
 
 
-        success:function (data) {
+            success:function (data) {
 
 
-            buildDorf(data);
+                buildDorf(data);
 
-            showFirstArticles();
-            showSecondArticles();
-            showZitat1();
-            buildCircles(data)
-            showZitat2();
-            showZitat4();
-            showImages();
-            showCircles();
-            verticalScroll();
+                showFirstArticles();
+                showSecondArticles();
+                showZitat1();
+                buildCircles(data)
+                showZitat2();
+                showZitat4();
+                showImages();
+                showCircles();
+                verticalScroll();
 
-        },
-        error:function () {
-            alert('failure');
-        }
-    });
+            },
+            error:function () {
+                alert('failure');
+            }
+        });
 
 
     if ($(window).scroll) {
@@ -42,66 +42,72 @@ $(document).ready(function () {
         $('.footer').hide();
     }
 
+    // 
+    // Paralax scheiss ;)))
+    // 
+
     // Cache the Window object
     $window = $(window);
 
 
-    $('section[data-type="background"]').each(function () {
-        var $bgobj = $(this); // assigning the object
+    // $('section[data-type="background"]').each(function () {
+    //     var $bgobj = $(this); // assigning the object
 
-        $(window).scroll(function () {
-            var check = 1;
-            if (check === 1) {
+    //     $(window).scroll(function () {
+    //         var check = 1;
+    //         if (check === 1) {
 
-                $('.footer').hide();
+    //             $('.footer').hide();
 
-            }
+    //         }
 
 
-            // Scroll the background at var speed
-            // the yPos is a negative value because we're scrolling it UP!
-            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+    //         // Scroll the background at var speed
+    //         // the yPos is a negative value because we're scrolling it UP!
+    //         var yPos = -($window.scrollTop() / $bgobj.data('speed'));
 
-            // Put together our final background position
-            var coords = '50% ' + yPos + 'px';
+    //         // Put together our final background position
+    //         var coords = '50% ' + yPos + 'px';
 
-            // Move the background
-            $bgobj.css({ backgroundPosition:coords });
+    //         // Move the background
+    //         $bgobj.css({ backgroundPosition:coords });
 
-        }); // window scroll Ends
+    //     }); // window scroll Ends
 
-    });
+    // });
+
+
 
     //
     // Automatisches scrollen zur nächsten Section
     //
 
-    // $(window).scroll(function() {
-    //     var lastScrollTop = 0;
-    //     var st = $(this).scrollTop();
+    $(window).scroll(function() {
+        var lastScrollTop = 0;
+        var st = $(this).scrollTop();
 
-    //     $('section').each(function() {
-    //         var docViewTop = $(window).scrollTop();
-    //         var docViewBottom = docViewTop + $(window).height();
-    //         var elemViewTop = $(this).offset().top;
+        $('section').each(function() {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemViewTop = $(this).offset().top;
 
-    //         console.log("docViewBottom" + docViewBottom);
-    //         console.log("elemViewTop " + elemViewTop + " " + $('section').attr('name'));
-    //         console.log("docViewTop" + docViewTop);
-    //         if (docViewTop > elemViewTop > docViewBottom) {
+            console.log("docViewBottom" + docViewBottom);
+            console.log("elemViewTop " + elemViewTop + " " + $(this).attr('name'));
+            console.log("docViewTop" + docViewTop);
+            if (docViewTop > elemViewTop > docViewBottom) {
 
-    //             console.log("blja" + $this.attr('name'));
-    //         }
+                console.log("blja" + $this.attr('name'));
+            }
 
-    //     });
+        });
 
-    //         if (st > lastScrollTop){
+            if (st > lastScrollTop){
 
-    //         } else {
-    //           // upscroll code
-    //         }
-    //     lastScrollTop = st;
-    // });
+            } else {
+              // upscroll code
+            }
+        lastScrollTop = st;
+    });
 
 
     //
