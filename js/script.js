@@ -9,6 +9,7 @@ $(document).ready(function () {
 
     // });
 
+
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -18,17 +19,19 @@ $(document).ready(function () {
         success: function (data) {
             $.fn.fullpage();
 
-            buildDorf(data);
 
-            showFirstArticles();
-            showSecondArticles();
-            showZitat1();
-            buildCircles(data)
-            showZitat2();
-            showZitat4();
-            showImages();
-            showCircles();
-            verticalScroll();
+                buildDorf(data);
+
+                showFirstArticles();
+                showSecondArticles();
+                showZitat1();
+                buildCircles(data)
+                showZitat2();
+                showZitat4();
+                showImages();
+                showCircles();
+                verticalScroll();
+
 
 
         },
@@ -38,13 +41,19 @@ $(document).ready(function () {
     });
 
 
+
     if ($(window).scroll) {
 
         $('.footer').hide();
     }
 
+    // 
+    // Paralax scheiss ;)))
+    // 
+
     // Cache the Window object
     $window = $(window);
+
 
 
 //    $('section[data-type="background"]').each(function () {
@@ -73,36 +82,6 @@ $(document).ready(function () {
 //
 //    });
 
-    //
-    // Automatisches scrollen zur nächsten Section
-    //
-
-    // $(window).scroll(function() {
-    //     var lastScrollTop = 0;
-    //     var st = $(this).scrollTop();
-
-    //     $('section').each(function() {
-    //         var docViewTop = $(window).scrollTop();
-    //         var docViewBottom = docViewTop + $(window).height();
-    //         var elemViewTop = $(this).offset().top;
-
-    //         console.log("docViewBottom" + docViewBottom);
-    //         console.log("elemViewTop " + elemViewTop + " " + $('section').attr('name'));
-    //         console.log("docViewTop" + docViewTop);
-    //         if (docViewTop > elemViewTop > docViewBottom) {
-
-    //             console.log("blja" + $this.attr('name'));
-    //         }
-
-    //     });
-
-    //         if (st > lastScrollTop){
-
-    //         } else {
-    //           // upscroll code
-    //         }
-    //     lastScrollTop = st;
-    // });
 
 
     //

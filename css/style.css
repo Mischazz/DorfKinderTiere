@@ -27,7 +27,7 @@ overflow-x: hidden;
 
 }
 
-section{
+.section{
 	padding-left: 50px;
     width: 100%;
     position: relative; /* importet for position Gallery*/
@@ -92,40 +92,40 @@ article p {
 
 }
 
-/*#Galerie {*/
-/*background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*}*/
+#Galerie {
+background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
+min-height: 1000px;
+background-repeat: no-repeat;
+width: 100%;
+}
 
-/*#Anmelden {*/
-/*background: grey 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*}*/
+#Anmelden {
+background: grey 50% 0 repeat fixed;
+min-height: 1000px;
+background-repeat: no-repeat;
+width: 100%;
+}
 
-/*#Wir {*/
-/*background: orange 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*}*/
+#Wir {
+background: orange 50% 0 repeat fixed;
+min-height: 1000px;
+background-repeat: no-repeat;
+width: 100%;
+}
 
-/*#Andere {*/
-/*background: blue 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*}*/
+#Andere {
+background: blue 50% 0 repeat fixed;
+min-height: 1000px;
+background-repeat: no-repeat;
+width: 100%;
+}
 
-/*#Kontakt {*/
-/*background: red 50% 0 repeat fixed;*/
-/*min-height: 1000px;*/
-/*background-repeat: no-repeat;*/
-/*width: 100%;*/
-/*}*/
+#Kontakt {
+background: red 50% 0 repeat fixed;
+min-height: 1000px;
+background-repeat: no-repeat;
+width: 100%;
+}
 
 .logo {
     width: 15%;
