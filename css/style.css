@@ -27,7 +27,7 @@ overflow-x: hidden;
 
 }
 
-section{
+.section{
 	padding-left: 50px;
     width: 100%;
     position: relative; /* importet for position Gallery*/
