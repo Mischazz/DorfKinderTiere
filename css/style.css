@@ -804,21 +804,13 @@ article p {
     bottom: 0;
     height: 155px;
 }
-<<<<<<< HEAD
+
 #pp_thumbContainer{
     position:absolute;
     left:180px;
     height:65px;
     width:100%;
     bottom: -100px;
-=======
-
-#pp_thumbContainer {
-    position: relative;
-    left: 180px;
-    height: 65px;
-    width: 100%;
->>>>>>> 8386ec99b6de5489e7ad32c37d90a47ec326ba8b
 }
 
 #pp_thumbContainer .album {
