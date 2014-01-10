@@ -1,23 +1,25 @@
 /*Style*/
-nav{
-	padding: 50px 20px 0 20px;
-	position: fixed;
-	height: 100%;
-	width: 100px;
-	z-index: 1;
-}
-nav a{
-	display: block;
-	text-decoration: none;
-	color: black;
-	font-size: 25px;
-	line-height: 35px;
-}
-a:hover{
-	color: gray;
+nav {
+    padding: 50px 20px 0 20px;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    z-index: 1;
 }
 
-body{
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+a:hover {
+    color: gray;
+}
+
+body {
 
     margin: 0 auto;
 
@@ -32,20 +34,22 @@ section{
 }
 
 #Start {
-    background: url(../assets/wiese.jpg) 50% 0 repeat fixed; min-height: 1000px;
-    height: 1000px;
+    background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
+    height: 1500px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1920px;
+
     position: relative;
 }
 
-article{
+article {
 
     font-size: 50px;
     color: white;
 }
-article p{
+
+article p {
 
     font-size: 24px;
 }
@@ -59,14 +63,17 @@ article p{
 }
 
 #DasDorf {
-    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed; min-height: 1000px;
-    height: 1000px;
+    background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
+
+    min-height: 1000px;
+    height: 5000px;
     margin: 0 auto;
+    padding: 20px;
     width: 100%;
-    max-width: 1920px;
+
     position: relative;
-    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 #DasDorf article {
@@ -77,50 +84,56 @@ article p{
     width: 100%;
 
 }
-#Berufe{
-    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed; min-height: 1000px;
+
+#Berufe {
+    background: url(../assets/Schwein2.jpg) 50% 0 repeat fixed;
+    min-height: 1000px;
     background-repeat: no-repeat;
 
-
-}
-#Galerie{
-	background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Anmelden{
-	background: grey 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Wir{
-	background: orange 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Andere{
-	background: blue 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
-}
-#Kontakt{
-	background: red 50% 0 repeat fixed;
-    min-height: 1000px;
-	background-repeat: no-repeat;
-	width: 100%;
 }
 
-.logo{
+/*#Galerie {*/
+/*background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
+
+/*#Anmelden {*/
+/*background: grey 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
+
+/*#Wir {*/
+/*background: orange 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
+
+/*#Andere {*/
+/*background: blue 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
+
+/*#Kontakt {*/
+/*background: red 50% 0 repeat fixed;*/
+/*min-height: 1000px;*/
+/*background-repeat: no-repeat;*/
+/*width: 100%;*/
+/*}*/
+
+.logo {
     width: 15%;
     position: fixed;
     z-index: 20;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 30px;
     position: fixed;
@@ -147,29 +160,34 @@ article p{
 
 /* reset margins and paddings */
 .Navigation * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
+
 .Navigation ul {
-margin: 0; 
-padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
+
 .Navigation ul li {
     list-style: none;
-    margin: 0; 
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .Navigation ul li a {
-  text-decoration:none;
+    text-decoration: none;
 }
+
 .Navigation ul li a img {
-  width:50px;  /* initial width of images, 50% of width */
-  height:50px; /* initial height of images, 50% of height */
-  border:none;
-  
+    width: 50px; /* initial width of images, 50% of width */
+    height: 50px; /* initial height of images, 50% of height */
+    border: none;
+
 }
+
 /* initially, don't show the label inside <span> tag */
 .Navigation ul li a span {
 	font-size:10px;
@@ -177,26 +195,70 @@ padding: 0;
 	display:block;
     float:right;
 }
+
+.Navigation .icon {
+
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+
+}
+
+.Navigation .Dorf {
+
+    background-image: url("../assets/Dorf.png");
+}
+
+.Navigation .Berufe {
+
+    background-image: url("../assets/Berufe.png");
+}
+
+.Navigation .Galerie {
+
+    background-image: url("../assets/Galerie.png");
+}
+
+.Navigation .Anmelden {
+
+    background-image: url("../assets/Anmelden.png");
+}
+
+.Navigation .UeberUns {
+
+    background-image: url("../assets/UeberUns.png");
+}
+
+.Navigation .Andere {
+
+    background-image: url("../assets/Andere.png");
+}
+
+.Navigation .Kontakt {
+
+    background-image: url("../assets/Kontakt.png");
+}
+
 /* initially, don't show the second navigation */
 .Navigation ul li ul {
-	display:none;
+    display: none;
 }
 
 .Navigation ul li:hover a span {
-  /* show label on mouse hover */
-  font-size:14px;
-  text-align:center;
-  float:right;
-  color:black;
+    /* show label on mouse hover */
+    font-size: 14px;
+    text-align: center;
+    float: right;
+    color: black;
 }
 
 .Navigation ul li:hover ul {
-  /* show second navigation on mouse hover */
-  font-size:14px;
-  text-align:center;
-  float:right;
-  color:black;
-  display:inline;
+    /* show second navigation on mouse hover */
+    font-size: 14px;
+    text-align: center;
+    float: right;
+    color: black;
+    display: inline;
 }
 
 /* expand the image to 100% on mouse hover.
@@ -204,18 +266,527 @@ padding: 0;
 ** ideally, the image should have same width and height as below 
 */
 .Navigation ul li:hover a img {
-  width:100px;
-  height:100px;
+    width: 100px;
+    height: 100px;
 }
+
 /* expand the image next to the right of the active image to 60% using + selector */
 .Navigation ul li:hover + li a img {
-  width:60px;
-  height:60px;
+    width: 60px;
+    height: 60px;
 }
+
 /* expand the image second to the right of the active image to 55% using + selectors */
 .Navigation ul li:hover + li + li a img {
-  width:55px;
-  height:55px;
+    width: 55px;
+    height: 55px;
+}
+
+#DasDorf .header {
+    color: #EA5E0F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#DasDorf .artikel .header {
+    color: #EA5E0F;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#DasDorf .artikel {
+    display: none;
+    width: 460px;
+    border: 3px solid grey;
+    border-radius: 100px;
+    padding: 30px;
+
+    background-color: aliceblue;
+    opacity: 0.65;
+    box-shadow: 0px 1px 7px aliceblue
+}
+
+#DasDorf .artikel1 {
+    border-color: #775CA2;
+
+}
+
+#DasDorf .artikel2 {
+    position: absolute;
+    right: 5%;
+    border-color: #B91704;
+}
+
+#DasDorf .artikel3 {
+    position: absolute;
+    left: 7%;
+    top: 400px;
+    border-color: #89E08D;
+}
+
+#DasDorf .artikel4 {
+    position: absolute;
+    width: 500px;
+    left: 15%;
+    top: 850px;
+    border-color: #FFE581;
+}
+
+#DasDorf .artikel5 {
+    position: absolute;
+
+    left: 69%;
+    top: 840px;
+    border-color: #FF9C30;
+}
+
+#DasDorf .artikel6 {
+    position: absolute;
+
+    left: 5%;
+    top: 1350px;
+    border-color: #89E08D;
+}
+
+#DasDorf .artikel7 {
+    position: absolute;
+
+    left: 58%;
+    top: 1600px;
+    border-color: #88B8FF;
+}
+
+#DasDorf .img {
+
+    position: absolute;
+    display: none;
+    border: 3px solid grey;
+    border-radius: 100px;
+}
+
+#DasDorf .img.img1 {
+
+    left: 40%;
+
+}
+
+#DasDorf .img.img2 {
+
+    right: 35%;
+    top: 500px;
+
+}
+
+#DasDorf .img.img3 {
+
+    right: 45%;
+    top: 1160px;
+
+}
+
+#DasDorf .img.img4 {
+
+    right: 55%;
+    top: 1500px;
+
+}
+
+#DasDorf .img.img5 {
+
+    left: 10%;
+    top: 3750px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img6 {
+
+    left: 30%;
+    top: 3600px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img7 {
+
+    left: 50%;
+    top: 3600px;
+    border-radius: 50px;
+
+}
+
+#DasDorf .img.img8 {
+
+    left: 70%;
+    top: 3750px;
+    border-radius: 50px;
+
+}
+
+.zitat1 {
+    width: 400px;
+    height: 180px;
+
+    background-image: url("../assets/Zitat1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 40px;
+    top: 1450px;
+}
+
+.zitat2 {
+    background: #f0f8ff;
+
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 3370px;
+    left: 0%;
+    opacity: 0.65;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+
+}
+
+.zitat3 {
+    box-sizing: border-box;
+    width: 400px;
+
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-left: 2px solid #88B8FF;
+    border-bottom-left-radius: 20px;
+
+    border-top-left-radius: 20px;
+    position: absolute;
+    top: 3070px;
+    right: 1%;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+
+}
+
+.zitat3 img {
+
+    width: 100%;
+    border-top: 2px solid #88B8FF;
+    border-bottom: 2px solid #88B8FF;
+    border-left: 2px solid #88B8FF;
+    border-top-left-radius: 18px;
+}
+
+.zitat3 .text {
+    padding: 20px;
+    padding-right: 30px;
+    margin-top: -3px;
+    background: #f0f8ff;
+    opacity: 0.65;
+    border-bottom-left-radius: 18px;
+}
+
+.zitat4 {
+
+    box-sizing: border-box;
+    width: 280px;
+
+    border-bottom: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+
+    border-bottom-right-radius: 20px;
+
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 2530px;
+    left: 0%;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #EA5E0F;
+}
+
+.zitat4 img {
+
+    width: 100%;
+    border-top: 2px solid #88B8FF;
+    border-right: 2px solid #88B8FF;
+    border-top-right-radius: 18px;
+
+}
+
+.zitat4 .text {
+    padding: 20px;
+    background: aliceblue;
+    opacity: 0.65;
+}
+
+#ArbeitHeader.header {
+
+    position: absolute;
+    top: 2200px;
+    left: 35%;
+}
+
+.circleBase {
+    border-radius: 50%;
+    display: none;
+}
+
+.circleType1 {
+    width: 350px;
+    height: 350px;
+    background-color: aliceblue;
+    opacity: 0.65;
+    border: 3px solid red;
+    /*box-sizing: border-box;*/
+}
+
+#DasDorf .circleType1 .wrapper {
+    padding: 59px;
+}
+
+#DasDorf .circleType1 .header {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#DasDorf .circleType1 p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#circle1 {
+    position: absolute;
+    top: 2400px;
+    left: 36%;
+}
+
+#circle2 {
+    position: absolute;
+    top: 2750px;
+    left: 20%;
+}
+
+#circle3 {
+    position: absolute;
+    top: 2750px;
+    left: 52%;
+}
+
+#circle4 {
+    position: absolute;
+    top: 3120px;
+    left: 36%;
+}
+
+#circle5 {
+    position: absolute;
+    top: 4070px;
+    left: 8%;
+    width: 340px;
+    height: 340px;
+
+}
+
+#circle6 {
+    position: absolute;
+    top: 3870px;
+    left: 25%;
+    width: 400px;
+    height: 400px;
+
+}
+
+#circle7 {
+    position: absolute;
+    top: 3870px;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+
+}
+
+#circle8 {
+    position: absolute;
+    top: 4070px;
+    left: 70%;
+    width: 340px;
+    height: 340px;
+
+}
+
+.verticalTest {
+
+    width: 3000px;
+    height: 500px;
+    background: red;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: black;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box:nth-child(2n+2) {
+    background: #ffd700;
+}
+
+@media screen and (max-width: 1280px) {
+
+    #DasDorf {
+
+        height: 5800px;
+
+    }
+
+    #DasDorf .artikel {
+
+        width: 280px;
+    }
+
+    #DasDorf .img.img3 {
+        right: 34%;
+        top: 1160px;
+    }
+
+    #DasDorf .img.img4 {
+        right: 45%;
+        top: 1580px;
+    }
+
+    #DasDorf .artikel4 {
+
+        top: 940px;
+
+    }
+
+    #DasDorf .artikel6 {
+
+        top: 1800px;
+
+    }
+
+    #DasDorf .artikel7 {
+
+        width: 320px;
+        top: 1760px;
+    }
+
+    #ArbeitHeader.header {
+        top: 2700px;
+    }
+
+    #circle1 {
+
+        top: 3000px;
+    }
+
+    #circle2 {
+
+        top: 3370px;
+
+    }
+
+    #circle3 {
+
+        top: 3370px;
+    }
+
+    #circle4 {
+
+        top: 3780px;
+
+    }
+
+    #circle5 {
+
+        top: 4700px;
+        left: 32%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #circle6 {
+        top: 4290px;
+        left: 32%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #circle7 {
+
+        top: 4475px;
+        left: 58%;
+        width: 390px;
+        height: 390px;
+    }
+
+    #circle8 {
+        position: absolute;
+        top: 5060px;
+        left: 50%;
+        width: 350px;
+        height: 350px;
+        /*TEst*/
+
+    }
+
+    #DasDorf .img.img5 {
+        left: 5%;
+        top: 4300px;
+
+    }
+
+    #DasDorf .img.img6 {
+
+        top: 4570px;
+        left: 5%;
+
+    }
+
+    #DasDorf .img.img7 {
+
+        top: 4840px;
+        left: 5%;
+
+    }
+
+    #DasDorf .img.img8 {
+        left: 5%;
+        top: 5110px;
+    }
+
+    .zitat2 {
+
+        top: 3950px;
+
+    }
+
+    .zitat3 {
+        width: 250px;
+        top: 2800px;
+    }
+    .zitat4{
+        width: 220px;
+        top: 2700px;
+    }
+
 }
 /*Gallery*/
 .gallery_main{
