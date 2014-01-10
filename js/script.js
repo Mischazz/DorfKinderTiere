@@ -1,11 +1,10 @@
 $(document).ready(function () {
 
+    // $.getJSON( "content.json", function( data ) {
 
-    $.getJSON( "content.json", function( data ) {
+    //     console.log(data["Andere über Uns"]);
 
-        console.log(data["Andere über Uns"]);
-
-    });
+    // });
 
     if ($(window).scroll) {
 
@@ -42,7 +41,7 @@ $(document).ready(function () {
 
     });
 
-
+    //
     // Automatisches scrollen zur nächsten Section
     //
 
@@ -91,6 +90,15 @@ $(document).ready(function () {
             location.hash = ziel;
         });
         return false;
+    });
+
+    //
+    // Galerie Albumvorschau
+    //
+    $('img').animate({transform: 'rotate(30deg)'});
+    $('.content img').each(function() {
+        var random = Math.floor(Math.random()*41)-20;
+        $(this).animate({ transform : 'rotate(40deg)'});
     });
 
 
