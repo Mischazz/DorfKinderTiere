@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
     // $.getJSON( "content.json", function( data ) {
 
 
@@ -15,7 +17,7 @@ $(document).ready(function () {
 
 
         success: function (data) {
-
+            $.fn.fullpage();
 
 
                 buildDorf(data);
