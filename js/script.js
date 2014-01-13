@@ -2,12 +2,6 @@ $(document).ready(function () {
 
 
 
-    // $.getJSON( "content.json", function( data ) {
-
-
-    //     console.log(data["Andere über Uns"]);
-
-    // });
 
 
     $.ajax({
@@ -25,7 +19,6 @@ $(document).ready(function () {
             showFirstArticles();
             showSecondArticles();
             showZitat1();
-            buildCircles(data)
             showZitat2();
             showZitat4();
             showImages();
@@ -99,7 +92,6 @@ $(document).ready(function () {
         return false;
     });
 
-
 });
 
 
@@ -158,10 +150,10 @@ function buildDorf(data) {
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
                 $('#' + type).append(elem);
                 header = "";
-            }else if(elementType === "circleSlide"){
+            } else if (elementType === "circleSlide") {
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
 
-                $('.slide'+slideCount).append(elem);
+                $('.slide' + slideCount).append(elem);
                 header = "";
             }
 
@@ -172,194 +164,154 @@ function buildDorf(data) {
     })
 
 
-}
-function buildCircles(data) {
-
-    var header = "";
-    var text = "";
-    var counter = 0;
-    var globalVal = ""
+    }
 
 
-    _.each(data["Circle"], function (key, value) {
+    function showFirstArticles() {
 
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
 
-        _.each(data["Circle"][value], function (value, key) {
+            if (y > 1100) {
 
+                $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeIn(800);
 
-            if (key === "header" && value !== "") {
-
-
-                if (key && key === "header") {
-
-                    header = '<h3 class="header">' + value + '</h3>'
-
-                }
-            } else if (key && key === "text") {
-
-                text = value;
-                counter++;
             }
+    else {
+        $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeOut();
+        }
+    });
 
+    }
+    function showSecondArticles() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 1300) {
+
+                $('.artikel4, .artikel5, .artikel6,.artikel7,.img4 ').fadeIn(800);
+
+            }
+    else {
+        $('.artikel4, .artikel5, .artikel6,.artikel7, .img4').fadeOut();
+        }
+    });
+    }
+
+    function showZitat1() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 2200) {
+
+//            $('.zitat1').fadeIn(800);
+                $('.zitat1').show('slide', {direction: 'right'}, 1000);
+    }
+    else {
+        $('.zitat1').fadeOut();
+        }
+    });
+    }
+    function showZitat2() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 3900) {
+
+//            $('.zitat1').fadeIn(800);
+                $('.zitat2').show('slide', {direction: 'left'}, 1000);
+    $('.zitat3').show('slide', {direction: 'right'}, 1000);
+    }
+    else {
+        $('.zitat2').hide('slide', {direction: 'left'}, 1000);
+    ;
+    $('.zitat3').hide('slide', {direction: 'right'}, 1000);
+    ;
+    }
+    });
+    }
+
+    function showImages() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 4200) {
+
+//            $('.zitat1').fadeIn(800);
+                $('.img5').fadeIn(1000);
+                $('.img6').fadeIn(2300);
+                $('.img7').fadeIn(3500);
+                $('.img8').fadeIn(4700);
+            }
+    else {
+        $('.img5, .img6, .img7, .img8').fadeOut(1000);
+        }
+    });
+    }
+    function showCircles() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 4500) {
+
+//            $('.zitat1').fadeIn(800);
+                $('#circle5').show('slide', {direction: 'up'}, 1000);
+    $('#circle6').show('slide', {direction: 'left'}, 1000);
+    $('#circle7').show('slide', {direction: 'right'}, 1000);
+    $('#circle8').show('slide', {direction: 'down'}, 1000);
+    }
+    else {
+
+        $('#circle5').hide('slide', {direction: 'up'}, 1000);
+    $('#circle6').hide('slide', {direction: 'left'}, 1000);
+    $('#circle7').hide('slide', {direction: 'right'}, 1000);
+    $('#circle8').hide('slide', {direction: 'down'}, 1000);
+    }
+
+
+    });
+    }
+
+
+    function showZitat4() {
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+
+            if (y > 3500) {
+
+//            $('.zitat1').fadeIn(800);
+                $('.zitat4').show('slide', {direction: 'left'}, 1000);
+
+    $('#circle1').show('slide', {direction: 'up'}, 1000);
+    $('#circle2').show('slide', {direction: 'left'}, 1000);
+    $('#circle3').show('slide', {direction: 'right'}, 1000);
+    $('#circle4').show('slide', {direction: 'down'}, 1000);
+    }
+    else {
+        $('.zitat4').hide('slide', {direction: 'left'}, 1000);
+
+    $('#circle1').hide('slide', {direction: 'up'}, 1000);
+    $('#circle2').hide('slide', {direction: 'left'}, 1000);
+    $('#circle3').hide('slide', {direction: 'right'}, 1000);
+    $('#circle4').hide('slide', {direction: 'down'}, 1000);
+    }
+    });
+    }
+    function verticalScroll() {
+
+        $(".verticalTest").mousewheel(function (event, delta) {
+
+            this.scrollLeft -= (delta * 100);
+
+            event.preventDefault();
 
         });
-
-        var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
-        $('#DasDorf').append(elem);
-        header = ""
-
-
-    })
-
-
-}
-
-
-function showFirstArticles() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 1100) {
-
-            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeIn(800);
-
-        }
-        else {
-            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeOut();
-        }
-    });
-
-}
-function showSecondArticles() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 1300) {
-
-            $('.artikel4, .artikel5, .artikel6,.artikel7,.img4 ').fadeIn(800);
-
-        }
-        else {
-            $('.artikel4, .artikel5, .artikel6,.artikel7, .img4').fadeOut();
-        }
-    });
-}
-
-function showZitat1() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 2200) {
-
-//            $('.zitat1').fadeIn(800);
-            $('.zitat1').show('slide', {direction: 'right'}, 1000);
-        }
-        else {
-            $('.zitat1').fadeOut();
-        }
-    });
-}
-function showZitat2() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 3900) {
-
-//            $('.zitat1').fadeIn(800);
-            $('.zitat2').show('slide', {direction: 'left'}, 1000);
-            $('.zitat3').show('slide', {direction: 'right'}, 1000);
-        }
-        else {
-            $('.zitat2').hide('slide', {direction: 'left'}, 1000);
-            ;
-            $('.zitat3').hide('slide', {direction: 'right'}, 1000);
-            ;
-        }
-    });
-}
-
-function showImages() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 4200) {
-
-//            $('.zitat1').fadeIn(800);
-            $('.img5').fadeIn(1000);
-            $('.img6').fadeIn(2300);
-            $('.img7').fadeIn(3500);
-            $('.img8').fadeIn(4700);
-        }
-        else {
-            $('.img5, .img6, .img7, .img8').fadeOut(1000);
-        }
-    });
-}
-function showCircles() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 4500) {
-
-//            $('.zitat1').fadeIn(800);
-            $('#circle5').show('slide', {direction: 'up'}, 1000);
-            $('#circle6').show('slide', {direction: 'left'}, 1000);
-            $('#circle7').show('slide', {direction: 'right'}, 1000);
-            $('#circle8').show('slide', {direction: 'down'}, 1000);
-        }
-        else {
-
-            $('#circle5').hide('slide', {direction: 'up'}, 1000);
-            $('#circle6').hide('slide', {direction: 'left'}, 1000);
-            $('#circle7').hide('slide', {direction: 'right'}, 1000);
-            $('#circle8').hide('slide', {direction: 'down'}, 1000);
-        }
-
-
-    });
-}
-
-
-function showZitat4() {
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-
-        if (y > 3500) {
-
-//            $('.zitat1').fadeIn(800);
-            $('.zitat4').show('slide', {direction: 'left'}, 1000);
-
-            $('#circle1').show('slide', {direction: 'up'}, 1000);
-            $('#circle2').show('slide', {direction: 'left'}, 1000);
-            $('#circle3').show('slide', {direction: 'right'}, 1000);
-            $('#circle4').show('slide', {direction: 'down'}, 1000);
-        }
-        else {
-            $('.zitat4').hide('slide', {direction: 'left'}, 1000);
-
-            $('#circle1').hide('slide', {direction: 'up'}, 1000);
-            $('#circle2').hide('slide', {direction: 'left'}, 1000);
-            $('#circle3').hide('slide', {direction: 'right'}, 1000);
-            $('#circle4').hide('slide', {direction: 'down'}, 1000);
-        }
-    });
-}
-function verticalScroll() {
-
-    $(".verticalTest").mousewheel(function (event, delta) {
-
-        this.scrollLeft -= (delta * 100);
-
-        event.preventDefault();
-
-    });
-}
+    }
 
 
