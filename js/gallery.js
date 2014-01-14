@@ -69,7 +69,7 @@ $(document).ready(function () {
         //store the current left for the reverse operation
         $album.data('left',$album.css('left'))
               .stop()
-              .animate({'left':'0px'},500).find('.descr').stop().animate({'bottom':'-30px'},200);
+              .animate({'left':'100px'},500).find('.descr').stop().animate({'bottom':'-30px'},200);
         var total_pic   = $album.find('.content').length;
         var cnt         = 0;
         //each picture
