@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
 
-
-
-
     $.ajax({
         type: "GET",
         dataType: "json",
