@@ -119,6 +119,7 @@ article p {
 .UeberUns .topper h2 {
     padding-top: 50px;
     margin-top: 0;
+    color:#fff;
 }
 
 .UeberUns .scrollArrow {
@@ -243,7 +244,7 @@ article p {
     display: inline-block;
     margin-right: 10px;
 }
-#section9.UeberUns .imageWrap h3{
+#section9.UeberUns  h3{
 
    color: #555555;
 }
