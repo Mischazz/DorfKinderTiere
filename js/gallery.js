@@ -4,7 +4,7 @@ $(document).ready(function () {
     //
     // Galerie Albumvorschau
     //
-    
+    var r;
     var ie = false;
     // if ($.browser.msie) {
     //     ie = true;
@@ -187,6 +187,7 @@ $(document).ready(function () {
             var largeH              = $imgL.height()+10+45;
             //change the properties of the wrapping div 
             //to fit the large image sizes
+
             $preview.css({
                 'width'         :largeW+'px',
                 'height'        :largeH+'px',
@@ -196,13 +197,12 @@ $(document).ready(function () {
             });
             Cufon.replace('.pp_descr');
             //show navigation
-            showNavigation();
-            
+
             //hide the ajax image loading
             $loader.hide();
             
             //slide up (also rotating) the large image
-            var r           = Math.floor(Math.random()*41)-20;
+             r           = Math.floor(Math.random()*41)-20;
             if(ie)
                 var param = {
                     'top':'50%'
@@ -211,10 +211,23 @@ $(document).ready(function () {
                 var param = {
                     'top':'50%',
                     'rotate': r+'deg'
+
                 };
-            $preview.stop().animate(param,500,function(){
-                enableshow = true;
-            });
+
+//            $preview.stop().animate(param,500,function(){
+//                enableshow = true;
+//            });
+
+            $preview.stop().animate({  textIndent: 0 }, {
+                step: function() {
+
+                    $(this).css('-webkit-transform','rotate('+r+'deg)');
+                    enableshow = true;
+                },
+                duration:'slow'
+
+            },'linear');
+
         }).error(function(){
             //error loading image. Maybe show a message : 'no preview available'?
         }).attr('src',imgL_source); 
@@ -264,6 +277,7 @@ $(document).ready(function () {
 
     //mouseenter event on each thumb
     function upImage(){
+
         var $content    = $(this);
         $content.stop().animate({
             'marginTop'     : '-70px'
@@ -289,6 +303,7 @@ $(document).ready(function () {
         var windowH      = $(window).height()-heightMargin;
         var windowW      = $(window).width()-widthMargin;
         var theImage     = new Image();
+
         theImage.src     = $image.attr("src");
         var imgwidth     = theImage.width;
         var imgheight    = theImage.height;
