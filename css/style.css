@@ -962,7 +962,7 @@ article p {
     margin-top: -16px;
     width: 32px;
     height: 32px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     border: 1px solid #111;
     color: #fff;

@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+    
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -83,7 +84,7 @@ $(document).ready(function () {
 
             scrollTop: $(ziel).offset().top
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-        }, 1000, function () {
+        }, 100, function () {
             location.hash = ziel;
         });
         return false;
@@ -310,5 +311,6 @@ function buildDorf(data) {
 
         });
     }
+
 
 

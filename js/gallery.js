@@ -93,7 +93,7 @@ $(document).ready(function () {
             }).find('img')
               .stop()
               .animate({'rotate': r+'deg'},300);
-            $back.stop().animate({'left':'0px'},300);
+            $back.stop().animate({'left':'200px'},300);
         });
     }
 
@@ -162,6 +162,7 @@ $(document).ready(function () {
         if(current != -1){
             hideCurrentPicture();
         }
+
         
         current                 = $content.index();
         var $thumb              = $content.find('img');
@@ -169,7 +170,9 @@ $(document).ready(function () {
         var imgL_description    = $thumb.next().html();
         //preload the large image to show
         $('<img style=""/>').load(function(){
+
             var $imgL   = $(this);
+
             //resize the image based on the windows size
             resize($imgL);
             //create an element to include the large image
@@ -187,13 +190,16 @@ $(document).ready(function () {
             var largeH              = $imgL.height()+10+45;
             //change the properties of the wrapping div 
             //to fit the large image sizes
+
             $preview.css({
+                'position'      :'absolute',
                 'width'         :largeW+'px',
                 'height'        :largeH+'px',
                 'marginTop'     :-largeH/2-20+'px',
                 'marginLeft'    :-largeW/2+'px',
                 'visibility'    :'visible'
             });
+
             Cufon.replace('.pp_descr');
             //show navigation
             showNavigation();
@@ -203,18 +209,19 @@ $(document).ready(function () {
             
             //slide up (also rotating) the large image
             var r           = Math.floor(Math.random()*41)-20;
+            
             if(ie)
                 var param = {
                     'top':'50%'
                 };
             else
                 var param = {
-                    'top':'50%',
-                    'rotate': r+'deg'
+                    'top':'50%',    
+                    'transform': 'rotate('+r+'deg)'
                 };
-            $preview.stop().animate(param,500,function(){
-                enableshow = true;
-            });
+
+            $preview.stop().css(param);
+
         }).error(function(){
             //error loading image. Maybe show a message : 'no preview available'?
         }).attr('src',imgL_source); 
@@ -253,7 +260,7 @@ $(document).ready(function () {
     //shows the navigation buttons
     function showNavigation(){
         $next.stop().animate({'right':'0px'},100);
-        $prev.stop().animate({'left':'0px'},100);
+        $prev.stop().animate({'left':'200px'},100);
     }
 
     //hides the navigation buttons
@@ -292,6 +299,7 @@ $(document).ready(function () {
         theImage.src     = $image.attr("src");
         var imgwidth     = theImage.width;
         var imgheight    = theImage.height;
+
 
         if((imgwidth > windowW)||(imgheight > windowH)){
             if(imgwidth > imgheight){
