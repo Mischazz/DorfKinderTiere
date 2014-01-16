@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
 
-    
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -9,7 +8,7 @@ $(document).ready(function () {
 
 
         success: function (data) {
-            $.fn.fullpage();
+//            $.fn.fullpage();
 
 
             buildDorf(data);
@@ -31,47 +30,23 @@ $(document).ready(function () {
     });
 
 
-    if ($(window).scroll) {
+    $(window).on('scroll',function() {
 
-        $('.footer').hide();
-    }
+        var scrolltop = $(this).scrollTop();
 
-    // 
-    // Paralax scheiss ;)))
-    // 
+        if(scrolltop >= 215) {
+            $('.NavigationBar').show('slide',{direction:'left'});
+        }
 
-    // Cache the Window object
-    $window = $(window);
-
-
-//    $('section[data-type="background"]').each(function () {
-//        var $bgobj = $(this); // assigning the object
-//
-//        $(window).scroll(function () {
-//            var check = 1;
-//            if (check === 1) {
-//
-//                $('.footer').hide();
-//
-//            }
-//
-//
-//            // Scroll the background at var speed
-//            // the yPos is a negative value because we're scrolling it UP!
-//            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-//
-//            // Put together our final background position
-//            var coords = '50% ' + yPos + 'px';
-//
-//            // Move the background
-//            $bgobj.css({ backgroundPosition:coords });
-//
-//        }); // window scroll Ends
-//
-//    });
+        else if(scrolltop <= 210) {
+            $('.NavigationBar').fadeOut(250);
+        }
+    });
 
 
-    //
+
+
+
     // Scrollen zu dem Ankerpunkt
     //
 
@@ -84,7 +59,7 @@ $(document).ready(function () {
 
             scrollTop: $(ziel).offset().top
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
-        }, 100, function () {
+        }, 1000, function () {
             location.hash = ziel;
         });
         return false;
@@ -104,6 +79,8 @@ function buildDorf(data) {
     var globalVal = ""
     var elementType = ""
     var slideCount = 0;
+    var position ="";
+    var layout ="";
     _.each(data["Dorf"], function (key, value) {
         type = value;
         globalVal = value;
@@ -113,7 +90,7 @@ function buildDorf(data) {
             _.each(data["Dorf"][globalVal][key], function (value, key) {
 
                 if (key === "type" && value === "article") {
-                    ;
+
                     elementType = value;
 
                 } else if (key === "type" && value === "circle") {
@@ -121,6 +98,8 @@ function buildDorf(data) {
                 } else if (key === "type" && value === "circleSlide") {
                     elementType = value;
                     slideCount++;
+                }else if(key === "type" && value === "zitat"){
+                    elementType = value;
                 }
 
                 if (key === "header" && value !== "") {
@@ -135,6 +114,10 @@ function buildDorf(data) {
 
                     text = value;
                     counter++;
+                }else if(key && key  === "position"){
+                    position = value;
+                }else if (key && key === "layout"){
+                    layout = value
                 }
 
             })
@@ -142,17 +125,24 @@ function buildDorf(data) {
             if (elementType === "article") {
                 var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
 
-                $('#' + type).append(elem);
+                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
                 header = "";
             } else if (elementType === "circle") {
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
-                $('#' + type).append(elem);
+                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
+
                 header = "";
             } else if (elementType === "circleSlide") {
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
 
                 $('.slide' + slideCount).append(elem);
                 header = "";
+            }else if(elementType === "zitat"){
+                var elem = '<div class="zitat zitat' + counter + '">' + header + '<p>' + text + '</p></div>';
+                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
+
+                header = "";
+
             }
 
 
