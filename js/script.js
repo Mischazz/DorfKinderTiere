@@ -20,7 +20,7 @@ $(document).ready(function () {
             showZitat4();
             showImages();
             showCircles();
-            verticalScroll();
+
 
 
         },
@@ -66,6 +66,8 @@ $(document).ready(function () {
     });
 
 });
+
+
 
 
 // Diese Funktion liest die verschiedenen Artikel aus der "Dorf" Rubrik des content.json Files ein und erzeugt entsprechendes HTML
@@ -238,7 +240,39 @@ $('.imageWrap').on('click', function () {
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
+    }else if($(this).hasClass('job1')){
+
+        $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
+
+    }else if($(this).hasClass('job2')){
+
+        $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
+
+    }else if($(this).hasClass('job3')){
+
+        $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
+
+    }else if($(this).hasClass('job4')){
+
+        $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
+
     }
+
+
+
+
 
 
 })
@@ -378,16 +412,8 @@ function showZitat4() {
             $('#circle4').hide('slide', {direction: 'down'}, 1000);
         }
     });
-}
-function verticalScroll() {
 
-    $(".verticalTest").mousewheel(function (event, delta) {
 
-        this.scrollLeft -= (delta * 100);
-
-        event.preventDefault();
-
-    });
 }
 
 

@@ -108,13 +108,15 @@ body {
     position: relative;
 }
 
-article {
+.article {
 
     font-size: 50px;
     color: white;
+    padding-top: 100px;
+    text-align: center;
 }
 
-article p {
+.article p {
 
     font-size: 24px;
 }
@@ -126,8 +128,14 @@ article p {
     top: 150px;
     width: 100%;
 }
-.scrollArrow{
+.scrollArrowWrapper{
+    height: 55px;
+    position: relative;
+}
 
+.scrollArrow {
+
+    transition:all 0.3s linear;
     width: 51px;
     height: 50px;
     background: url("../assets/sprite.png");
@@ -136,9 +144,21 @@ article p {
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+.scrollArrow:hover{
 
+    margin-top:28px;
+    cursor: pointer;
+}
+.scrollArrow a{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+}
+.topper{
+    width: 100%;
+    min-height: 250px;
+}
 .DasDorf {
-
 
     min-height: 1000px;
     height: 100%;
@@ -152,8 +172,7 @@ article p {
 }
 
 .DasDorf .topper {
-    width: 100%;
-   min-height: 250px;
+
 
     padding-top: 70px;
     padding-left: 20px;
@@ -171,61 +190,64 @@ article p {
     font-size: 14px;
 
 }
-.zitat{
+
+.zitat {
     font-size: 17px;
-    color:#EA5E0F ;
+    color: #EA5E0F;
 }
-.leftSide{
+
+.leftSide {
     width: 28%;
     height: inherit;
     float: left;
     padding-right: 20px;
     padding-left: 20px;
 }
-.bottom .middle{
+
+.bottom .middle {
     width: 32%;
     height: inherit;
     display: inline-block;
     padding-right: 20px;
 
-
 }
-.rightSide{
+
+.rightSide {
     width: 28%;
     height: inherit;
     float: right;
-padding-right: 20px;
+    padding-right: 20px;
 }
 
-#section2 .topper{
+#section2 .topper {
     background: cadetblue;
 }
 
-#section3 .zitat{
+#section3 .zitat {
     padding-left: 50px;
     padding-right: 0;
 }
 
-
-#section3 .topper{
+#section3 .topper {
     background: cornflowerblue;
 }
 
-#section4 .topper{
+#section4 .topper {
     background: goldenrod;
 }
-#section5 .topper{
-    background:#2b405c;
-}
 
+#section5 .topper {
+    background: #2b405c;
+}
 
 .DasDorf .header {
     position: static;
     color: #fff;
-    font-size:32px;
+    font-size: 32px;
     font-weight: 500;
 }
-.DasDorf .textBox{
+
+.DasDorf .textBox {
     width: 400%;
     max-width: 750px;
     min-width: 500px;
@@ -243,6 +265,21 @@ padding-right: 20px;
     top: 150px;
     width: 100%;
 
+}
+.DasDorf .Berufe .wrapper{
+    text-align: center;
+    padding-top: 50px;
+    background:#edebe9 ;
+
+}
+
+
+.DasDorf .person {
+    width: 20%;
+    display: inline-block;
+}
+.DasDorf .person h3{
+    color: #555555;
 }
 
 /* Start Ueber Uns Styling */
@@ -274,17 +311,7 @@ padding-right: 20px;
     color: #fff;
 }
 
-.UeberUns .scrollArrow {
-    position: absolute;
-    top: 315px;
-    width: 100%;
-    height: 50px;
-    background: url("../assets/sprite.png");
-    background-position: 930px -1298px;
-    text-align: center;
-    background-repeat: no-repeat;
 
-}
 
 /* Start section7 Styling */
 
@@ -293,10 +320,6 @@ padding-right: 20px;
     background: #edebe9;
 }
 
-#section7.UeberUns .scrollArrow {
-    top: 399px
-
-}
 
 #section7.UeberUns .topper {
     background: #fc4f4f;
@@ -343,14 +366,17 @@ padding-right: 20px;
     color: #444444;
 
 }
+#section9 .topper{
+    padding-top: 50px;
+}
 
-#section9.UeberUns .detailContainer {
+.detailContainer {
     text-align: center;
     height: 500px;
     background: #ffffff;
 }
 
-#section9.UeberUns .detailsWrapper {
+ .detailsWrapper {
 
     width: 70%;
     text-align: center;;
@@ -359,19 +385,19 @@ padding-right: 20px;
     overflow: hidden;
 }
 
-#section9.UeberUns .detailsWrapper .leftSide {
+ .detailsWrapper .leftSide {
 
     width: 30%;
     float: left;
 }
 
-#section9.UeberUns .detailsWrapper .rightSide {
+ .detailsWrapper .rightSide {
 
     width: 60%;
     float: right;
 }
 
-#section9.UeberUns .detailsWrapper .zitat {
+ .zitat {
 
     color: #EA5E0F;;
 }
@@ -412,7 +438,7 @@ padding-right: 20px;
     box-sizing: border-box;
 }
 
-#section9.UeberUns .imageWrap img:hover {
+ .imageWrap img:hover {
 
     cursor: pointer;
 }
@@ -465,18 +491,12 @@ padding-right: 20px;
     opacity: 0.8;
 }
 
-
-
 .DasDorf .artikel .header {
     color: #EA5E0F;
     font-size: 22px;
     margin-bottom: 20px;
     position: static;
 }
-
-
-
-
 
 .DasDorf .artikel13 {
     right: 35%;
@@ -588,53 +608,6 @@ padding-right: 20px;
 
 }
 
-.zitat1, .zitat2, .zitat3, .zitat5 {
-
-
-    background: #f0f8ff;
-
-    box-sizing: border-box;
-    width: 400px;
-
-    border-top: 2px solid #88B8FF;
-    border-bottom: 2px solid #88B8FF;
-    border-right: 2px solid #88B8FF;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    position: absolute;
-
-    bottom: 0%;
-    opacity: 0.65;
-    padding: 20px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #EA5E0F;
-
-}
-
-
-.zitat2 {
-    background: #f0f8ff;
-
-    box-sizing: border-box;
-    width: 400px;
-
-    border-top: 2px solid #88B8FF;
-    border-bottom: 2px solid #88B8FF;
-    border-right: 2px solid #88B8FF;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    position: absolute;
-
-    bottom: 0%;
-    opacity: 0.65;
-    padding: 20px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #EA5E0F;
-
-}
-
 .zitat3 img {
 
     width: 100%;
@@ -723,23 +696,16 @@ padding-right: 20px;
     margin-top: 5px;
 }
 
-
-
-
-.bottomZitat{
+.bottomZitat {
     background: #fff;
     text-align: center;
     color: #EA5E0F;
     border: 4px solid grey;
 }
 
-
-
 .detailsWrapper {
     display: none;
 }
-
-
 
 /*Gallery*/
 
@@ -903,3 +869,6 @@ padding-right: 20px;
     text-align: center;
     color: #00021c;
 }
+
+*/
+
