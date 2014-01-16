@@ -1,4 +1,4 @@
-/*Style*/
+Style*/
 .NavigationBar {
     display: none;
     padding-left: 50px;
@@ -743,6 +743,10 @@ padding-right: 20px;
 
 /*Gallery*/
 
+#albums{
+    height: 500px;
+    background-color: green; 
+}
 
 /*
 .album .descr {
@@ -899,4 +903,3 @@ padding-right: 20px;
     text-align: center;
     color: #00021c;
 }
-*/
