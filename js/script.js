@@ -22,7 +22,6 @@ $(document).ready(function () {
             showCircles();
 
 
-
         },
         error: function () {
             alert('failure');
@@ -30,21 +29,18 @@ $(document).ready(function () {
     });
 
 
-    $(window).on('scroll',function() {
+    $(window).on('scroll', function () {
 
         var scrolltop = $(this).scrollTop();
 
-        if(scrolltop >= 215) {
-            $('.NavigationBar').show('slide',{direction:'left'});
+        if (scrolltop >= 215) {
+            $('.NavigationBar').show('slide', {direction: 'left'});
         }
 
-        else if(scrolltop <= 210) {
+        else if (scrolltop <= 210) {
             $('.NavigationBar').fadeOut(250);
         }
     });
-
-
-
 
 
     // Scrollen zu dem Ankerpunkt
@@ -68,8 +64,6 @@ $(document).ready(function () {
 });
 
 
-
-
 // Diese Funktion liest die verschiedenen Artikel aus der "Dorf" Rubrik des content.json Files ein und erzeugt entsprechendes HTML
 
 function buildDorf(data) {
@@ -81,8 +75,9 @@ function buildDorf(data) {
     var globalVal = ""
     var elementType = ""
     var slideCount = 0;
-    var position ="";
-    var layout ="";
+    var position = "";
+    var layout = "";
+    var layoutmode = "";
     _.each(data["Dorf"], function (key, value) {
         type = value;
         globalVal = value;
@@ -100,7 +95,7 @@ function buildDorf(data) {
                 } else if (key === "type" && value === "circleSlide") {
                     elementType = value;
                     slideCount++;
-                }else if(key === "type" && value === "zitat"){
+                } else if (key === "type" && value === "zitat") {
                     elementType = value;
                 }
 
@@ -116,10 +111,12 @@ function buildDorf(data) {
 
                     text = value;
                     counter++;
-                }else if(key && key  === "position"){
+                } else if (key && key === "position") {
                     position = value;
-                }else if (key && key === "layout"){
+                } else if (key && key === "layout") {
                     layout = value
+                } else if (key && key === "layoutmode") {
+                    layoutmode = value
                 }
 
             })
@@ -127,11 +124,11 @@ function buildDorf(data) {
             if (elementType === "article") {
                 var elem = '<div class="artikel artikel' + counter + '">' + header + '<p>' + text + '</p></div>';
 
-                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
+                $('#' + type + ' ' + '.' + position + ' ' + '.' + layout).append(elem);
                 header = "";
             } else if (elementType === "circle") {
                 var elem = '<div class="circleBase circleType1" id="circle' + counter + '"><div class="wrapper"> ' + header + '<p>' + text + '</p></div></div>';
-                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
+                $('#' + type + ' ' + '.' + position + ' ' + '.' + layout).append(elem);
 
                 header = "";
             } else if (elementType === "circleSlide") {
@@ -139,9 +136,9 @@ function buildDorf(data) {
 
                 $('.slide' + slideCount).append(elem);
                 header = "";
-            }else if(elementType === "zitat"){
+            } else if (elementType === "zitat") {
                 var elem = '<div class="zitat zitat' + counter + '">' + header + '<p>' + text + '</p></div>';
-                $('#' + type +' '+'.'+position+' '+'.'+layout).append(elem);
+                $('#' + type + ' ' + '.' + position + ' ' + '.' + layout).append(elem);
 
                 header = "";
 
@@ -155,6 +152,33 @@ function buildDorf(data) {
 
 
 }
+$('#btn1').on('click', function () {
+    $('#btn2,#btn3').removeClass('active');
+    $('#btn1').addClass('active');
+    $('.bottom #textBox2').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox3').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox1').show('slide', {direction: 'left'}, 1000)
+
+
+});
+$('#btn2').on('click', function () {
+    $('#btn1,#btn3').removeClass('active');
+    $('#btn2').addClass('active');
+    $('.bottom #textBox1').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox3').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox2').show('slide', {direction: 'left'}, 1000);
+
+
+});
+$('#btn3').on('click', function () {
+    $('#btn1,#btn2').removeClass('active');
+    $('#btn3').addClass('active');
+    $('.bottom #textBox1').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox2').hide('slide', {direction: 'right'}, 1000);
+    $('.bottom #textBox3').show('slide', {direction: 'left'}, 1000);
+
+
+});
 $('.imageWrap').on('click', function () {
     $('.imageWrap img').removeClass('active');
     $(this).find(':first-child').addClass('active');
@@ -224,7 +248,7 @@ $('.imageWrap').on('click', function () {
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    }else if ($(this).hasClass('chef1')) {
+    } else if ($(this).hasClass('chef1')) {
 
         $('.leftSide img').attr('src', 'assets/AnneSchweisfurth.jpg');
         $('.details').html('Erster Vorstand und Pädagogische Leitung Sennerin, Bäckerin und Pädagogin, Leitungsteam Hafenmuseum Bremen');
@@ -232,7 +256,7 @@ $('.imageWrap').on('click', function () {
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    }else if ($(this).hasClass('chef2')) {
+    } else if ($(this).hasClass('chef2')) {
 
         $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
         $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
@@ -240,28 +264,28 @@ $('.imageWrap').on('click', function () {
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    }else if($(this).hasClass('job1')){
+    } else if ($(this).hasClass('job1')) {
 
         $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
         $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
-    }else if($(this).hasClass('job2')){
+    } else if ($(this).hasClass('job2')) {
 
         $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
         $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
-    }else if($(this).hasClass('job3')){
+    } else if ($(this).hasClass('job3')) {
 
         $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
         $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('.zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
-    }else if($(this).hasClass('job4')){
+    } else if ($(this).hasClass('job4')) {
 
         $('.leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
         $('.details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
@@ -269,10 +293,6 @@ $('.imageWrap').on('click', function () {
         $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
     }
-
-
-
-
 
 
 })

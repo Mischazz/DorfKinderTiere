@@ -1,4 +1,4 @@
-Style*/
+
 .NavigationBar {
     display: none;
     padding-left: 50px;
@@ -93,6 +93,42 @@ body {
 
 }
 
+.btn{
+    width: 50px;
+    height: 50px;
+    background: #d3d3d3;
+    
+    box-sizing: border-box;
+    padding: 7px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.btn:hover{
+    background: #2b405c;
+    cursor: pointer;
+
+}
+.btn.active{
+    background: #2b405c;
+}
+#btn1{
+
+    position: absolute;
+    top: 9%;
+}
+#btn2{
+
+    position: absolute;
+    top: 19%;
+}
+#btn3{
+
+    position: absolute;
+    top: 29%;
+}
 .section {
     width: 100%;
     position: relative; /* importet for position Gallery*/
@@ -156,7 +192,7 @@ body {
 }
 .topper{
     width: 100%;
-    min-height: 250px;
+    min-height: 300px;
 }
 .DasDorf {
 
@@ -171,7 +207,7 @@ body {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-.DasDorf .topper {
+ .topper {
 
 
     padding-top: 70px;
@@ -179,8 +215,7 @@ body {
     padding-bottom: 50px;
     text-align: center;
 }
-
-.DasDorf .bottom {
+ .bottom {
     background: #edebe9;
     overflow: hidden;
     padding-left: 20px;
@@ -239,6 +274,11 @@ body {
 #section5 .topper {
     background: #2b405c;
 }
+#section10 .topper{
+    background: #2b405c;
+
+
+}
 
 .DasDorf .header {
     position: static;
@@ -247,8 +287,8 @@ body {
     font-weight: 500;
 }
 
-.DasDorf .textBox {
-    width: 400%;
+ .textBox {
+    width: 100%;
     max-width: 750px;
     min-width: 500px;
 
@@ -442,9 +482,38 @@ body {
 
     cursor: pointer;
 }
+ #section10 .bottom{
+
+     padding-bottom: 100px;
+     position: relative;
+ }
+#section10 .bottom .textBox .middle{
+    width:100%;
+    color:#555555;
+    text-align: center;
+
+}
+#section10 #textBox2{
+    display: none;
+}
+#section10 #textBox3{
+    display: none;
+}
+#section10 .Supporter{
+
+    width:100%;
+    color:#555555;
+    text-align: center;
+
+}#section10 .certificate{
+
+    width:100%;
+    color:#555555;
+    text-align: center;
+}
 
 #Galerie {
-    background: url(../assets/wiese_himmel-1.jpg) 50% 0 repeat fixed;
+   
     /*min-height: 1000px;*/
     background-repeat: no-repeat;
     width: 100%;
