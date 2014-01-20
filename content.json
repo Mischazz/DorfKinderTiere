@@ -135,7 +135,7 @@
 
             "artikel11": {
                 "position": "top",
-                "layoutmode":"",
+
                 "layout": "middle",
                 "type": "article",
                 "header": "Unterstützen Sie das Dorf für Kinder und Tiere!",
@@ -143,20 +143,25 @@
             },
             "artikel12": {
                 "position": "bottom",
-                "layoutmode":"onecolumn",
+
                 "layout": "middle",
                 "type": "article",
                 "header": "",
                 "text": "Dafür kann aber dieser einwöchige Aufenthalt für die Kinder zu einem Schlüsselerlebnis werden. Sie leben 'eigenverantwortlich' in unserem Dorf und haben dort Erlebnisse und Erfahrungen, die ihnen wichtige Impulse mit auf ihren Lebensweg geben.</br></br>Unser umfangreiches Programm, geprägt durch Eigeninitiative, z.B. bei der Ernte oder Herstellung von Lebensmitteln aus Garten und Landwirtschaft, haben sich zu einem sehr erfolgreichen und richtungsweisenden Konzept zur Umkehr ungesunder Trends in der Welt unserer Kinder entwickelt.</br></br>Inzwischen sind etwa 20 % der Kinder in der Bundesrepublik übergewichtig. Die Tendenz ist steigend - Fachleute sprechen bereits von einer Epidemie. Ungesunde Ernährung und Mangel an Bewegung gelten als die Hauptursachen für diese Entwicklung."
-           },
-            "artikel13": {
-                "position": "bottom",
-                "layout": "rightSide",
-                "type": "article",
-                "header": "",
-                "text": ""
-            }
+           }
 
+
+        },
+
+        "section11":{
+
+            "artikel13":{
+                "position": "top",
+                "layout": "middle",
+                "type": "article",
+                "header": "Andere über Uns",
+                "text":"'Wir haben gelernt, dass man, wenn man viel erreichen will, das zusammen machen muss. Zum Beispiel haben wir für alle Semmel gebacken, das hätten wir alleine nicht geschafft.'</br></br>'Man muss nicht immer alles im Supermarkt kaufen! Ich kann auch was selber machen.'</br></br>'Ich habe gelernt, Tiere genauso zu behandeln wie Menschen und dass es draußen schöner ist als drinnen.'</br></br>'Es gibt auch auf dem Land Spaß, und nicht nur in der Stadt'</br></br>'Das Leben bei den Tieren war ein sehr tolles Gefühl. Ich habe mich einfach frei gefühlt!'</br></br>'Ich werde bestimmt mein ganzes Leben an dieses Schullandheim denken.'</br></br>'Jetzt hat doch mein 'Erzfeind' gerade meinen Rucksack für mich getragen....'."
+            }
         }
     },
 

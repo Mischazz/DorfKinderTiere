@@ -92,7 +92,12 @@ body {
     font-family: "Segoe UI", Arial, Helvetical, sans-serif
 
 }
+.buttonGroup{
+   width: 50px;
+    float: left;
+    margin-left: -20px;
 
+}
 .btn{
     width: 50px;
     height: 50px;
@@ -114,21 +119,7 @@ body {
 .btn.active{
     background: #2b405c;
 }
-#btn1{
 
-    position: absolute;
-    top: 9%;
-}
-#btn2{
-
-    position: absolute;
-    top: 19%;
-}
-#btn3{
-
-    position: absolute;
-    top: 29%;
-}
 .section {
     width: 100%;
     position: relative; /* importet for position Gallery*/
@@ -238,6 +229,9 @@ body {
     padding-right: 20px;
     padding-left: 20px;
 }
+.bottom .textBox{
+    height: 400px;
+}
 
 .bottom .middle {
     width: 32%;
@@ -286,10 +280,14 @@ body {
     font-size: 32px;
     font-weight: 500;
 }
+.textBoxWrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
 
  .textBox {
-    width: 100%;
-    max-width: 750px;
+
+    width: 750px;
     min-width: 500px;
 
     margin: 0 auto;
@@ -493,12 +491,8 @@ body {
     text-align: center;
 
 }
-#section10 #textBox2{
-    display: none;
-}
-#section10 #textBox3{
-    display: none;
-}
+
+
 #section10 .Supporter{
 
     width:100%;
@@ -510,6 +504,24 @@ body {
     width:100%;
     color:#555555;
     text-align: center;
+}
+ #section11 .topper{
+     background: #e9967a;
+ }
+ #section11 .bottom .textBox{
+     color: #555555;
+     text-align: center;
+ }
+ #section11 #btn4,#section11 #btn5, #section11 #btn6{
+     background: #d3d3d3;
+
+ }
+#section11 #btn4.active,#section11 #btn5.active, #section11 #btn6.active{
+     background: #e9967a;
+
+ }
+#section11 #textBox4,#section11 #textBox5,#section11 #textBox6€{
+    display: none;
 }
 
 #Galerie {
