@@ -29,14 +29,23 @@ $(document).ready(function () {
 					}
 				})
 				.done(function(data) {
-					var count = 0;
-					$(data).find('ul li a').each(function(){
-						count++;
-					})
-					console.log("count "+count);
+
+					// var count = 0;
+					// $(data).find('ul li a').each(function(){
+					// 	count++;
+					// })
+					// console.log("count "+count);
 
 					// var count = $(this).size();
 					// console.log("count ="+count);
+
+                      
+					var $previewWidth = 0;
+					var count = 0
+                        $(data).find('tr td a').each(function(){
+                            count++;
+                        })
+                        console.log(count);
 					for (var i = 1; i < count; i++) {
 						$(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+i+'.jpg>')
 						
