@@ -42,16 +42,20 @@ $(document).ready(function () {
                       
 					var $previewWidth = 0;
 					var count = 0
-                        $(data).find('tr td a').each(function(){
+                        $(data).find('a').each(function(){
                             count++;
+                            var name = $(this).attr('href');
+                            
+                            $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+name+'>');
                         })
                         console.log(count);
-					for (var i = 1; i < count; i++) {
-						$(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+i+'.jpg>')
+                        console.log(data);
+					// for (var i = 1; i < count; i++) {
 						
-					};
+						
+					// };
 
-
+					$(".previewImg").first().hide();
 					$(".previewImg").each(function() {
 						$previewWidth += $(this).width();	
 					});
