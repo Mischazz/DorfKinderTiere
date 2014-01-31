@@ -1,20 +1,22 @@
 $(document).ready(function () {
 
-	var $previewWidth;
+	
 
-	$("#closeP").hide();
+	$(".previewButton").hide();
 
+	//Album preview
 
 	$(".album").click(function(){
 
 		if($(".preview").height() == 0){
 			$(".preview").animate({height: "350px"}, 2000);
+			// $("#imgBox").animate({height: "300px"}, 2000);
 		};
 
 			//Check if there are some images already and remove them
 			removeImg();
 
-			$("#closeP").show();
+			$(".previewButton").show();
 			var elId = $(this).attr('id');
 
 			// Album1
@@ -46,23 +48,14 @@ $(document).ready(function () {
                             count++;
                             var name = $(this).attr('href');
                             
-                            $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+name+'>');
+                            $("#imgBox").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+name+'>');
                         })
                         console.log(count);
                         console.log(data);
-					// for (var i = 1; i < count; i++) {
-						
-						
-					// };
+
 
 					$(".previewImg").first().hide();
-					$(".previewImg").each(function() {
-						$previewWidth += $(this).width();	
-					});
 
-					$(".preview").css({
-						width: $previewWidth+'px'
-					});
 					console.log("success");
 				})
 				.fail(function() {
@@ -170,9 +163,11 @@ $(document).ready(function () {
 	$("#closeP").click(function(event) {
 		$(".preview").animate({height: "0px"}, 2000);
 		$(".previewImg").fadeOut(1000);
+		$(".previewButton").fadeOut(1000);
 		setTimeout(function() {
 			removeImg();
-		}, 2000); 
+		}, 2000);
+			
 	});
 
 
