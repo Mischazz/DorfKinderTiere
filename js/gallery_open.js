@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var $previewWidth;
 
-    $("#closeP").hide();
+    $(".previewButton").hide();
 
 
     $(".album").click(function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {
         //Check if there are some images already and remove them
         removeImg();
 
-        $("#closeP").show();
+        $(".previewButton").show();
         var elId = $(this).attr('id');
 
         // Album1
