@@ -914,7 +914,11 @@ body {
     margin-right:15px; 
 }
 #closeP{
-    
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    text-align: center;
     width: 100px;
     background-color: gray;
 }
