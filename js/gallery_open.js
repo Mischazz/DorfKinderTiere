@@ -25,7 +25,7 @@ $(document).ready(function () {
 					}
 				})
 				.done(function(data) {
-                      
+
 					var $previewWidth = 0;
 					var count = 0
                         $(data).find('tr td a').each(function(){
