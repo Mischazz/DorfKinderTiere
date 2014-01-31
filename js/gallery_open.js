@@ -25,8 +25,13 @@ $(document).ready(function () {
 					}
 				})
 				.done(function(data) {
+                      
 					var $previewWidth = 0;
-					var count = $("ul li a").length;
+					var count = 0
+                        $(data).find('tr td a').each(function(){
+                            count++;
+                        })
+                        console.log(count);
 					for (var i = 1; i < count; i++) {
 						$(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+i+'.jpg>')
 						

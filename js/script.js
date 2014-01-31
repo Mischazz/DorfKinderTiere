@@ -262,10 +262,51 @@ $('#btn6').on('click', function () {
 
 
 });
-$('.imageWrap').on('click', function () {
-    $('.imageWrap img').removeClass('active');
+$('#section5 .imageWrap').on('click', function () {
+    $('#section5 .imageWrap img').removeClass('active');
     $(this).find(':first-child').addClass('active');
-    $('.detailsWrapper').hide();
+    $('#section5 .detailsWrapper').hide();
+
+
+     if ($(this).hasClass('job1')) {
+
+        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+
+    } else if ($(this).hasClass('job2')) {
+
+        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+
+    } else if ($(this).hasClass('job3')) {
+
+        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+
+    } else if ($(this).hasClass('job4')) {
+
+        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
+        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+
+    }
+
+
+
+
+})
+
+$('#section9 .imageWrap').on('click', function () {
+    $('#section9 .imageWrap img').removeClass('active');
+    $(this).find(':first-child').addClass('active');
+    $('#section9 .detailsWrapper').hide();
 
 
     if ($(this).hasClass('person1')) {
@@ -346,34 +387,6 @@ $('.imageWrap').on('click', function () {
         $('#section9 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
-
-    } else if ($(this).hasClass('job1')) {
-
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
-
-    } else if ($(this).hasClass('job2')) {
-
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
-
-    } else if ($(this).hasClass('job3')) {
-
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
-
-    } else if ($(this).hasClass('job4')) {
-
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     }
 
