@@ -124,7 +124,6 @@ body {
     background: #2b405c;
 }
 
-
 #btn1 {
     background-image: url(../assets/IconAndereBlack.png);
     background-size: 80%;
@@ -167,8 +166,6 @@ body {
 
 }
 
-
-
 .section {
     width: 100%;
     position: relative; /* importet for position Gallery*/
@@ -177,7 +174,7 @@ body {
 #Start {
     background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
     min-height: 1000px;
-    height: 1500px;
+    height: 1200px;
     margin: 0 auto;
     width: 100%;
 
@@ -214,7 +211,7 @@ body {
 
     transition: all 0.3s linear;
     width: 51px;
-    height: 50px;
+    height: 51px;
     background: url("../assets/sprite.png");
     background-position: 0px -1298px;
     text-align: center;
@@ -376,6 +373,9 @@ body {
 
 .DasDorf .person h3 {
     color: #555555;
+}
+.DasDorf .person1 .detailsWrapper{
+    display: block;
 }
 
 /* Start Ueber Uns Styling */
@@ -579,12 +579,12 @@ body {
 
 }
 
-
-#section11 #btn4:hover,#section11 #btn5:hover, #section11 #btn6:hover, #section11 #btn4.active, #section11 #btn5.active, #section11 #btn6.active {
+#section11 #btn4:hover, #section11 #btn5:hover, #section11 #btn6:hover, #section11 #btn4.active, #section11 #btn5.active, #section11 #btn6.active {
     background: #e9967a;
 
 }
-#section11 #btn4{
+
+#section11 #btn4 {
     background-image: url(../assets/IconPigBlack.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -592,7 +592,8 @@ body {
     background-position-y: 4px;
 
 }
-#section11 #btn4:hover,#section11 #btn4.active {
+
+#section11 #btn4:hover, #section11 #btn4.active {
     background-image: url(../assets/IconPigWhite.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -600,7 +601,8 @@ body {
     background-position-y: 4px;
 
 }
-#section11 #btn5{
+
+#section11 #btn5 {
     background-image: url(../assets/IconRabbitBlack.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -608,7 +610,8 @@ body {
     background-position-y: 4px;
 
 }
-#section11 #btn5:hover,#section11 #btn5.active {
+
+#section11 #btn5:hover, #section11 #btn5.active {
     background-image: url(../assets/IconRabbitWhite.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -616,7 +619,8 @@ body {
     background-position-y: 4px;
 
 }
-#section11 #btn6{
+
+#section11 #btn6 {
     background-image: url(../assets/IconSheepBlack.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -624,7 +628,8 @@ body {
     background-position-y: 4px;
 
 }
-#section11 #btn6:hover,#section11 #btn6.active {
+
+#section11 #btn6:hover, #section11 #btn6.active {
     background-image: url(../assets/IconSheepWhite.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -681,8 +686,156 @@ body {
     z-index: 30;
     bottom: 0;
     border-top: 1px solid darkgrey;
-    background: #2b405c;
+    background: #3a3a3a;
     opacity: 0.8;
+
+}
+
+.footer .kontaktIcon {
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../assets/contacts-64.png");
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 30px;
+    background-color: #d3d3d3;
+    transition: all 1s ease;
+
+}
+
+.footer .kontaktIcon:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+
+
+}
+.footer .impressumIcon{
+    width: 30px;
+    height: 30px;
+    transition: all 1s ease;
+    background-image: url("../assets/contacts-64.png");
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+   background-image: url("../assets/bill-48.png");
+    background-color: #d3d3d3;
+}
+.footer .impressumIcon:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+}
+.impressum{
+    display: none;
+    width: 700px;
+    height:600px ;
+    position: fixed;
+    bottom: 45px;
+    left: 30px;
+    background: #3a3a3a;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: scroll;
+    color: #999;
+}
+
+.kontakt {
+    display: none;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
+    background: #3a3a3a;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.kontakt .wrapper div {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.kontakt .wrapper .link a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.kontakt .wrapper .link a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.kontakt .wrapper .mail {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.kontakt .wrapper .mail .icon {
+    display: inline-block;
+    height: 20px;
+    width: 20%;
+    background-image: url("../assets/message-48.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    float: left;
+
+}
+
+.kontakt .wrapper .phone {
+}
+
+.kontakt .wrapper .phone .icon {
+    display: inline-block;
+    height: 20px;
+    width: 20%;
+    background-image: url("../assets/phone1-48.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    float: left;
+
+}
+
+.kontakt .wrapper .address {
+    overflow: hidden;
+}
+
+.kontakt .wrapper .address .icon {
+
+    display: inline-block;
+    height: 20px;
+    width: 20%;
+    background-image: url("../assets/signpost-48.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.kontakt .wrapper .address .link {
+    float: right;
+    width: 80%;
+}
+
+.kontakt .wrapper .address .link p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.kontakt .wrapper .download {
+}
+
+.kontakt .wrapper .download .icon {
+    display: inline-block;
+    height: 20px;
+    width: 20%;
+    background-image: url("../assets/downloading_updates-48.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    float: left;
 }
 
 .DasDorf .artikel .header {
@@ -902,17 +1055,19 @@ body {
 }
 
 /*Gallery*/
-.preview{
+.preview {
     height: 0;
     max-height: 500px;
     overflow-y: hidden;
 
 }
-.previewImg{
+
+.previewImg {
     height: 500px;
     display: inline;
-    margin-right:15px; 
+    margin-right: 15px;
 }
+
 #closeP{
     display: block;
     position: absolute;
@@ -922,21 +1077,26 @@ body {
     width: 100px;
     background-color: gray;
 }
-#closeP:hover{
+
+#closeP:hover {
     cursor: pointer;
 }
+
 #albums {
     /*height: 500px;*/
     background-color: green;
 }
-.album{
+
+.album {
     display: inline-block;
     margin: 10px;
 }
-.album:hover{
+
+.album:hover {
     cursor: pointer;
 }
-.albumDiv{
+
+.albumDiv {
     display: table;
     margin: 0 auto;
 }
