@@ -1,11 +1,14 @@
 $(document).ready(function () {
+
+	var $previewWidth;
+
 	$("#closeP").hide();
 
 
 	$(".album").click(function(){
 
 		if($(".preview").height() == 0){
-			$(".preview").animate({height: "500px"}, 2000);
+			$(".preview").animate({height: "350px"}, 2000);
 		};
 
 			//Check if there are some images already and remove them
@@ -16,35 +19,53 @@ $(document).ready(function () {
 
 			// Album1
 			if(elId == 'album1'){
+
 				$.ajax({
 					url: '/DorfKinderTiere/images/album1',
 					type: 'GET',
 					success: function(data){
-
+						
 						
 					}
 				})
 				.done(function(data) {
 
+
+
+					// var count = 0;
+					// $(data).find('ul li a').each(function(){
+					// 	count++;
+					// })
+					// console.log("count "+count);
+
+					// var count = $(this).size();
+					// console.log("count ="+count);
+
+                      
+
 					var $previewWidth = 0;
 					var count = 0
-                        $(data).find('tr td a').each(function(){
+                        $(data).find('a').each(function(){
                             count++;
+                            var name = $(this).attr('href');
+                            
+                            $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+name+'>');
                         })
                         console.log(count);
-					for (var i = 1; i < count; i++) {
-						$(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/'+i+'.jpg>')
+                        console.log(data);
+					// for (var i = 1; i < count; i++) {
 						
-					};
+						
+					// };
 
-					// $(".previewImg").each(function() {
-					// 	$previewWidth += $(this).width();	
-					// });
+					$(".previewImg").first().hide();
+					$(".previewImg").each(function() {
+						$previewWidth += $(this).width();	
+					});
 
-					// $(".preview").css({
-					// 	width: $previewWidth+'px'
-					// });
-					
+					$(".preview").css({
+						width: $previewWidth+'px'
+					});
 					console.log("success");
 				})
 				.fail(function() {
@@ -53,6 +74,7 @@ $(document).ready(function () {
 				.always(function() {
 					console.log("complete");
 				});
+
 				
 			}
 
@@ -67,19 +89,21 @@ $(document).ready(function () {
 					}
 				})
 				.done(function(data) {
-					var $previewWidth = 0;
+					
 					var count = $("ul li a").length;
+					console.log("count ="+count);
 					for (var i = 1; i < count; i++) {
 						$(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album2/'+i+'.jpg>')
 					};
 					
-					// $(".previewImg").each(function() {
-					// 	$previewWidth += $(this).width();	
-					// });
+					$(".previewImg").each(function() {
+						$previewWidth += $(this).width();	
+					});
 
-					// $(".preview").css({
-					// 	width: $previewWidth+'px'
-					// });
+					$(".preview").css({
+						width: $previewWidth+'px'
+					});
+					console.log(data);
 					console.log("success");
 				})
 				.fail(function() {
@@ -88,6 +112,7 @@ $(document).ready(function () {
 				.always(function() {
 					console.log("complete");
 				});
+
 			}
 
 			// Album3

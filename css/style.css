@@ -1063,19 +1063,27 @@ body {
 }
 
 .previewImg {
-    height: 500px;
+    height: 300px;
     display: inline;
     margin-right: 15px;
 }
-
-#closeP{
+.previewButton{
     display: block;
     position: absolute;
-    right: 0px;
-    top: 50px;
     text-align: center;
-    width: 100px;
     background-color: gray;
+    width: 100px;
+}
+#closeP{
+
+    right: 0px;
+    top: 50px;   
+}
+#prev{
+    left: 20px;
+}
+#next{
+    right: 20px;
 }
 
 #closeP:hover {
