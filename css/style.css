@@ -228,10 +228,11 @@ body {
 .scrollArrowWrapper {
     height: 55px;
     position: relative;
+    padding-top: 10px;
 }
 
 .scrollArrow {
-
+    position: relative;
     transition: all 0.3s linear;
     width: 51px;
     height: 51px;
@@ -252,6 +253,7 @@ body {
     position: absolute;
     width: 51px;
     height: 51px;
+    left: 0;
 }
 
 .topper {
@@ -286,6 +288,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
+    padding-bottom: 50px;
+
     color: #555555;
     font-size: 14px;
     min-height: 500px;
@@ -388,14 +392,57 @@ body {
     background: #edebe9;
 
 }
+ .person{
 
-.DasDorf .person {
-    width: 20%;
+    width: 200px;
     display: inline-block;
+    margin-right: 20px;
+
+}
+ .person h3{}
+
+.DasDorf .Berufe .imageWrap {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    background-color: #B5A8BA;
+    background-repeat: no-repeat;
+    background-position-x: 65px;
+    background-position-y: 45px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+.DasDorf .Berufe .imageWrap:hover {
+   background-color: #D6C5DB;
+    cursor: pointer;
 }
 
-.DasDorf .person h3 {
+.DasDorf .Berufe .imageWrap.job1{
+
+    background-image: url("../assets/watering_can-64.png") ;
+
+}.DasDorf .Berufe .imageWrap.job2{
+
+    background-image: url("../assets/wheat-64.png") ;
+
+}.DasDorf .Berufe .imageWrap.job3{
+
+    background-image: url("../assets/cow-64.png") ;
+
+}
+.DasDorf .Berufe .imageWrap.job4{
+
+    background-image: url("../assets/coking_pot-64.png") ;
+
+}
+
+ .person h3 {
     color: #555555;
+     text-align:center ;
 }
 
 .DasDorf .person1 .detailsWrapper {
@@ -1073,7 +1120,6 @@ body {
     background: #fff;
     text-align: center;
     color: #EA5E0F;
-    border: 4px solid grey;
 }
 
 .detailsWrapper {
@@ -1163,21 +1209,23 @@ body {
 .album {
     display: inline-block;
     margin: 10px;
-    width: 250px;
-    height: 250px;
+    margin-left: 0;
+    width: 200px;
+    height: 150px;
     color: #fff;
     vertical-align: middle;
     font-size: 18px;
-    background-position-x: 95px;
-    background-position-y: 95px;
-    background-repeat: no-repeat ;
-    background-color:#8C9E8E ;
-    -webkit-transition: all 1s ease ;
-    -moz-transition: all 1s ease ;
-    -ms-transition: all 1s ease ;
-    -o-transition: all 1s ease ;
-    transition: all 1s ease ;
-    
+    background-position-x: 65px;
+    background-position-y: 45px;
+    background-repeat: no-repeat;
+    background-color: #8C9E8E;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 10px;
+    box-sizing: border-box;
 
 }
 
@@ -1193,19 +1241,25 @@ body {
 }
 
 #album1 {
-background-image: url("../assets/chiken-64.png");
+    background-image: url("../assets/chiken-64.png");
     text-align: center;
 
-}#album2 {
-     background-image: url("../assets/spade-64.png");
+}
+
+#album2 {
+    background-image: url("../assets/spade-64.png");
 
     text-align: center;
-}#album3 {
-      background-image: url("../assets/frisbee-64.png");
+}
+
+#album3 {
+    background-image: url("../assets/frisbee-64.png");
 
     text-align: center;
-}#album4 {
-       background-image: url("../assets/camping_tent-64.png");
+}
+
+#album4 {
+    background-image: url("../assets/camping_tent-64.png");
 
     text-align: center;
 }

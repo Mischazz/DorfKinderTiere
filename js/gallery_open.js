@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(".album").click(function () {
 
         if ($(".preview").height() == 0) {
-            $(".preview").animate({height: "330px"}, 2000);
+            $(".preview").animate({height: "315px"}, 2000);
 
             $(".previewButton").fadeIn(2000);
 
