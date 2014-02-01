@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
 
-    $("#closeP").hide();
+    $(".previewButton").hide();
 
 
     $(".album").click(function () {
 
         if ($(".preview").height() == 0) {
-            $(".preview").animate({height: "350px"}, 2000);
+            $(".preview").animate({height: "315px"}, 2000);
 
-            $("#closeP").fadeIn(2000);
+            $(".previewButton").fadeIn(2000);
 
         };
         setTimeout(function () {
@@ -179,7 +179,7 @@ $(document).ready(function () {
     });
 
     $("#closeP").click(function (event) {
-        $("#closeP").fadeOut(100);
+        $(".previewButton").fadeOut(100);
         $(".preview").animate({height: "0px"}, 2000);
         $(".previewImg").fadeOut(1000);
         setTimeout(function () {

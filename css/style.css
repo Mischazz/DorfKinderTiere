@@ -1109,7 +1109,7 @@ body {
     text-align: center;
     background-color: gray;
     width: 100px;
-    z-index: 2;
+
 }
 #closeP{
     position: absolute;
@@ -1117,11 +1117,21 @@ body {
     background-color: gray;
     width: 50px;
     z-index: 0;
-    right: 10px;
+    right: 110px;
     bottom: 590px;   
 }
 
-#closeP:hover, #prev:hover, #next:hover{
+#left{
+    height: 300px;
+    width: 100px;
+    left: 0;
+}
+#right{
+    height: 300px;
+    width: 100px;
+    right: 0;
+}
+#closeP:hover{
     cursor: pointer;
 }
 
