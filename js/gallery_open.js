@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    var $previewWidth;
 
     $(".previewButton").hide();
 
@@ -9,8 +8,9 @@ $(document).ready(function () {
 
         if ($(".preview").height() == 0) {
             $(".preview").animate({height: "350px"}, 2000);
-        }
-        ;
+            	$(".previewButton").fadeIn(3000);
+        	
+        };
 
         //Check if there are some images already and remove them
         removeImg();
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
                             _.each(data["album1"], function (value, key) {
 
-                                $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src=/DorfKinderTiere/images/album1/' + value + '>');
 
                             })
 
@@ -47,17 +47,6 @@ $(document).ready(function () {
 
                     });
 
-
-                    var $previewWidth = 0;
-
-
-                    $(".previewImg").each(function () {
-                        $previewWidth += $(this).width();
-                    });
-
-                    $(".preview").css({
-                        width: $previewWidth + 'px'
-                    });
                     console.log("success");
                 })
                 .fail(function () {
@@ -89,7 +78,7 @@ $(document).ready(function () {
 
                             _.each(data["album2"], function (value, key) {
 
-                                $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album2/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src=/DorfKinderTiere/images/album2/' + value + '>');
 
                             })
 
@@ -98,18 +87,6 @@ $(document).ready(function () {
 
                     });
 
-
-                    var $previewWidth = 0;
-
-                    $(".previewImg").each(function () {
-                        $previewWidth += $(this).width();
-                    });
-
-                    $(".preview").css({
-                        width: $previewWidth + 'px'
-                    });
-                    console.log(data);
-                    console.log("success");
                 })
                 .fail(function () {
                     console.log("error");
@@ -140,7 +117,7 @@ $(document).ready(function () {
 
                             _.each(data["album3"], function (value, key) {
 
-                                $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album3/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src=/DorfKinderTiere/images/album3/' + value + '>');
 
                             })
 
@@ -149,15 +126,6 @@ $(document).ready(function () {
 
                     });
 
-                    var $previewWidth = 0;
-
-                    $(".previewImg").each(function () {
-                        $previewWidth += $(this).width();
-                    });
-
-                    $(".preview").css({
-                        width: $previewWidth + 'px'
-                    });
                     console.log("success");
                 })
                 .fail(function () {
@@ -185,7 +153,7 @@ $(document).ready(function () {
 
                             _.each(data["album4"], function (value, key) {
 
-                                $(".preview").append('<img class="previewImg" src=/DorfKinderTiere/images/album4/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src=/DorfKinderTiere/images/album4/' + value + '>');
 
                             })
 
@@ -197,13 +165,7 @@ $(document).ready(function () {
 
                     var $previewWidth = 0;
 
-                    $(".previewImg").each(function () {
-                        $previewWidth += $(this).width();
-                    });
 
-                    $(".preview").css({
-                        width: $previewWidth + 'px'
-                    });
                     console.log("success");
                 })
                 .fail(function () {
@@ -223,6 +185,12 @@ $(document).ready(function () {
             removeImg();
         }, 2000);
     });
+
+    $("#next").click(function(event) {
+    	var left = $("#imgBox").css('left');
+    	$("#imgBox").css('left', 'value');
+    });
+
 
 
 });
