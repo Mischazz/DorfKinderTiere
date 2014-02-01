@@ -388,8 +388,9 @@ body {
 
 .DasDorf .Berufe .wrapper {
     text-align: center;
-    padding-top: 50px;
     background: #edebe9;
+    padding-top: 50px;
+    padding-bottom: 40px;
 
 }
  .person{
