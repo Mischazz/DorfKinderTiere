@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".previewButton").hide();
 
 
+
     $(".album").click(function () {
 
         if ($(".preview").height() == 0) {
@@ -12,9 +13,19 @@ $(document).ready(function () {
             $(".previewButton").fadeIn(2000);
 
         };
+
+        if ($(".preview").height() != 0) {
+
+        	showLoader();
+
+        };
+
         setTimeout(function () {
-        $(".preview").css("overflow-x", "scroll");
-        },2500)
+        	$(".preview").css("overflow-x", "scroll");
+        },2500);
+        
+        	
+        
         //Check if there are some images already and remove them
         removeImg();
 
@@ -58,7 +69,6 @@ $(document).ready(function () {
                 .always(function () {
                     console.log("complete");
                 });
-
 
         }
 
@@ -175,16 +185,18 @@ $(document).ready(function () {
                     console.log("complete");
                 });
         }
+        
 
     });
 
     $("#closeP").click(function (event) {
         $(".previewButton").fadeOut(100);
         $(".preview").animate({height: "0px"}, 2000);
-        $(".previewImg").fadeOut(1000);
+        $(".previewImg").fadeOut(1900);
         setTimeout(function () {
             removeImg();
             $(".preview").css("overflow-x","hidden");
+
 
         }, 2000);
     });
@@ -196,7 +208,28 @@ $(document).ready(function () {
 function removeImg() {
     if ($(".previewImg").length = !0) {
         $(".previewImg").remove();
-    }
-    ;
+    };
 
+};
+//Show a loader image
+function showLoader(){
+	$(".preview").append('<img id="loader" src="/DorfKinderTiere/icons/loader.gif">');
+	$("#right").after('<div id="loaderBack"></div>')
+	$("#loader").css({
+		position: 'absolute',
+		left: '50%',
+		top: '50%'
+	});
+	$("#loaderBack").css({
+		position: 'absolute',
+		'background-color': 'black',
+		opacity: '0.5',
+		height: '315px',
+		width: 'inherit'
+	});
+	setTimeout(function(){
+		$("#loaderBack").remove();
+		$("#loader").remove();
+		$(".previewImg").show();
+	}, 500);
 };
