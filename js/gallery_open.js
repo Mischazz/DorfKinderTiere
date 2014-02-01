@@ -14,7 +14,7 @@ $(document).ready(function () {
         };
         setTimeout(function () {
         $(".preview").css("overflow-x", "scroll");
-        },2000)
+        },2500)
         //Check if there are some images already and remove them
         removeImg();
 
