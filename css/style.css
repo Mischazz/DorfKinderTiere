@@ -1109,21 +1109,32 @@ body {
     text-align: center;
     background-color: gray;
     width: 100px;
-    z-index: 2;
+
 }
 #closeP{
     position: absolute;
     text-align: center;
     width: 50px;
+
     height: 50px;
-    z-index: 2;
+   
     right: 10px;
     bottom: 610px;
     background-image: url("../assets/cancel-64.png");
     background-size: contain;
 }
 
-#closeP:hover, #prev:hover, #next:hover{
+#left{
+    height: 300px;
+    width: 100px;
+    left: 0;
+}
+#right{
+    height: 300px;
+    width: 100px;
+    right: 0;
+}
+#closeP:hover{
     cursor: pointer;
 }
 
