@@ -224,7 +224,7 @@ function showLoader(){
 	$("#loader").css({
 		position: 'absolute',
 		left: '50%',
-		bottom: '415px'
+		bottom: '445px'
 	});
 	$("#loaderBack").css({
 		position: 'absolute',
