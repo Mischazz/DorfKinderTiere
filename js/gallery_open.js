@@ -1,21 +1,22 @@
 $(document).ready(function () {
 
 
-    $(".previewButton").hide();
+    $("#closeP").hide();
 
 
     $(".album").click(function () {
 
         if ($(".preview").height() == 0) {
             $(".preview").animate({height: "350px"}, 2000);
-            	$(".previewButton").fadeIn(3000);
+            
+            	$("#closeP").fadeIn(2000);
         	
         };
 
         //Check if there are some images already and remove them
         removeImg();
 
-        $(".previewButton").show();
+        $("#closeP").show();
         var elId = $(this).attr('id');
 
         // Album1
@@ -163,9 +164,6 @@ $(document).ready(function () {
                     });
 
 
-                    var $previewWidth = 0;
-
-
                     console.log("success");
                 })
                 .fail(function () {
@@ -179,18 +177,13 @@ $(document).ready(function () {
     });
 
     $("#closeP").click(function (event) {
+    	$("#closeP").fadeOut(100);
         $(".preview").animate({height: "0px"}, 2000);
         $(".previewImg").fadeOut(1000);
         setTimeout(function () {
             removeImg();
         }, 2000);
     });
-
-    $("#next").click(function(event) {
-    	var left = $("#imgBox").css('left');
-    	$("#imgBox").css('left', 'value');
-    });
-
 
 
 });
