@@ -8,11 +8,13 @@ $(document).ready(function () {
 
         if ($(".preview").height() == 0) {
             $(".preview").animate({height: "350px"}, 2000);
-            
-            	$("#closeP").fadeIn(2000);
-        	
-        };
 
+            $("#closeP").fadeIn(2000);
+
+        };
+        setTimeout(function () {
+        $(".preview").css("overflow-x", "scroll");
+        },2000)
         //Check if there are some images already and remove them
         removeImg();
 
@@ -140,7 +142,7 @@ $(document).ready(function () {
         if (elId == 'album4') {
             $.ajax({
                 url: 'image.json',
-                dataType:'json',
+                dataType: 'json',
                 type: 'GET',
                 success: function (data) {
 
@@ -177,11 +179,13 @@ $(document).ready(function () {
     });
 
     $("#closeP").click(function (event) {
-    	$("#closeP").fadeOut(100);
+        $("#closeP").fadeOut(100);
         $(".preview").animate({height: "0px"}, 2000);
         $(".previewImg").fadeOut(1000);
         setTimeout(function () {
             removeImg();
+            $(".preview").css("overflow-x","hidden");
+
         }, 2000);
     });
 

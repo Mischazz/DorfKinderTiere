@@ -1088,18 +1088,18 @@ body {
     max-height: 500px;
     width: 100%;
     white-space: nowrap;
-   
+
 
 }
 
 #imgBox{
-    height: 350px;
+    height: 300px;
     overflow-y: hidden;
     display: inline-flex;
 }
 
 .previewImg {
-    height: 350px;
+    height: 300px;
     display: inline-block;
     margin-right: 15px;
 
