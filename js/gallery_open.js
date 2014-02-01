@@ -8,9 +8,13 @@ $(document).ready(function () {
     $(".album").click(function () {
 
         if ($(".preview").height() == 0) {
-            $(".preview").animate({height: "330px"}, 2000);
+            $(".preview").animate({height: "330px"}, 2000, function(){
 
-            $(".previewButton").fadeIn(2000);
+            	$(".previewButton").fadeIn(1000);
+            		
+            });
+
+            
 
         };
 
@@ -29,7 +33,7 @@ $(document).ready(function () {
         //Check if there are some images already and remove them
         removeImg();
 
-        $("#closeP").show();
+        
         var elId = $(this).attr('id');
 
         // Album1
@@ -218,7 +222,7 @@ function showLoader(){
 	$("#loader").css({
 		position: 'absolute',
 		left: '50%',
-		top: '50%'
+		bottom: '415px'
 	});
 	$("#loaderBack").css({
 		position: 'absolute',
