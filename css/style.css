@@ -1116,7 +1116,7 @@ body {
     text-align: center;
     background-color: gray;
     width: 50px;
-    z-index: 2;
+    z-index: 0;
     right: 10px;
     bottom: 590px;   
 }
