@@ -128,10 +128,29 @@
             "artikel12":{
                 "position":"bottom",
 
-                "layout":"middle",
+                "layout":"first",
+                "type":"article",
+                "header":"",
+                "text":" Unsere Förderer Starthilfe haben uns gegeben:</br> Schreinerei Gröbmayr, Glonn</br>Bulthaup, Bodenkirchen</br>Manufactum, Waltrop</br></br> Wir danken herzlich allen Spenderinnen und Spendern anlässlich des 80. Geburtstagsfestes von Karl Ludwig Schweisfurth und anlässlich des 80. Geburtstagsfestes von Dorothee Schweisfurth </br></br>Karl Ludwig Schweisfurth, München</br>Dr. Christoph von Schwingenstein, München - </br>jährliche Spenden </br>Dr. Hans-J. Hüchting, Weinheim </br>Herrn und Frau Drs. Zeiner, Taufkirchen </br>Alexander Brachmann, München</br> Anne Schweisfurth, Bremen </br>Rolf-Christof Dienst, Icking</br> Naturkost Südbayern e.V., Freising </br>Prof. Dr. Karl Ganser, Breitenthal </br>Thomas Modsching, Pullenhofen </br>Hilke Packmohr, Bremen</br> Wilhelm von Herder-Hebenbrock, Starnberg </br>Karl Schweisfurth, Glonn </br>und viele Kleinspenderinnen und -spender."
+            },
+
+
+
+            "artikel13":{
+                "position":"bottom",
+
+                "layout":"second",
                 "type":"article",
                 "header":"",
                 "text":"Dafür kann aber dieser einwöchige Aufenthalt für die Kinder zu einem Schlüsselerlebnis werden. Sie leben 'eigenverantwortlich' in unserem Dorf und haben dort Erlebnisse und Erfahrungen, die ihnen wichtige Impulse mit auf ihren Lebensweg geben.</br></br>Unser umfangreiches Programm, geprägt durch Eigeninitiative, z.B. bei der Ernte oder Herstellung von Lebensmitteln aus Garten und Landwirtschaft, haben sich zu einem sehr erfolgreichen und richtungsweisenden Konzept zur Umkehr ungesunder Trends in der Welt unserer Kinder entwickelt.</br></br>Inzwischen sind etwa 20 % der Kinder in der Bundesrepublik übergewichtig. Die Tendenz ist steigend - Fachleute sprechen bereits von einer Epidemie. Ungesunde Ernährung und Mangel an Bewegung gelten als die Hauptursachen für diese Entwicklung."
+            },
+            "artikel14":{
+                "position":"bottom",
+
+                "layout":"third",
+                "type":"article",
+                "header":"",
+                "text":"Das Dorf für Kinder und Tiere ist 2011 startsocial-Stipendiat Bundeskanzler Gerhard Schröder hat im Jahr 2000 mit Vertretern großer und kleiner Unternehmen diskutiert: Wie kann man dem sozialen Engagement im Jahr 2001, dem Internationalen Jahr der Freiwilligen, neue Impulse geben? Als Antwort darauf wurde in Zusammenarbeit mit großen und kleiner Unternehmen der Verein start social e.V. ins Leben gerufen, der seitdem jedes Jahr einen Wettbewerb anbietet unter der Schirmherrschaft des Bundeskanzlers, in diesem Jahr der Bundeskanzlerin Angela Merkel, bei dem sich gemeinnützige Organisationen bewerben können. Wir haben uns mit unserem Dorf für Kinder und Tiere beworben."
             }
 
 
@@ -139,12 +158,33 @@
 
         "section11":{
 
-            "artikel13":{
+            "artikel15":{
                 "position":"top",
                 "layout":"middle",
                 "type":"article",
                 "header":"Andere über Uns",
                 "text":"'Wir haben gelernt, dass man, wenn man viel erreichen will, das zusammen machen muss. Zum Beispiel haben wir für alle Semmel gebacken, das hätten wir alleine nicht geschafft.'</br></br>'Man muss nicht immer alles im Supermarkt kaufen! Ich kann auch was selber machen.'</br></br>'Ich habe gelernt, Tiere genauso zu behandeln wie Menschen und dass es draußen schöner ist als drinnen.'</br></br>'Es gibt auch auf dem Land Spaß, und nicht nur in der Stadt'</br></br>'Das Leben bei den Tieren war ein sehr tolles Gefühl. Ich habe mich einfach frei gefühlt!'</br></br>'Ich werde bestimmt mein ganzes Leben an dieses Schullandheim denken.'</br></br>'Jetzt hat doch mein 'Erzfeind' gerade meinen Rucksack für mich getragen....'."
+            },
+            "artikel16":{
+                "position":"bottom",
+                "layout":"first",
+                "type":"article",
+                "header":"",
+                "text":"Grundschule Südliche Auffahrtsallee München</br> </br>Anfangs wussten die Schüler nicht so recht, was sie mit ihrer Freizeit streckenweise anfangen sollten, da kein Gameboy etc. zur Hand war, aber das legte sich schnell und sie begannen sich mit sich und anderen zu beschäftigen und auseinander zu setzen. Sie beteiligten sich meist gerne an der Arbeit, denn die verschaffte ihnen gewissermaßen echte Erfolge und das Gefühl etwas Sinnvolles vollbracht zu haben. (…) Schüler, die Zuhause eher kompliziert waren, entwickelten sich zu aufgeweckten, kontaktfreudigen und verantwortungsbewussten Menschen. (...). Im abschließenden Dorfrat sagten einige Kinder, dass sie gelernt hätten, dass man zusammen mehr erreiche und dass wir zusammenhalten müssen. Es war großartig zu beobachten, wie selbständig und resolut meine Schüler (im Dorfrat) arbeiteten. Die Kinder lernten hier, sich aufeinander einzustellen, aufeinander zu hören und sich selbst auch mal zurück zu stellen. Hier wurde mit Sicherheit einer der Grundsteine für demokratisches Denken und Handeln gelegt. (…)"
+            },
+            "artikel17":{
+                "position":"bottom",
+                "layout":"second",
+                "type":"article",
+                "header":"",
+                "text":"Franziska-Lechner-Volksschule Edling (bei Wasserburg)</br></br> Schon zum zweiten Mal war ich nun mit einer Klasse im 'Dorf für Kinder und Tiere' und wir durften dort eine Woche der ganz besonderen Art erleben. Eine wesentliche Komponente ist die bewusste Reduktion in vielen Dingen auf das Elementare. Dies muss kein wirklicher 'Verlust' sein, vielmehr konnten es die meisten Kinder als Bereicherung erleben, auch wenn ihnen das natürlich häufig nicht selbst so bewusst war. Da gab es zum Beispiel den sonst oft recht unruhigen Jungen, der zu Hause viel Zeit vor dem Bildschirm verbringt und hier nach zwei Tagen sich meist ruhig am Programm beteiligte oder dasaß und Karten spielte. Andere Kinder, die häufig äußerst impulsiv und störend sind, tobten sich so aus, dass sie deutlich leichter führbar waren als sonst. Mancher 'Querulant' mit recht bedenklichem Sozialverhalten streichelte sehr behutsam die Schweine und wäre nie im Leben auf die Idee gekommen, ein Tier zu treten oder zu schlagen. Unerwartet zarte Seiten traten zu Tage. Ebensolche schwierige Schüler arbeiteten bei manchen 'Berufen' im Dorf für Kinder und Tiere engagiert mit, ließen sich von der Köchin willig beim Zubereiten des Mittagessens anspornen und aßen hinterher natürlich mit Appetit die selbst gekochte Gemüsesuppe - ob sie das bei Muttern auch täten? Und was ist mit den ganz 'normalen, pflegeleichten' Kindern? Die meisten von ihnen fühlten sich schnell richtig zu Hause, vergaßen ihr Heimweh, blühten teilweise richtig auf und einige wären sogar gerne noch länger geblieben. Eine Freude ihnen zuzusehen, wie selbständig und verantwortlich sie ihren Abwaschdienst übernahmen oder sich in der Leitung des Dorfrates versuchten. Viele Effekte sind zugegebener Maßen vielleicht eher kurzfristiger Natur. Dennoch bin ich überzeugt, dass über das reine 'Freizeiterlebnis' hinaus doch wenigstens zwei Dinge hängen bleiben: Zum Einen, die wirkliche Erkenntnis, dass unser tägliches Essen nicht fertig 'vom Himmel fällt' und zum Anderen, dass für unsere Nahrungsmittel lebende Tiere benötigt werden, die ein Recht auf ein würdevolles Dasein haben - nicht nur der Schoßhund oder das Meerschwein, sondern auch Nutztiere wollen nicht leiden! Sollte dies dazu beitragen, dass sich bei diesen künftigen Erwachsenen etwas in ihrer Lebensführung bzw. in ihrem (Kauf-)Verhalten ändert,so wäre das eine gelungene Investition in die Zukunft. Ich komme jedenfalls mit meiner nächsten Klasse gerne wieder..."
+            },
+            "artikel18":{
+                "position":"bottom",
+                "layout":"third",
+                "type":"article",
+                "header":"",
+                "text":"Kinderschule Bremen</br></br> Besonders spürbar für mich als Erwachsener war die Qualität, dass immer alle für alle etwas machen. (…) Die Gruppe hat sich immer insgesamt versorgt, ein nicht zu unterschätzender Bestandteil für das Gruppengefühl. (...)Der Schwerpunkt lag bei der Wahrnehmung von Handlunge und Handlungsabläufen durch eigenes Tätigsein. Die handwerkliche Produktion von Nahrungsmitteln erfordert eine sinnvolle Reihenfolge. Mir hat gefallen, dass die Sensibilisierung der Kinder in der Woche zu sehen war: 'Hmm, das ist das Sauerteigbrot!' 'Wo ist der Gelee, den die anderen Kinder gemacht haben?' 'Der Ketschup ist selbst gemacht!?' Die Nahrungsmittel wurden in ihre Inhaltsstoffe zerlegt und geschmacklich zugeordnet: 'Möhren sind da drin?' Es war ein Prozess wahrnehmbar, der bei einigen Kindern sicher nachgewirkt hat: Sie sehen hin, was es zu essen gibt oder beteiligen sich beim Kochen oder Backen. Eine Nachhaltigkeit ist wohl nicht allgemein zu belegen, aber wie bei vielen Lernprozessen werden hier Keime für Entwicklungen und Haltungen gelegt, die ich für sehr wertvoll halte."
             }
         }
     },

@@ -395,6 +395,17 @@ a:hover {
     font-size: 17px;
     color: #EA5E0F;
 }
+.section .person {
+
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.section .person h3 {
+    color: #555555;
+    text-align: center;
+}
 
 
 
@@ -546,17 +557,6 @@ a:hover {
 
 }
 
-.DasDorf .person {
-
-    width: 200px;
-    display: inline-block;
-    margin-right: 20px;
-
-}
-.DasDorf .person h3 {
-    color: #555555;
-    text-align: center;
-}
 
 .DasDorf .Berufe .imageWrap {
     width: 200px;
@@ -574,8 +574,8 @@ a:hover {
 
 }
 
-.DasDorf .Berufe .imageWrap:hover {
-    background-color: #D6C5DB;
+.DasDorf .Berufe .imageWrap:hover,.DasDorf .Berufe .imageWrap.active {
+    background-color:#EFDCF5;
     cursor: pointer;
 }
 
@@ -685,10 +685,7 @@ a:hover {
     float: right;
 }
 
-.zitat {
 
-    color: #EA5E0F;;
-}
 
 #section9.UeberUns .personalWrapper {
     text-align: center;
@@ -762,6 +759,13 @@ a:hover {
 #section11 .bottom .textBox {
     color: #555555;
     text-align: center;
+}
+#section11 .scrollArrow{
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
 }
 
 #section11 #textBox4, #section11 #textBox5, #section11 #textBox6 {
@@ -1066,8 +1070,8 @@ a:hover {
 
 }
 
-.album:hover {
-    background-color: #B4CCB7;
+.album:hover,.album.active {
+    background-color: #CFEBD2;
     cursor: pointer;
 }
 

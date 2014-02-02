@@ -73,8 +73,8 @@ function buildDorf(data) {
     var text = "";
     var counter = 0;
     var type = "";
-    var globalVal = ""
-    var elementType = ""
+    var globalVal = "";
+    var elementType = "";
     var slideCount = 0;
     var position = "";
     var layout = "";
@@ -151,14 +151,16 @@ function buildDorf(data) {
 
 
 }
+
+
 function showfirstImg() {
 
-    $('.imageWrap.person1 img').addClass('active');
+    $('.imageWrap.person1 img,.imageWrap.job1').addClass('active');
+    buildJob1();
     $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
-
     $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
     $('#section9 .zitat').html('"Es macht mir Spaß, begeisterte Kinderaugen zu sehen. Für mich ist wichtig, dass Kinder das "Leben" lernen und sich mit den Basics wie den Lebens-Mitteln vertraut machen. Es ist spannend, wie Kinder mit ihrer emotionalen Intelligenz umgehen und wie es ihnen gelingt, diese im Rahmen unserer Woche zu erhöhen."');
-    $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+    $('.detailsWrapper').show('slide', {direction:'left'}, 1000)
 }
 
 var check1 = 0;
@@ -184,6 +186,91 @@ $('.impressumIcon').on('click', function () {
         $('.impressum').fadeOut(800)
         check2 = 0
     }
+});
+
+
+$('#btn1').on('click', function () {
+    $('#btn2,#btn3').removeClass('active');
+    $('#btn1').addClass('active');
+
+    $('#section10 .second').fadeOut(600);
+    $('#section10 .third').fadeOut(600);
+
+    setTimeout(function () {
+        $('#section10 .first').fadeIn(600);
+
+    }, 1000);
+
+
+});
+$('#btn2').on('click', function () {
+    $('#btn1,#btn3').removeClass('active');
+    $('#btn2').addClass('active');
+    $('#section10 .first').fadeOut(600)
+    $('#section10 .third').fadeOut(600);
+
+    setTimeout(function () {
+        $('#section10 .second').fadeIn(600);
+
+    }, 1000);
+
+
+});
+$('#btn3').on('click', function () {
+    $('#btn1,#btn2').removeClass('active');
+    $('#btn3').addClass('active');
+
+    $('#section10 .first').fadeOut(600)
+    $('#section10 .second').fadeOut(600);
+    setTimeout(function () {
+        $('#section10 .third').fadeIn(600);
+
+    }, 1000);
+
+
+});
+$('#btn4').on('click', function () {
+    $('#btn5,#btn6').removeClass('active');
+    $('#btn4').addClass('active');
+
+    $('#section11 .second').fadeOut(600);
+    $('#section11 .third').fadeOut(600);
+
+    setTimeout(function () {
+        $('#section11 .first').fadeIn(600);
+
+    }, 1000);
+
+
+});
+$('#btn5').on('click', function () {
+    $('#btn4,#btn6').removeClass('active');
+    $('#btn5').addClass('active');
+
+    $('#section11 .first').fadeOut(600);
+    $('#section11 .third').fadeOut(600)
+
+    setTimeout(function () {
+        $('#section11 .second').fadeIn(600);
+
+    }, 1000);
+
+
+});
+$('#btn6').on('click', function () {
+    $('#btn4,#btn5').removeClass('active');
+    $('#btn6').addClass('active');
+
+    $('#section11 .first').fadeOut(600);
+    $('#section11 .second').fadeOut(600)
+
+    setTimeout(function () {
+        $('#section11 .third').fadeIn(600);
+
+
+    }, 1000);
+
+
 });
 
 
@@ -318,84 +405,17 @@ $('#btn14').on('click', function () {
 })
 
 
-$('#btn1').on('click', function () {
-    $('#btn2,#btn3').removeClass('active');
-    $('#btn1').addClass('active');
-    $('.bottom #textBox1').hide('slide', {direction:'right'});
-    setTimeout(function () {
-        $('.bottom #textBox1').html(' <div class="Supporter"><p> Unsere Förderer Starthilfe haben uns gegeben: Schreinerei Gröbmayr, Glonn</br> Bulthaup, Bodenkirchen</br> Manufactum, Waltrop</br> Wir danken herzlich allen Spenderinnen und Spendern anlässlich des 80. Geburtstagsfestes von Karl Ludwig Schweisfurth und anlässlich des 80. Geburtstagsfestes von Dorothee Schweisfurth</p><p>Karl Ludwig Schweisfurth, München Dr. Christoph von Schwingenstein, München - jährliche Spenden Dr. Hans-J. Hüchting, Weinheim Herrn und Frau Drs. Zeiner, Taufkirchen Alexander Brachmann, München Anne Schweisfurth, Bremen Rolf-Christof Dienst, Icking Naturkost Südbayern e.V., Freising Prof. Dr. Karl Ganser, Breitenthal  Thomas Modsching, Pullenhofen Hilke Packmohr, Bremen Wilhelm von Herder-Hebenbrock, Starnberg Karl Schweisfurth, Glonn und viele Kleinspenderinnen und -spender.</p></div>')
-    }, 1000);
-    $('.bottom #textBox1').show('slide', {direction:'left'}, 1000);
+function buildJob1() {
+    $('#section5 .leftSide ').html('<div class="person job1"><div class="imageWrap job1 active"></div><h3>Der Gärtner</h3></div>');
+    $('#section5 .details').html('Als Gärtner kümmerst du dich um Gemüse und Kräuter. Es liegt in deinem Aufgabenbereich Pflanzen wachsen und gedeihen zu lassen und die Dorfmitglieder mit Nahrungsmitteln zu versorgen ');
+    $('#section5 .zitat').html(' "Eins von den Hühnern versteckt sich immer in den Hügelbeeten und pickt den frischen Salat, ich habe es zu uns zum Mittagessen eingeladen!"');
 
+}
 
-});
-$('#btn2').on('click', function () {
-    $('#btn1,#btn3').removeClass('active');
-    $('#btn2').addClass('active');
-
-    $('.bottom #textBox1').hide('slide', {direction:'right'});
-    setTimeout(function () {
-        $('.bottom #textBox1').html('<div class="certificate"><p>Dafür kann aber dieser einwöchige Aufenthalt für die Kinder zu einem Schlüsselerlebnis werden. Sie leben "eigenverantwortlich" in unserem Dorf und haben dort Erlebnisse und Erfahrungen, die ihnen wichtige Impulse mit auf ihren Lebensweg geben.</p><p>Unser umfangreiches Programm, geprägt durch Eigeninitiative, z.B. bei der Ernte oder Herstellung von Lebensmitteln aus Garten und Landwirtschaft, haben sich zu einem sehr erfolgreichen und richtungsweisenden Konzept zur Umkehr ungesunder Trends in der Welt unserer Kinder entwickelt.</p><p>Inzwischen sind etwa 20 % der Kinder in der Bundesrepublik übergewichtig. Die Tendenz ist steigend - Fachleute sprechen bereits von einer Epidemie.Ungesunde Ernährung und Mangel an Bewegung gelten als die Hauptursachen für diese Entwicklung.</p></div>', 1000)
-
-    }, 1000);
-    $('.bottom #textBox1').show('slide', {direction:'left'}, 1000);
-
-
-});
-$('#btn3').on('click', function () {
-    $('#btn1,#btn2').removeClass('active');
-    $('#btn3').addClass('active');
-    $('.bottom #textBox1').hide('slide', {direction:'right'}, 1000);
-
-
-    setTimeout(function () {
-        $('.bottom #textBox1').html('<div class="certificate"><p>Das Dorf für Kinder und Tiere ist 2011 startsocial-Stipendiat Bundeskanzler Gerhard Schröder hat im Jahr 2000 mit Vertretern großer und kleiner Unternehmen diskutiert: Wie kann man dem sozialen Engagement im Jahr 2001, dem Internationalen Jahr der Freiwilligen, neue Impulse geben? Als Antwort darauf wurde in Zusammenarbeit mit großen und kleiner Unternehmen der Verein start social e.V. ins Leben gerufen, der seitdem jedes Jahr einen Wettbewerb anbietet unter der Schirmherrschaft des Bundeskanzlers, in diesem Jahr der Bundeskanzlerin Angela Merkel, bei dem sich gemeinnützige Organisationen bewerben können. Wir haben uns mit unserem Dorf für Kinder und Tiere beworben.</p></div>')
-
-    }, 1000);
-    $('.bottom #textBox1').show('slide', {direction:'left'}, 1000);
-
-
-});
-$('#btn4').on('click', function () {
-    $('#btn5,#btn6').removeClass('active');
-    $('#btn4').addClass('active');
-    $('.bottom #textBox2').hide('slide', {direction:'right'}, 1000);
-    setTimeout(function () {
-        $('.bottom #textBox2').html('<p> Grundschule Südliche Auffahrtsallee München </p><p>Anfangs wussten die Schüler nicht so recht, was sie mit ihrer Freizeit streckenweise anfangen sollten, da kein Gameboy etc. zur Hand war, aber das legte sich schnell und sie begannen sich mit sich und anderen zu beschäftigen und auseinander zu setzen. Sie beteiligten sich meist gerne an der Arbeit, denn die verschaffte ihnen gewissermaßen echte Erfolge und das Gefühl etwas Sinnvolles vollbracht zu haben. (…) Schüler, die Zuhause eher kompliziert waren, entwickelten sich zu aufgeweckten, kontaktfreudigen und verantwortungsbewussten Menschen. (...).</p><p>Im abschließenden Dorfrat sagten einige Kinder, dass sie gelernt hätten, dass man zusammen mehr erreiche und dass wir zusammenhalten müssen. Es war großartig zu beobachten, wie selbständig und resolut meine Schüler (im Dorfrat) arbeiteten. Die Kinder lernten hier, sich aufeinander einzustellen, aufeinander zu hören und sich selbst auch mal zurück zu stellen. Hier wurde mit Sicherheit einer der Grundsteine für demokratisches Denken und Handeln gelegt. (…) </p>')
-    }, 1000);
-
-    $('.bottom #textBox2').show('slide', {direction:'left'}, 1000);
-
-
-});
-$('#btn5').on('click', function () {
-    $('#btn4,#btn6').removeClass('active');
-    $('#btn5').addClass('active');
-
-    $('.bottom #textBox2').hide('slide', {direction:'right'}, 1000);
-    setTimeout(function () {
-        $('.bottom #textBox2').html('<p>Franziska-Lechner-Volksschule Edling (bei Wasserburg)</p><p>Schon zum zweiten Mal war ich nun mit einer Klasse im "Dorf für Kinder und Tiere" und wir durften dort eine Woche der ganz besonderen Art erleben. Eine wesentliche Komponente ist die bewusste Reduktion in vielen Dingen auf das Elementare. Dies muss kein wirklicher "Verlust" sein, vielmehr konnten es die meisten Kinder als Bereicherung erleben, auch wenn ihnen das natürlich häufig nicht selbst so bewusst war. Da gab es zum Beispiel den sonst oft recht unruhigen Jungen, der zu Hause viel Zeit vor dem Bildschirm verbringt und hier nach zwei Tagen sich meist ruhig am Programm beteiligte oder dasaß und Karten spielte.</p><p>Andere Kinder, die häufig äußerst impulsiv und störend sind, tobten sich so aus, dass sie deutlich leichter führbar waren als sonst. Mancher "Querulant" mit recht bedenklichem Sozialverhalten streichelte sehr behutsam die Schweine und wäre nie im Leben auf die Idee gekommen, ein Tier zu treten oder zu schlagen. Unerwartet zarte Seiten traten zu Tage. Ebensolche schwierige Schüler arbeiteten bei manchen "Berufen" im Dorf für Kinder und Tiere engagiert mit, ließen sich von der Köchin willig beim Zubereiten des Mittagessens anspornen und aßen hinterher natürlich mit Appetit die selbst gekochte Gemüsesuppe - ob sie das bei Muttern auch täten?</p><p>Und was ist mit den ganz "normalen, pflegeleichten" Kindern? Die meisten von ihnen fühlten sich schnell richtig zu Hause, vergaßen ihr Heimweh, blühten teilweise richtig auf und einige wären sogar gerne noch länger geblieben. Eine Freude ihnen zuzusehen, wie selbständig und verantwortlich sie ihren Abwaschdienst übernahmen oder sich in der Leitung des Dorfrates versuchten. Viele Effekte sind zugegebener Maßen vielleicht eher kurzfristiger Natur.</p><p>Dennoch bin ich überzeugt, dass über das reine "Freizeiterlebnis" hinaus doch wenigstens zwei Dinge hängen bleiben: Zum Einen, die wirkliche Erkenntnis, dass unser tägliches Essen nicht fertig "vom Himmel fällt" und zum Anderen, dass für unsere Nahrungsmittel lebende Tiere benötigt werden, die ein Recht auf ein würdevolles Dasein haben - nicht nur der Schoßhund oder das Meerschwein, sondern auch Nutztiere wollen nicht leiden! Sollte dies dazu beitragen, dass sich bei diesen künftigen Erwachsenen etwas in ihrer Lebensführung bzw. in ihrem (Kauf-)Verhalten ändert,so wäre das eine gelungene Investition in die Zukunft. Ich komme jedenfalls mit meiner nächsten Klasse gerne wieder...</p>')
-    }, 1000);
-
-    $('.bottom #textBox2').show('slide', {direction:'left'}, 1000);
-
-
-});
-$('#btn6').on('click', function () {
-    $('#btn4,#btn5').removeClass('active');
-    $('#btn6').addClass('active');
-
-    $('.bottom #textBox2').hide('slide', {direction:'right'}, 1000);
-    setTimeout(function () {
-        $('.bottom #textBox2').html('<div class="certificate"><p> Kinderschule Bremen </p><p>Besonders spürbar für mich als Erwachsener war die Qualität, dass immer alle für alle etwas machen. (…) Die Gruppe hat sich immer insgesamt versorgt, ein nicht zu unterschätzender Bestandteil für das Gruppengefühl. (...)</p><p>Der Schwerpunkt lag bei der Wahrnehmung von Handlunge und Handlungsabläufen durch eigenes Tätigsein. Die handwerkliche Produktion von Nahrungsmitteln erfordert eine sinnvolle Reihenfolge. Mir hat gefallen, dass die Sensibilisierung der Kinder in der Woche zu sehen war: "Hmm, das ist das Sauerteigbrot!" "Wo ist der Gelee, den die anderen Kinder gemacht haben?" "Der Ketschup ist selbst gemacht!?" Die Nahrungsmittel wurden in ihre Inhaltsstoffe zerlegt und geschmacklich zugeordnet: "Möhren sind da drin?"</p><p>Es war ein Prozess wahrnehmbar, der bei einigen Kindern sicher nachgewirkt hat: Sie sehen hin, was es zu essen gibt oder beteiligen sich beim Kochen oder Backen. Eine Nachhaltigkeit ist wohl nicht allgemein zu belegen, aber wie bei vielen Lernprozessen werden hier Keime für Entwicklungen und Haltungen gelegt, die ich für sehr wertvoll halte.</p></p>');
-    }, 1000);
-    $('.bottom #textBox2').show('slide', {direction:'left'}, 1000);
-
-
-});
 $('#section5 .imageWrap').on('click', function () {
+    $('#section5 .imageWrap').removeClass('active')
     $('#section5 .imageWrap img').removeClass('active');
-    $(this).find(':first-child').addClass('active');
+    $(this).addClass('active');
     $('#section5 .detailsWrapper').hide();
 
 
@@ -408,21 +428,21 @@ $('#section5 .imageWrap').on('click', function () {
 
     } else if ($(this).hasClass('job2')) {
 
-        $('#section5 .leftSide ').html('<div class="person job2"><div class="imageWrap job2"></div><h3>Die Bäuerin</h3></div>');
+        $('#section5 .leftSide ').html('<div class="person job2"><div class="imageWrap job2 active"></div><h3>Die Bäuerin</h3></div>');
         $('#section5 .details').html('Die Bäuerin kümmert sich um alle Arbeiten die auf dem Hof anfallen. Sie füttert die Tiere, arbeitet im Garten und Haushalt und kocht leckeres Essen ');
         $('#section5 .zitat').html(' "Wir haben die Tiere ganz allein gefüttert! Und ich habe sogar ein Schwein gestreichelt!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     } else if ($(this).hasClass('job3')) {
 
-        $('#section5 .leftSide ').html('<div class="person job3"><div class="imageWrap job3"></div><h3>Der Metzger</h3></div>');
+        $('#section5 .leftSide ').html('<div class="person job3"><div class="imageWrap job3 active"></div><h3>Der Metzger</h3></div>');
         $('#section5 .details').html('Mit dem Metzger machst du leckere eigene Wurst, die danach gemeinsam im Dorf gegessen wird! Von ihm lernst du viel über Tiere und Wurst und Fleischherstellung!');
         $('#section5 .zitat').html(' "Wir haben heute unsere eigene Wurst gemacht. Das war wirklich toll!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     } else if ($(this).hasClass('job4')) {
 
-        $('#section5 .leftSide ').html('<div class="person job4"><div class="imageWrap job4"></div><h3>Der Metzger</h3></div>');
+        $('#section5 .leftSide ').html('<div class="person job4"><div class="imageWrap job4 active"></div><h3>Der Metzger</h3></div>');
         $('#section5 .details').html('Von der Köchin lernst du wie die Nahrungsmittel, die du zuvor im Garten und auf dem Feld angebaut hast, in leckere Speisen verwandelst!');
         $('#section5 .zitat').html(' "Das Brot das Wir heute gebacken haben ist wirklich gut und sogar Butter haben Wir selber gemacht!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
