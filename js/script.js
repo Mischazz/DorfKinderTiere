@@ -13,8 +13,8 @@ $(document).ready(function () {
 
             buildDorf(data);
 
-            showFirstArticles();
-            showSecondArticles();
+//            showFirstArticles();
+//            showSecondArticles();
             showZitat1();
             showZitat2();
             showZitat4();
@@ -151,7 +151,7 @@ function buildDorf(data) {
 
 
 }
-function showfirstImg(){
+function showfirstImg() {
 
     $('.imageWrap.person1 img').addClass('active');
     $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
@@ -161,30 +161,161 @@ function showfirstImg(){
     $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 }
 
-var check1 =0;
-var check2 =0;
-$('.kontaktIcon').on('click',function(){
+var check1 = 0;
+var check2 = 0;
+$('.kontaktIcon').on('click', function () {
 
 
-    if(check1 === 0){
-    $('.kontakt').fadeIn(800)
+    if (check1 === 0) {
+        $('.kontakt').fadeIn(800)
         check1 = 1;
-    }   else if(check1 !== 0){
+    } else if (check1 !== 0) {
         $('.kontakt').fadeOut(800)
-    check1 = 0
+        check1 = 0
     }
 });
-$('.impressumIcon').on('click',function(){
+$('.impressumIcon').on('click', function () {
 
 
-    if(check2 === 0){
-    $('.impressum').fadeIn(800)
+    if (check2 === 0) {
+        $('.impressum').fadeIn(800)
         check2 = 1;
-    }   else if(check2 !== 0){
+    } else if (check2 !== 0) {
         $('.impressum').fadeOut(800)
-    check2 = 0
+        check2 = 0
     }
 });
+
+
+$('#btn7').on('click', function () {
+    $('#btn8,#btn9,#btn10,#btn11').removeClass('active');
+    $('#btn7').addClass('active');
+
+    $('#section2 .second').fadeOut(600);
+    $('#section2 .third').fadeOut(600)
+    $('#section2 .fourth').fadeOut(600)
+    $('#section2 .fifth').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section2 .first').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn8').on('click', function () {
+    $('#btn7,#btn9,#btn10,#btn11').removeClass('active');
+    $('#btn8').addClass('active');
+
+    $('#section2 .first').fadeOut(600)
+    $('#section2 .third').fadeOut(600)
+    $('#section2 .fourth').fadeOut(600)
+    $('#section2 .fifth').fadeOut(600)
+    setTimeout(function () {
+
+        $('#section2 .second').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn9').on('click', function () {
+    $('#btn7,#btn8,#btn10,#btn11').removeClass('active');
+    $('#btn9').addClass('active');
+
+    $('#section2 .first').fadeOut(600);
+    $('#section2 .second').fadeOut(600);
+    $('#section2 .fourth').fadeOut(600)
+    $('#section2 .fifth').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section2 .third').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn10').on('click', function () {
+    $('#btn7,#btn8,#btn9,#btn11').removeClass('active');
+    $('#btn10').addClass('active');
+
+    $('#section2 .first').fadeOut(600);
+    $('#section2 .second').fadeOut(600);
+    $('#section2 .third').fadeOut(600)
+    $('#section2 .fifth').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section2 .fourth').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn11').on('click', function () {
+    $('#btn7,#btn8,#btn9,#btn10').removeClass('active');
+    $('#btn11').addClass('active');
+
+    $('#section2 .first').fadeOut(600);
+    $('#section2 .second').fadeOut(600);
+    $('#section2 .third').fadeOut(600)
+    $('#section2 .fourth').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section2 .fifth').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn12').on('click', function () {
+    $('#btn13,#btn14').removeClass('active');
+    $('#btn12').addClass('active');
+
+    $('#section4 .second').fadeOut(600);
+    $('#section4 .third').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section4 .first').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn13').on('click', function () {
+    $('#btn12,#btn14').removeClass('active');
+    $('#btn13').addClass('active');
+
+    $('#section4 .first').fadeOut(600);
+    $('#section4 .third').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section4 .second').fadeIn(600)
+
+    }, 1000)
+
+
+})
+$('#btn14').on('click', function () {
+    $('#btn12,#btn13').removeClass('active');
+    $('#btn14').addClass('active');
+
+    $('#section4 .first').fadeOut(600);
+    $('#section4 .second').fadeOut(600)
+
+    setTimeout(function () {
+
+        $('#section4 .third').fadeIn(600)
+
+    }, 1000)
+
+
+})
 
 
 $('#btn1').on('click', function () {
@@ -268,37 +399,35 @@ $('#section5 .imageWrap').on('click', function () {
     $('#section5 .detailsWrapper').hide();
 
 
-     if ($(this).hasClass('job1')) {
+    if ($(this).hasClass('job1')) {
 
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .leftSide ').html('<div class="person job1"><div class="imageWrap job1"></div><h3>Der Gärtner</h3></div>');
+        $('#section5 .details').html('Als Gärtner kümmerst du dich um Gemüse und Kräuter. Es liegt in deinem Aufgabenbereich Pflanzen wachsen und gedeihen zu lassen und die Dorfmitglieder mit Nahrungsmitteln zu versorgen ');
+        $('#section5 .zitat').html(' "Eins von den Hühnern versteckt sich immer in den Hügelbeeten und pickt den frischen Salat, ich habe es zu uns zum Mittagessen eingeladen!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     } else if ($(this).hasClass('job2')) {
 
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .leftSide ').html('<div class="person job2"><div class="imageWrap job2"></div><h3>Die Bäuerin</h3></div>');
+        $('#section5 .details').html('Die Bäuerin kümmert sich um alle Arbeiten die auf dem Hof anfallen. Sie füttert die Tiere, arbeitet im Garten und Haushalt und kocht leckeres Essen ');
+        $('#section5 .zitat').html(' "Wir haben die Tiere ganz allein gefüttert! Und ich habe sogar ein Schwein gestreichelt!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     } else if ($(this).hasClass('job3')) {
 
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .leftSide ').html('<div class="person job3"><div class="imageWrap job3"></div><h3>Der Metzger</h3></div>');
+        $('#section5 .details').html('Mit dem Metzger machst du leckere eigene Wurst, die danach gemeinsam im Dorf gegessen wird! Von ihm lernst du viel über Tiere und Wurst und Fleischherstellung!');
+        $('#section5 .zitat').html(' "Wir haben heute unsere eigene Wurst gemacht. Das war wirklich toll!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     } else if ($(this).hasClass('job4')) {
 
-        $('#section5 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
-        $('#section5 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
-        $('#section5 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
+        $('#section5 .leftSide ').html('<div class="person job4"><div class="imageWrap job4"></div><h3>Der Metzger</h3></div>');
+        $('#section5 .details').html('Von der Köchin lernst du wie die Nahrungsmittel, die du zuvor im Garten und auf dem Feld angebaut hast, in leckere Speisen verwandelst!');
+        $('#section5 .zitat').html(' "Das Brot das Wir heute gebacken haben ist wirklich gut und sogar Butter haben Wir selber gemacht!"');
         $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
 
     }
-
-
 
 
 })

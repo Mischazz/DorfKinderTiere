@@ -1,16 +1,19 @@
-/* Let's get this party started */
+
+/* Scrollbar Styling */
+
+
 ::-webkit-scrollbar {
     width: 4px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 
     background: #666;
@@ -20,6 +23,20 @@
 ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255, 0, 0, 0.4);
 }
+
+body {
+
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: "Segoe UI", Arial, Helvetical, sans-serif
+
+}
+
+
+
+
+/* Navigation */
+
 
 .NavigationBar {
     display: none;
@@ -107,13 +124,9 @@ a:hover {
     color: gray;
 }
 
-body {
 
-    margin: 0 auto;
-    overflow-x: hidden;
-    font-family: "Segoe UI", Arial, Helvetical, sans-serif
 
-}
+/* Button Styling */
 
 .buttonGroup {
     width: 50px;
@@ -129,22 +142,26 @@ body {
 
     box-sizing: border-box;
     padding: 7px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -ms-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 4px;
 
 }
 
-.btn:hover {
+.btn:hover, btn.active {
     background: #2b405c;
     cursor: pointer;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 4px;
 
-}
-
-.btn.active {
-    background: #2b405c;
 }
 
 #btn1 {
@@ -158,41 +175,326 @@ body {
 
 #btn1:hover, #btn1.active {
     background-image: url(../assets/IconAndereWhite.png);
-
+    background-color: #2b405c;
 }
 
 #btn2 {
     background-image: url(../assets/IconDorfBlack.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
 
 }
 
 #btn2:hover, #btn2.active {
     background-image: url(../assets/IconDorfWhite.png);
-
+    background-color: #2b405c;
 }
 
 #btn3 {
     background-image: url(../assets/IconZertifikatBlack.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
 
 }
 
 #btn3:hover, #btn3.active {
     background-image: url(../assets/IconZertifikatWhite.png);
+    background-color: #2b405c;
 
+}
+
+#btn4, #btn5, #btn6 {
+    background-color: #d3d3d3;
+
+}
+
+#btn4:hover, #btn5:hover, #btn6:hover, #btn4.active, #btn5.active, #btn6.active {
+    background-color: #e9967a;
+
+}
+
+#btn4 {
+    background-image: url(../assets/IconPigBlack.png);
+
+}
+
+#btn4:hover, #btn4.active {
+    background-image: url(../assets/IconPigWhite.png);
+
+}
+
+#btn5 {
+    background-image: url(../assets/IconRabbitBlack.png);
+
+}
+
+#btn5:hover, #btn5.active {
+    background-image: url(../assets/IconRabbitWhite.png);
+
+}
+
+#btn6 {
+    background-image: url(../assets/IconSheepBlack.png);
+
+}
+
+#btn6:hover, #btn6.active {
+    background-image: url(../assets/IconSheepWhite.png);
+
+}
+
+#btn7:hover, #btn8:hover, #btn9:hover, #btn10:hover, #btn11:hover, #btn7.active, #btn8.active, #btn9.active, #btn10.active, #btn11.active {
+    background-color: #5f9ea0;
+}
+
+#btn7 {
+    background-image: url("../assets/nature.png");
+}
+
+#btn7:hover, #btn7.active {
+    background-image: url("../assets/nature-white.png");
+}
+
+#btn8 {
+    background-image: url("../assets/hand_planting.png");
+
+}
+
+#btn8:hover, #btn8.active {
+    background-image: url("../assets/hand_planting-white.png");
+
+}
+
+#btn9 {
+    background-image: url("../assets/tomato.png");
+
+}
+
+#btn9:hover, #btn9.active {
+    background-image: url("../assets/tomato-white.png");
+
+}
+
+#btn10 {
+    background-image: url("../assets/handshake.png");
+}
+
+#btn10:hover, #btn10.active {
+    background-image: url("../assets/handshake-white.png");
+
+}
+
+#btn11 {
+    background-image: url("../assets/generation.png");
+}
+
+#btn11:hover, #btn11.active {
+    background-image: url("../assets/generation-white.png");
+}
+
+#btn12:hover, #btn13:hover, #btn14:hover, #btn12.active, #btn13.active, #btn14.active {
+    background-color: #daa520;
+}
+
+#btn12 {
+    background-image: url("../assets/bread.png");
+}
+
+#btn12:hover, #btn12.active {
+    background-image: url("../assets/bread-white.png");
+}
+
+#btn13 {
+    background-image: url("../assets/old_young.png");
+}
+
+#btn13:hover, #btn13.active {
+    background-image: url("../assets/old_young-white.png");
+}
+
+#btn14 {
+    background-image: url("../assets/alltag.png");
+}
+
+#btn14:hover, #btn14.active {
+    background-image: url("../assets/alltag-white.png");
+
+}
+
+/* Scroll Down Button Styling */
+
+.scrollArrowWrapper {
+    height: 55px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.scrollArrow {
+    position: relative;
+    transition: margin-top 0.3s linear;
+    width: 51px;
+    height: 51px;
+    background: url("../assets/ArrowDown.png");
+    background-position: 0px -196px;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.scrollArrow:hover {
+
+    margin-top: 18px;
+    cursor: pointer;
+    background: url("../assets/ArrowDown-red.png");
+    background-repeat: no-repeat;
+
+    background-position: 0px 0px;
+
+}
+
+.scrollArrow a {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 0;
 }
 
 .section {
-    width: 100%;
+
     position: relative; /* importet for position Gallery*/
+    min-height: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
+
+.section .header {
+    position: static;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.section .textBoxWrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section .textBox {
+
+    width: 750px;
+    min-width: 500px;
+
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section .zitat {
+    font-size: 17px;
+    color: #EA5E0F;
+}
+
+
+
+.section .second {
+    display: none;
+}
+
+.section .third {
+    display: none;
+}
+
+.section .fourth {
+    display: none;
+}
+
+.section .fifth {
+    display: none;
+}
+
+
+
+/* Top Section Styling */
+
+.topper {
+    width: 100%;
+    min-height: 300px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#section2 .topper {
+    background: #5f9ea0;
+}
+
+#section4 .topper {
+    background: #daa520;
+}
+
+#section5 .topper {
+    background: #2b405c;
+}
+
+#section7.UeberUns .topper {
+    background: #fc4f4f;
+
+}
+#Galerie .topper {
+
+    background: #778899;
+}
+
+#section9 .topper {
+
+    background: #ff8c00;
+}
+#section10 .topper {
+    background: #2b405c;
+
+}
+
+#section11 .topper {
+    background: #e9967a;
+}
+
+
+
+/* Bottom Section Styling */
+
+.bottom {
+    background: #edebe9;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+    min-height: 500px;
+
+}
+
+
+.bottom .textBox {
+    min-height: 400px;
+    display: inline-block;
+}
+
+.bottom .artikel {
+
+    color: #555555;
+
+}
+
+
+/* Styling Start Page */
+
 
 #Start {
     background: url(../assets/wiese.jpg) 50% 0 repeat fixed;
@@ -204,187 +506,37 @@ body {
     position: relative;
 }
 
-.article {
-
+#Start .header {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
     font-size: 50px;
     color: white;
     padding-top: 100px;
-    text-align: center;
+
 }
 
-.article p {
+#Start .header p {
 
     font-size: 24px;
 }
 
-#Start article {
-    height: 458px;
-    position: absolute;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-}
 
-.scrollArrowWrapper {
-    height: 55px;
-    position: relative;
-    padding-top: 10px;
-}
 
-.scrollArrow {
-    position: relative;
-    transition: all 0.3s linear;
-    width: 51px;
-    height: 51px;
-    background: url("../assets/sprite.png");
-    background-position: 0px -1298px;
-    text-align: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-}
 
-.scrollArrow:hover {
 
-    margin-top: 28px;
-    cursor: pointer;
-}
+/* DasDorf Styling */
 
-.scrollArrow a {
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    left: 0;
-}
 
-.topper {
-    width: 100%;
-    min-height: 300px;
-}
 
-.DasDorf {
 
-    min-height: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
 
-    position: relative;
-    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-}
 
-.topper {
 
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-bottom: 50px;
-    text-align: center;
-}
 
-.bottom {
-    background: #edebe9;
-    overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 
-    color: #555555;
-    font-size: 14px;
-    min-height: 500px;
-
-}
-
-.zitat {
-    font-size: 17px;
-    color: #EA5E0F;
-}
-
-.leftSide {
-    width: 28%;
-    height: inherit;
-    float: left;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.bottom .textBox {
-    min-height: 400px;
-}
-
-.bottom .middle {
-    width: 32%;
-    height: inherit;
-    display: inline-block;
-    padding-right: 20px;
-
-}
-
-.rightSide {
-    width: 28%;
-    height: inherit;
-    float: right;
-    padding-right: 20px;
-}
-
-#section2 .topper {
-    background: cadetblue;
-}
-
-#section3 .zitat {
-    padding-left: 50px;
-    padding-right: 0;
-}
-
-#section3 .topper {
-    background: cornflowerblue;
-}
-
-#section4 .topper {
-    background: goldenrod;
-}
-
-#section5 .topper {
-    background: #2b405c;
-}
-
-#section10 .topper {
-    background: #2b405c;
-
-}
-
-.DasDorf .header {
-    position: static;
-    color: #fff;
-    font-size: 32px;
-    font-weight: 500;
-}
-
-.textBoxWrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.textBox {
-
-    width: 750px;
-    min-width: 500px;
-
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.DasDorf article {
-    height: 458px;
-    position: absolute;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-
-}
 
 .DasDorf .Berufe .wrapper {
     text-align: center;
@@ -393,14 +545,18 @@ body {
     padding-bottom: 40px;
 
 }
- .person{
+
+.DasDorf .person {
 
     width: 200px;
     display: inline-block;
     margin-right: 20px;
 
 }
- .person h3{}
+.DasDorf .person h3 {
+    color: #555555;
+    text-align: center;
+}
 
 .DasDorf .Berufe .imageWrap {
     width: 200px;
@@ -417,61 +573,48 @@ body {
     transition: all 1s ease;
 
 }
+
 .DasDorf .Berufe .imageWrap:hover {
-   background-color: #D6C5DB;
+    background-color: #D6C5DB;
     cursor: pointer;
 }
 
-.DasDorf .Berufe .imageWrap.job1{
+.DasDorf .Berufe .imageWrap.job1 {
 
-    background-image: url("../assets/watering_can-64.png") ;
-
-}.DasDorf .Berufe .imageWrap.job2{
-
-    background-image: url("../assets/wheat-64.png") ;
-
-}.DasDorf .Berufe .imageWrap.job3{
-
-    background-image: url("../assets/cow-64.png") ;
-
-}
-.DasDorf .Berufe .imageWrap.job4{
-
-    background-image: url("../assets/coking_pot-64.png") ;
+    background-image: url("../assets/watering_can-64.png");
 
 }
 
- .person h3 {
-    color: #555555;
-     text-align:center ;
+.DasDorf .Berufe .imageWrap.job2 {
+
+    background-image: url("../assets/wheat-64.png");
+
 }
+
+.DasDorf .Berufe .imageWrap.job3 {
+
+    background-image: url("../assets/cow-64.png");
+
+}
+
+.DasDorf .Berufe .imageWrap.job4 {
+
+    background-image: url("../assets/coking_pot-64.png");
+
+}
+
+
 
 .DasDorf .person1 .detailsWrapper {
     display: block;
 }
 
+
+
+
+
 /* Start Ueber Uns Styling */
 
-.UeberUns .Verein {
-
-    width: 400%;
-    max-width: 750px;
-    min-width: 500px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.UeberUns .Verein p {
-
-    color: #fff;
-    font-weight: 500;
-}
-
-.UeberUns .topper {
-    text-align: center;
-    min-height: 350px;
-    background: darkorange;
-}
 
 .UeberUns .topper h2 {
     padding-top: 50px;
@@ -481,25 +624,11 @@ body {
 
 /* Start section7 Styling */
 
-#section7.UeberUns .tableCell {
-    vertical-align: top;
-    background: #edebe9;
-}
 
-#section7.UeberUns .topper {
-    background: #fc4f4f;
-    padding-bottom: 100px;
-    overflow: hidden;
-    margin-bottom: -22px;
-    font-size: 18px;
-}
 
-#section7.UeberUns .topper .Verein .header {
 
-    color: #fff;
-    font-weight: 500;
-    font-size: 36px;
-}
+
+
 
 #section7.UeberUns .textContainer {
     width: 100%;
@@ -520,21 +649,14 @@ body {
 
 /* Start section9 Styling */
 
-#section9.UeberUns {
-    background: #edebe9;
-    min-height: 1000px;
-    background-repeat: no-repeat;
 
-}
 
 #section9.UeberUns h2 {
     color: #444444;
 
 }
 
-#section9 .topper {
-    padding-top: 50px;
-}
+
 
 .detailContainer {
     text-align: center;
@@ -637,119 +759,22 @@ body {
     text-align: center;
 }
 
-#section11 .topper {
-    background: #e9967a;
-}
-
 #section11 .bottom .textBox {
     color: #555555;
     text-align: center;
-}
-
-#section11 #btn4, #section11 #btn5, #section11 #btn6 {
-    background: #d3d3d3;
-
-}
-
-#section11 #btn4:hover, #section11 #btn5:hover, #section11 #btn6:hover, #section11 #btn4.active, #section11 #btn5.active, #section11 #btn6.active {
-    background: #e9967a;
-
-}
-
-#section11 #btn4 {
-    background-image: url(../assets/IconPigBlack.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
-}
-
-#section11 #btn4:hover, #section11 #btn4.active {
-    background-image: url(../assets/IconPigWhite.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
-}
-
-#section11 #btn5 {
-    background-image: url(../assets/IconRabbitBlack.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
-}
-
-#section11 #btn5:hover, #section11 #btn5.active {
-    background-image: url(../assets/IconRabbitWhite.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
-}
-
-#section11 #btn6 {
-    background-image: url(../assets/IconSheepBlack.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
-}
-
-#section11 #btn6:hover, #section11 #btn6.active {
-    background-image: url(../assets/IconSheepWhite.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
-
 }
 
 #section11 #textBox4, #section11 #textBox5, #section11 #textBox6 {
     display: none;
 }
 
-#Galerie {
 
-    /*min-height: 1000px;*/
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-#Anmelden {
-    background: grey 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
 
-#Wir {
-    background: orange 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
 
-#Andere {
-    background: blue 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+/* Footer Styling */
 
-#Kontakt {
-    background: red 50% 0 repeat fixed;
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    width: 100%;
-}
+
 
 .footer {
     width: 100%;
@@ -802,6 +827,8 @@ body {
     background-color: goldenrod;
 }
 
+/* Impressum PopUp */
+
 .impressum {
     display: none;
     width: 700px;
@@ -815,6 +842,9 @@ body {
     overflow-y: scroll;
     color: #999;
 }
+
+
+/* Kontakt PopUp */
 
 .kontakt {
     display: none;
@@ -830,7 +860,7 @@ body {
 
 .kontakt .wrapper div {
     color: #999;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .kontakt .wrapper .link a {
@@ -846,31 +876,33 @@ body {
 .kontakt .wrapper .mail {
     color: #fff;
     text-decoration: none;
+    overflow: hidden;
 
 }
 
-.kontakt .wrapper .mail .icon {
+.kontakt .wrapper .icon {
     display: inline-block;
-    height: 20px;
-    width: 20%;
-    background-image: url("../assets/message-48.png");
-    background-size: 30%;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
     background-repeat: no-repeat;
     float: left;
+    margin-top: -5px;
+}
+
+.kontakt .wrapper .mail .icon {
+
+    background-image: url("../assets/message-48-white.png");
 
 }
 
 .kontakt .wrapper .phone {
+    overflow: hidden;
 }
 
 .kontakt .wrapper .phone .icon {
-    display: inline-block;
-    height: 20px;
-    width: 20%;
-    background-image: url("../assets/phone1-48.png");
-    background-size: 30%;
-    background-repeat: no-repeat;
-    float: left;
+
+    background-image: url("../assets/phone-48-white.png");
 
 }
 
@@ -880,36 +912,25 @@ body {
 
 .kontakt .wrapper .address .icon {
 
-    display: inline-block;
-    height: 20px;
-    width: 20%;
-    background-image: url("../assets/signpost-48.png");
-    background-size: 30%;
-    background-repeat: no-repeat;
-    float: left;
+    background-image: url("../assets/signpost-48-white.png");
+
 }
 
-.kontakt .wrapper .address .link {
+.kontakt .wrapper  .link {
     float: right;
     width: 80%;
 }
 
-.kontakt .wrapper .address .link p {
+.kontakt .wrapper .link p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.kontakt .wrapper .download {
-}
 
 .kontakt .wrapper .download .icon {
-    display: inline-block;
-    height: 20px;
-    width: 20%;
-    background-image: url("../assets/downloading_updates-48.png");
-    background-size: 30%;
-    background-repeat: no-repeat;
-    float: left;
+
+    background-image: url("../assets/downloading_updates-48-white.png");
+
 }
 
 .DasDorf .artikel .header {
@@ -919,203 +940,12 @@ body {
     position: static;
 }
 
-.DasDorf .artikel13 {
-    right: 35%;
-    top: 100px;
-    border-color: #FF9C30;
-}
 
-.DasDorf .artikel14 {
-    right: 5%;
-    top: 460px;
 
-    border-color: #89E08D;
 
-}
 
-.DasDorf .artikel15 {
-    right: 66%;
-    top: 460px;
-    border-color: #88B8FF;
 
-}
 
-.DasDorf .artikel16 {
-    right: 35%;
-    top: 870px;
-    border-color: #B91704;
-
-}
-
-.DasDorf .img {
-
-    position: absolute;
-    border: 3px solid grey;
-    border-radius: 100px;
-}
-
-.DasDorf .img.img1 {
-
-    top: 90px;
-    right: 10%;
-
-}
-
-.DasDorf .img.img2 {
-
-    right: 32%;
-    top: 700px;
-
-}
-
-.DasDorf .img.img3 {
-
-    left: 34%;
-    top: 700px;
-
-}
-
-.DasDorf .img.img4 {
-
-    left: 55%;
-    top: 40px;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-
-}
-
-.DasDorf .img.img5 {
-
-    left: 40%;
-    top: 90px;
-    border-radius: 50px;
-
-}
-
-.DasDorf .img.img6 {
-
-    left: 2%;
-
-    border-radius: 50px;
-
-}
-
-.DasDorf .img.img7 {
-
-    left: 17%;
-    top: 830px;
-    border-radius: 50px;
-
-}
-
-.DasDorf .img.img8 {
-
-    left: 40%;
-    top: 340px;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-
-}
-
-.DasDorf .img.img9 {
-
-    left: 70%;
-    top: 340px;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-
-}
-
-.zitat3 img {
-
-    width: 100%;
-    border-top: 2px solid #88B8FF;
-    border-bottom: 2px solid #88B8FF;
-    border-left: 2px solid #88B8FF;
-    border-top-left-radius: 18px;
-}
-
-.zitat3 .text {
-    padding: 20px;
-    padding-right: 30px;
-    margin-top: -3px;
-    background: #f0f8ff;
-    opacity: 0.65;
-    border-bottom-left-radius: 18px;
-}
-
-.zitat4 {
-
-    box-sizing: border-box;
-    width: 280px;
-
-    border-bottom: 2px solid #88B8FF;
-    border-right: 2px solid #88B8FF;
-
-    border-bottom-right-radius: 20px;
-
-    border-top-right-radius: 20px;
-    position: absolute;
-    top: 2530px;
-    left: 0%;
-
-    font-size: 13px;
-    font-weight: bold;
-    color: #EA5E0F;
-}
-
-.zitat4 img {
-
-    width: 100%;
-    border-top: 2px solid #88B8FF;
-    border-right: 2px solid #88B8FF;
-    border-top-right-radius: 18px;
-
-}
-
-.zitat4 .text {
-    padding: 20px;
-    background: aliceblue;
-    opacity: 0.65;
-}
-
-#ArbeitHeader.header {
-
-    position: absolute;
-    top: 2200px;
-    left: 35%;
-}
-
-.circleBase {
-    border-radius: 50%;
-}
-
-.circleType1 {
-    width: 350px;
-    height: 350px;
-    background-color: aliceblue;
-    opacity: 0.65;
-    border: 3px solid red;
-    /*box-sizing: border-box;*/
-}
-
-.DasDorf .circleType1 .wrapper {
-    padding: 59px;
-}
-
-.DasDorf .circleType1 .header {
-    font-size: 18px;
-    margin-bottom: 0;
-    position: static;
-}
-
-.DasDorf .circleType1 p {
-    font-size: 14px;
-    margin-top: 5px;
-}
 
 .bottomZitat {
     background: #fff;
@@ -1128,10 +958,18 @@ body {
 }
 
 /*Gallery*/
-#Galerie .topper {
 
-    background: lightslategray;
+#Galerie {
+
+    /*min-height: 1000px;*/
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
+
+
 
 .preview {
     height: 0;
