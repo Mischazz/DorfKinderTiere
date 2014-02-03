@@ -155,7 +155,7 @@ function buildDorf(data) {
 
 function showfirstImg() {
 
-    $('.imageWrap.person1 img,.imageWrap.job1').addClass('active');
+    $('.imageWrap.person1 ,.imageWrap.job1').addClass('active');
     buildJob1();
     $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
     $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
@@ -453,12 +453,13 @@ $('#section5 .imageWrap').on('click', function () {
 })
 
 $('#section9 .imageWrap').on('click', function () {
-    $('#section9 .imageWrap img').removeClass('active');
-    $(this).find(':first-child').addClass('active');
+    $('#section9 .imageWrap ').removeClass('active');
+    $(this).addClass('active');
     $('#section9 .detailsWrapper').hide();
 
 
     if ($(this).hasClass('person1')) {
+        debugger;
         $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
 
         $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
