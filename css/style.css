@@ -47,7 +47,7 @@ body {
     background: #555555;
     position: fixed;
 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .NavigationBar .logoWrapper {
@@ -721,23 +721,27 @@ a:hover {
     background-color: #8C9E8E;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+
+}
+.personal h2{
+    margin-top: 30%;
+}
+.chef h2{
+    margin-top: 30%;
 }
 .chef{
     background-color: #8C9E8E;
     position: absolute;
-    width: 400px;
-    height: 300px;
+    width: 400px !important;
+    height: 300px !important;
+    background-repeat: no-repeat;
 }
-.chef1:hover{
+.chef1:hover, .chef1.active{
     background-image: url(../assets/AnneSchweisfurth.jpg);
-    background-repeat: no-repeat;
 }
-.chef2:hover{
+.chef2:hover, .chef2.active{
     background-image: url(../assets/Claudia_Weisser.jpg);
-    background-repeat: no-repeat;
-}
-.person1:hover{
-    background-image: url(../assets/ReinerEberlein.jpg);
 }
 .person2, .person4{
     left: 200px;
@@ -745,25 +749,29 @@ a:hover {
 .person6, .person8{
     left: 200px;
 }
-.person2:hover{
+.person1:hover, .person1.active{
+    background-image: url(../assets/ReinerEberlein.jpg);
+
+}
+.person2:hover, .person2.active{
     background-image: url(../assets/Angela_Florian.jpg);
 }
-.person3:hover{
+.person3:hover, .person3.active{
     background-image: url(../assets/KathieMück.jpg);
 }
-.person4:hover{
+.person4:hover, .person4.active{
     background-image: url(../assets/HildegardEmmerig.jpg);
 }
-.person5:hover{
+.person5:hover, .person5.active{
     background-image: url(../assets/SeppWörndl.jpg);
 }
-.person6:hover{
+.person6:hover, .person6.active{
     background-image: url(../assets/FranziskaW.jpg);
 }
-.person7:hover{
+.person7:hover, .person7.active{
     background-image: url(../assets/IngaBöger.jpg);
 }
-.person8:hover{
+.person8:hover, .person8.active{
     background-image: url(../assets/AlexSchuhbauer.jpg);
 }
 #section9.UeberUns .imageWrap {
@@ -778,12 +786,6 @@ a:hover {
 #section9.UeberUns h3 {
 
     color: #555555;
-}
-
-#section9.UeberUns .active {
-
-    border: 2px solid gold;
-    
 }
 
 #section9.UeberUns .imageWrap img {
