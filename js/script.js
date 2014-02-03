@@ -452,7 +452,31 @@ $('#section5 .imageWrap').on('click', function () {
     }
 
 
-})
+});
+
+$(".imageWrap").mouseenter(function(event) {
+
+    $(this).children().fadeIn(700);
+
+
+});
+$(".imageWrap").mouseleave(function(event){
+
+    if(this.hasClass('active') == false){
+        $('.person1').fadeOut(700);
+
+    }
+
+
+
+});
+
+$(".imageWrap").click(function(event) {
+    $('.person1').fadeIn(700);
+
+
+});
+
 
 $('#section9 .imageWrap').on('click', function () {
     $('#section9 .imageWrap ').removeClass('active');
@@ -682,17 +706,8 @@ function showZitat4() {
 
 
 }
-$(".imageWrap").click(function(event) {
-    $("h2").show();
-    $(".active h2").hide();
-});
 
-$(".imageWrap").hover(function() {
-    $(this).children().hide();
-}, function() {
-    $(this).children().show();
-    $(".active h2").hide();
-});
+
 
 
 

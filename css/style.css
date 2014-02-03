@@ -175,7 +175,7 @@ a:hover {
 
 #btn1:hover, #btn1.active {
     background-image: url(../assets/IconAndereWhite.png);
-    background-color: #2b405c;
+    background-color: #99543D;
 }
 
 #btn2 {
@@ -185,7 +185,7 @@ a:hover {
 
 #btn2:hover, #btn2.active {
     background-image: url(../assets/IconDorfWhite.png);
-    background-color: #2b405c;
+    background-color: #99543D;
 }
 
 #btn3 {
@@ -195,7 +195,7 @@ a:hover {
 
 #btn3:hover, #btn3.active {
     background-image: url(../assets/IconZertifikatWhite.png);
-    background-color: #2b405c;
+    background-color: #99543D;
 
 }
 
@@ -240,7 +240,7 @@ a:hover {
 }
 
 #btn7:hover, #btn8:hover, #btn9:hover, #btn10:hover, #btn11:hover, #btn7.active, #btn8.active, #btn9.active, #btn10.active, #btn11.active {
-    background-color: #5f9ea0;
+    background-color: #4a90ce;
 }
 
 #btn7 {
@@ -358,14 +358,13 @@ a:hover {
 .section {
 
     position: relative; /* importet for position Gallery*/
-    min-height: 1000px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .section .header {
@@ -441,6 +440,7 @@ a:hover {
 
 #section2 .topper {
     background: #5f9ea0;
+    background: #4a90ce;
 }
 
 #section4 .topper {
@@ -465,7 +465,7 @@ a:hover {
     background: #ff8c00;
 }
 #section10 .topper {
-    background: #2b405c;
+    background: #99543D;
 
 }
 
@@ -714,6 +714,10 @@ a:hover {
     margin-left: 400px;
     margin-top: 450px;
 }
+
+.imageWrap:hover{
+    cursor: pointer;
+}
 .personal{
     position: absolute;
     width: 200px;
@@ -721,8 +725,10 @@ a:hover {
     background-color: #8C9E8E;
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
+}
 
+.personal:hover{
+    cursor: pointer;
 }
 .personal h2{
     margin-top: 30%;
@@ -745,15 +751,17 @@ a:hover {
 }
 .person2, .person4{
     left: 200px;
+
 }
 .person6, .person8{
     left: 200px;
+
 }
-.person1:hover, .person1.active{
+.person1, .person1.active{
     background-image: url(../assets/ReinerEberlein.jpg);
 
 }
-.person2:hover, .person2.active{
+.person2, .person2.active{
     background-image: url(../assets/Angela_Florian.jpg);
 }
 .person3:hover, .person3.active{
@@ -779,6 +787,11 @@ a:hover {
     padding: 0;
     width: 200px;
     height: 150px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     /*display: inline-block;*/
     /*margin-right: 10px;*/
 }
