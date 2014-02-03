@@ -114,7 +114,26 @@ nav a {
     font-size: 25px;
     line-height: 35px;
 }
+#DorfNav:hover,#DorfNav.active{
+   color: #4a90ce
+}
+#VereinNav:hover,#VereinNav.active {
+  color:  #fc4f4f;
+}
+#WirNav:hover,#WirNav.active{
+color:#ff8c00;
 
+}
+#GalerieNav:hover,#GalerieNav.active{
+color: #778899;
+
+}
+#SupporterNav:hover,#SupporterNav.active{
+  color:  #99543D;
+}
+#AndereNav:hover,#AndereNav.active{
+color:#e9967a ;
+}
 .Navigation a {
 
     display: block;
@@ -689,16 +708,40 @@ a:hover {
     /*display: inline-block;*/
     text-align: center;
     padding-top: 60px;
+    margin: 0 auto;
 }
+.span1{
+    width: 25%;
+}
+.span2{
+    width: 100%;
+    overflow: hidden;
+}
+
+#span1 .imageWrap:nth-child(n+1),#span4 .imageWrap:nth-child(n+1),#span5 .imageWrap:nth-child(n+1),#span6 .imageWrap:nth-child(n+1){
+    float: left;
+}
+#span1 .imageWrap:nth-child(n+2),#span4 .imageWrap:nth-child(n+2),#span5 .imageWrap:nth-child(n+2),#span6 .imageWrap:nth-child(n+2){
+    float: right;
+}
+
 .line{
 
-    position: absolute;
-    display: inline-block;
-    height: 150px;
-    width: 400px;
+
+
+
+    width: 100%;
 }
+.line1{
+    float: left;
+    width: 50%;
+    overflow: hidden;;
+}
+
 .line2{
-    margin-top: 150px;
+    float: right;
+    width: 50%;
+    overflow: hidden;;
 }
 .line3{
     margin-top: 450px;
@@ -719,7 +762,6 @@ a:hover {
     cursor: pointer;
 }
 .personal{
-    position: absolute;
     width: 200px;
     height: 150px;
     background-color: #8C9E8E;
@@ -733,21 +775,47 @@ a:hover {
 .personal h2{
     margin-top: 30%;
 }
+.image{
+    width: inherit;
+    height: inherit;
+}
 .chef h2{
+    margin: 0;
     margin-top: 30%;
 }
 .chef{
     background-color: #8C9E8E;
-    position: absolute;
-    width: 400px !important;
+
     height: 300px !important;
     background-repeat: no-repeat;
 }
-.chef1:hover, .chef1.active{
+#span3{
+}
+#span5{
+    float: right;
+}
+.imageWrap3{
+    background: #00a4b2;
+
+}
+
+.chef1{
+    display: none;
     background-image: url(../assets/AnneSchweisfurth.jpg);
+
+}
+.chef1:hover, .chef1.active{
+}
+.imageWrap5{
+    background: #ff6a00;
+
+}
+.chef2{
+    display: none;
+    background-image: url(../assets/Claudia_Weisser.jpg);
+
 }
 .chef2:hover, .chef2.active{
-    background-image: url(../assets/Claudia_Weisser.jpg);
 }
 .person2, .person4{
     left: 200px;
@@ -757,43 +825,125 @@ a:hover {
     left: 200px;
 
 }
+.imageWrap1{
+    float: left;
+    background: #ff7919;
+
+}
+
 .person1, .person1.active{
+
     background-image: url(../assets/ReinerEberlein.jpg);
 
 }
+.person1.hover{
+}
+.imageWrap1 h2{
+    display: none;
+}
+.imageWrap2{
+    float: right;
+    background:#e8c00c;
+}
 .person2, .person2.active{
+    display: none;
     background-image: url(../assets/Angela_Florian.jpg);
+
+}
+.person2.hover{
+    background-image: url(../assets/Angela_Florian.jpg);
+
+}
+.person3{
+    background-image: url(../assets/KathieMück.jpg);
+
 }
 .person3:hover, .person3.active{
-    background-image: url(../assets/KathieMück.jpg);
+
+
+}
+.imageWrap4{
+    background: #b2500a;
+
+}
+.person4{
+    display: none;
+    background-image: url(../assets/HildegardEmmerig.jpg);
+
 }
 .person4:hover, .person4.active{
-    background-image: url(../assets/HildegardEmmerig.jpg);
+
+}
+.person4 h2{
+    display: none;
+}
+.imageWrap5{
+    background: #5e99f2;
+
+}
+.person5{
+    background-image: url(../assets/SeppWörndl.jpg);
+
 }
 .person5:hover, .person5.active{
-    background-image: url(../assets/SeppWörndl.jpg);
+}
+.person5 h2{
+    display: none
+}
+.imageWrap6{
+    background: #ff6a00;
+
+
+}
+.person6{
+    display: none;
+    background-image: url(../assets/FranziskaW.jpg);
+
 }
 .person6:hover, .person6.active{
-    background-image: url(../assets/FranziskaW.jpg);
+}
+.imageWrap7{
+    background: #ffaf00;
+
+
+}
+.person7{
+    display: none;
+    background-image: url(../assets/IngaBöger.jpg);
+
 }
 .person7:hover, .person7.active{
-    background-image: url(../assets/IngaBöger.jpg);
+}
+.imageWrap8{
+    background:#00eaff;
+
+}
+.imageWrap9{
+    background: #50af0e;
+}
+.person8{
+    background-image: url(../assets/AlexSchuhbauer.jpg);
+
+}
+.imageWrap10{
+    background: #7f67cc;
+
 }
 .person8:hover, .person8.active{
-    background-image: url(../assets/AlexSchuhbauer.jpg);
+}
+.person8 h2{
+    display: none;
 }
 #section9.UeberUns .imageWrap {
     margin: 0;
     padding: 0;
-    width: 200px;
     height: 150px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    /*display: inline-block;*/
-    /*margin-right: 10px;*/
+    overflow: hidden;
 }
 
 #section9.UeberUns h3 {

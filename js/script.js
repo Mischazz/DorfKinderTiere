@@ -2,19 +2,19 @@ $(document).ready(function () {
 
 
     $.ajax({
-        type:"GET",
-        dataType:"json",
-        url:'content.json',
+        type: "GET",
+        dataType: "json",
+        url: 'content.json',
 
 
-        success:function (data) {
+        success: function (data) {
 //            $.fn.fullpage();
 
 
             buildDorf(data);
 
-//            showFirstArticles();
-//            showSecondArticles();
+           showFirstArticles();
+           showSecondArticles();
             showZitat1();
             showZitat2();
             showZitat4();
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
         },
-        error:function () {
+        error: function () {
             alert('failure');
         }
     });
@@ -35,7 +35,7 @@ $(document).ready(function () {
         var scrolltop = $(this).scrollTop();
 
         if (scrolltop >= 215) {
-            $('.NavigationBar').show('slide', {direction:'left'});
+            $('.NavigationBar').show('slide', {direction: 'left'});
         }
 
         else if (scrolltop <= 210) {
@@ -54,7 +54,7 @@ $(document).ready(function () {
 
         $('html,body').animate({
 
-            scrollTop:$(ziel).offset().top
+            scrollTop: $(ziel).offset().top
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und ergänzt die URL
         }, 1000, function () {
             location.hash = ziel;
@@ -63,8 +63,6 @@ $(document).ready(function () {
     });
 
 });
-
-
 
 
 // Diese Funktion liest die verschiedenen Artikel aus der "Dorf" Rubrik des content.json Files ein und erzeugt entsprechendes HTML
@@ -162,7 +160,7 @@ function showfirstImg() {
     $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
     $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
     $('#section9 .zitat').html('"Es macht mir Spaß, begeisterte Kinderaugen zu sehen. Für mich ist wichtig, dass Kinder das "Leben" lernen und sich mit den Basics wie den Lebens-Mitteln vertraut machen. Es ist spannend, wie Kinder mit ihrer emotionalen Intelligenz umgehen und wie es ihnen gelingt, diese im Rahmen unserer Woche zu erhöhen."');
-    $('.detailsWrapper').show('slide', {direction:'left'}, 1000)
+    $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
 }
 
 var check1 = 0;
@@ -426,57 +424,137 @@ $('#section5 .imageWrap').on('click', function () {
         $('#section5 .leftSide ').html('<div class="person job1"><div class="imageWrap job1"></div><h3>Der Gärtner</h3></div>');
         $('#section5 .details').html('Als Gärtner kümmerst du dich um Gemüse und Kräuter. Es liegt in deinem Aufgabenbereich Pflanzen wachsen und gedeihen zu lassen und die Dorfmitglieder mit Nahrungsmitteln zu versorgen ');
         $('#section5 .zitat').html(' "Eins von den Hühnern versteckt sich immer in den Hügelbeeten und pickt den frischen Salat, ich habe es zu uns zum Mittagessen eingeladen!"');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section5 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
     } else if ($(this).hasClass('job2')) {
 
         $('#section5 .leftSide ').html('<div class="person job2"><div class="imageWrap job2 active"></div><h3>Die Bäuerin</h3></div>');
         $('#section5 .details').html('Die Bäuerin kümmert sich um alle Arbeiten die auf dem Hof anfallen. Sie füttert die Tiere, arbeitet im Garten und Haushalt und kocht leckeres Essen ');
         $('#section5 .zitat').html(' "Wir haben die Tiere ganz allein gefüttert! Und ich habe sogar ein Schwein gestreichelt!"');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section5 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
     } else if ($(this).hasClass('job3')) {
 
         $('#section5 .leftSide ').html('<div class="person job3"><div class="imageWrap job3 active"></div><h3>Der Metzger</h3></div>');
         $('#section5 .details').html('Mit dem Metzger machst du leckere eigene Wurst, die danach gemeinsam im Dorf gegessen wird! Von ihm lernst du viel über Tiere und Wurst und Fleischherstellung!');
         $('#section5 .zitat').html(' "Wir haben heute unsere eigene Wurst gemacht. Das war wirklich toll!"');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section5 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
     } else if ($(this).hasClass('job4')) {
 
         $('#section5 .leftSide ').html('<div class="person job4"><div class="imageWrap job4 active"></div><h3>Der Metzger</h3></div>');
         $('#section5 .details').html('Von der Köchin lernst du wie die Nahrungsmittel, die du zuvor im Garten und auf dem Feld angebaut hast, in leckere Speisen verwandelst!');
         $('#section5 .zitat').html(' "Das Brot das Wir heute gebacken haben ist wirklich gut und sogar Butter haben Wir selber gemacht!"');
-        $('#section5 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section5 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
     }
 
 
 });
-
-$(".imageWrap").mouseenter(function(event) {
-
-    $(this).children().fadeIn(700);
-
-
+$('.imageWrap1').mouseenter(function (event) {
+    $('.person1').fadeOut(1000);
+    $('.imageWrap1 h2').show();
 });
-$(".imageWrap").mouseleave(function(event){
+$('.imageWrap1').mouseleave(function (event) {
+    $('.person1').fadeIn(1000);
 
-    if(this.hasClass('active') == false){
-        $('.person1').fadeOut(700);
-
-    }
-
-
+    $('.imageWrap1 h2').hide();
 
 });
 
-$(".imageWrap").click(function(event) {
-    $('.person1').fadeIn(700);
+$('.imageWrap2').mouseenter(function (event) {
+    $('.person2').fadeIn(1000);
+    $('.imageWrap2 h2').hide();
+});
+$('.imageWrap2').mouseleave(function (event) {
+    $('.person2').fadeOut(1000);
+    $('.imageWrap2 h2').show();
+
+
+});
+$('.imageWrap3').mouseenter(function (event) {
+    $('.chef1').fadeIn(1000);
+    $('.imageWrap3 h2').hide();
+});
+$('.imageWrap3').mouseleave(function (event) {
+    $('.chef1').fadeOut(1000);
+    $('.imageWrap3 h2').show();
+
+
+})
+
+;
+$('.imageWrap4').mouseenter(function (event) {
+    $('.person3').fadeOut(1000);
+    $('.imageWrap4 h2').show();
+});
+$('.imageWrap4').mouseleave(function (event) {
+    $('.person3').fadeIn(1000);
+    $('.imageWrap4 h2').hide();
+
+
+});
+$('.imageWrap5').mouseenter(function (event) {
+    $('.person4').fadeIn(1000);
+    $('.imageWrap5 h2').hide();
+});
+$('.imageWrap5').mouseleave(function (event) {
+    $('.person4').fadeOut(1000);
+    $('.imageWrap5 h2').show();
+
+
+})
+$('.imageWrap6').mouseenter(function (event) {
+    $('.chef2').fadeIn(1000);
+    $('.imageWrap6 h2').hide();
+});
+$('.imageWrap6').mouseleave(function (event) {
+    $('.chef2').fadeOut(1000);
+    $('.imageWrap6 h2').show();
 
 
 });
 
+$('.imageWrap7').mouseenter(function (event) {
+    $('.person5').fadeOut(1000);
+    $('.imageWrap7 h2').show();
+});
+$('.imageWrap7').mouseleave(function (event) {
+    $('.person5').fadeIn(1000);
+
+    $('.imageWrap7 h2').hide();
+
+});
+$('.imageWrap8').mouseenter(function (event) {
+    $('.person6').fadeIn(1000);
+    $('.imageWrap8 h2').hide();
+});
+$('.imageWrap8').mouseleave(function (event) {
+    $('.person6').fadeOut(1000);
+    $('.imageWrap8 h2').show();
+
+
+});
+$('.imageWrap9').mouseenter(function (event) {
+    $('.person7').fadeIn(1000);
+    $('.imageWrap9 h2').hide();
+});
+$('.imageWrap9').mouseleave(function (event) {
+    $('.person7').fadeOut(1000);
+    $('.imageWrap9 h2').show();
+
+
+});
+$('.imageWrap10').mouseenter(function (event) {
+    $('.person8').fadeOut(1000);
+    $('.imageWrap10 h2').show();
+});
+$('.imageWrap10').mouseleave(function (event) {
+    $('.person8').fadeIn(1000);
+
+    $('.imageWrap10 h2').hide();
+
+});
 
 $('#section9 .imageWrap').on('click', function () {
     $('#section9 .imageWrap ').removeClass('active');
@@ -484,89 +562,89 @@ $('#section9 .imageWrap').on('click', function () {
     $('#section9 .detailsWrapper').hide();
 
 
-    if ($(this).hasClass('person1')) {
+    if ($(this).children().hasClass('person1')) {
         $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
 
         $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
         $('#section9 .zitat').html('"Es macht mir Spaß, begeisterte Kinderaugen zu sehen. Für mich ist wichtig, dass Kinder das "Leben" lernen und sich mit den Basics wie den Lebens-Mitteln vertraut machen. Es ist spannend, wie Kinder mit ihrer emotionalen Intelligenz umgehen und wie es ihnen gelingt, diese im Rahmen unserer Woche zu erhöhen."');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
-    } else if ($(this).hasClass('person2')) {
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
+    } else if ($(this).children().hasClass('person2')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/Angela_Florian.jpg');
         $('#section9 .details').html('Sozialpädagogin, Reittherapeutin');
         $('#section9 .zitat').html('"Ich möchte gerne Kinder dabei unterstützen, sich selbst zu organisieren und ihnen dadurch die Möglichkeit geben, neue Erfahrungen in der Gemeinschaft zu sammeln – sei es beim Käsen, Marmelade kochen, Spielen oder im Dorfrat."');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
-    } else if ($(this).hasClass('person3')) {
+    } else if ($(this).children().hasClass('person3')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/KathieMück.jpg');
         $('#section9 .details').html('Pensionierte Bäuerin, Hauswirtschaftlerin');
         $('#section9 .zitat').html('"Für die Kinder bin ich wie eine Oma und ich liebe es, mit ihnen zu kochen und sie dabei näher kennen zu lernen."');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
     }
-    else if ($(this).hasClass('person4')) {
+    else if ($(this).children().hasClass('person4')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/HildegardEmmerig.jpg');
         $('#section9 .details').html('Erzieherin, Hauswirtschaftlerin, Köchin für Schulmittagessen an der Grundschule Moosach, 3 Kinder');
         $('#section9 .zitat').html('"Mein Herzensanliegen ist es, Kindern eine Umgebung anzubieten, in der sie "selbsttätig" lebenspraktische Erfahrungen machen können. Beobachtungen, die ich bei der Entwicklung unserer drei eigenen Kinder machen durfte, bestärken mich in meinem Ziel." ');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    } else if ($(this).hasClass('person5')) {
+    } else if ($(this).children().hasClass('person5')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/SeppWörndl.jpg');
         $('#section9 .details').html('Pensionierter Volksschullehrer, 5 Enkelkinder');
         $('#section9 .zitat').html('"Im Dorf für Kinder und Tiere kann ich meine Liebe im Umgang mit den Kindern mit dem Gärtnerischen verbinden." ');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
     }
-    else if ($(this).hasClass('person6')) {
+    else if ($(this).children().hasClass('person6')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/FranziskaW.jpg');
         $('#section9 .details').html('Lehrerin, Älplerin, landwirtschaftliche Mitarbeiterin in der Symbiotischen Landwirtschaft, alleinerziehend, eine Tochte');
         $('#section9 .zitat').html('"Es war mir immer schon ein Anliegen, Pädagogik mit Landwirtschaft zu verbinden. Hier können die Kinder mit mir in der Symbiotischen Landwirtschaft arbeiten und einen respektvollen Umgang mit den Tieren, den Pflanzen und der Erde kennenlernen. Die Freude und das Selber Tun stehen dabei im Mittelpunkt." ');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    } else if ($(this).hasClass('person7')) {
+    } else if ($(this).children().hasClass('person7')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/IngaBöger.jpg');
         $('#section9 .details').html('Grundschullehrerin an der Freien Kinderschule Bremen');
         $('#section9 .zitat').html('"Im Dorf für Kinder und Tiere genieße ich es, den ganzen Tag draußen in der Natur zu sein und die Kinder unterstützen zu können, in kurzer Zeit das Zusammenspiel zwischen ökologischer Landwirtschaft und der Natur zu erfahren. In nur einer Woche wird spürbar, dass alle Kinder ihren Teil zur Gemeinschaft beitragen. In kurzer Zeit wird hier in einer natürlichen - und nicht konstruierten – Umgebung ein kleiner Grundstein zum Demokratischen Handeln gelegt." ');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    } else if ($(this).hasClass('person8')) {
+    } else if ($(this).children().hasClass('person8')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/AlexSchuhbauer.jpg');
         $('#section9 .details').html('Metzgermeister in Herrmannsdorf, Vater von 2 Kindern');
         $('#section9 .zitat').html('"Ich bin mit Leib und Seele Metzgermeister. Im Dorf für Kinder und Tiere kann ich die Qualität dieses Handwerksberuf den Kindern nahebringen: Sie erleben, wie die Tiere hier gelebt haben, sie erfahren, wie man mit Fleisch umgeht und sie lernen, mit den eigenen Händen das Fleisch zu bearbeiten und daraus Würstl zu drehen, die sie am Abend zusammen grillen und essen. Ein paar Kinder machen die Würstl für die ganze Klasse! Für viele ein großes Erfolgserlebnis." ');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    } else if ($(this).hasClass('chef1')) {
+    } else if ($(this).children().hasClass('chef1')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/AnneSchweisfurth1.jpg');
         $('#section9 .details').html('Erster Vorstand und Pädagogische Leitung Sennerin, Bäckerin und Pädagogin, Leitungsteam Hafenmuseum Bremen');
         $('#section9 .zitat').html(' "Ich bin ein Fan von entdeckendem und selbstorganisiertem Lernen, bei dem die Kinder all ihre Sinne einsetzen und entwickeln können."');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
-    } else if ($(this).hasClass('chef2')) {
+    } else if ($(this).children().hasClass('chef2')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/Claudia_Weisser1.jpg');
         $('#section9 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('#section9 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
-        $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
+        $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
 
 
     }
 
 
-})
+});
 
 function showFirstArticles() {
 
@@ -575,12 +653,9 @@ function showFirstArticles() {
 
         if (y > 1100) {
 
-            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeIn(800);
+           $('#DorfNav').addClass('active')
+        }
 
-        }
-        else {
-            $('.artikel1, .artikel2, .artikel3, .img1, .img2, .img3').fadeOut();
-        }
     });
 
 }
@@ -589,9 +664,10 @@ function showSecondArticles() {
     $(document).scroll(function () {
         var y = $(this).scrollTop();
 
-        if (y > 1300) {
+        if (y > 2300) {
+            $('#DorfNav').removeClass('active')
 
-            $('.artikel4, .artikel5, .artikel6,.artikel7,.img4 ').fadeIn(800);
+            $('#VereinNav').addClass('active')
 
         }
         else {
@@ -608,7 +684,7 @@ function showZitat1() {
         if (y > 2200) {
 
 //            $('.zitat1').fadeIn(800);
-            $('.zitat1').show('slide', {direction:'right'}, 1000);
+            $('.zitat1').show('slide', {direction: 'right'}, 1000);
         }
         else {
             $('.zitat1').fadeOut();
@@ -623,13 +699,13 @@ function showZitat2() {
         if (y > 3900) {
 
 //            $('.zitat1').fadeIn(800);
-            $('.zitat2').show('slide', {direction:'left'}, 1000);
-            $('.zitat3').show('slide', {direction:'right'}, 1000);
+            $('.zitat2').show('slide', {direction: 'left'}, 1000);
+            $('.zitat3').show('slide', {direction: 'right'}, 1000);
         }
         else {
-            $('.zitat2').hide('slide', {direction:'left'}, 1000);
+            $('.zitat2').hide('slide', {direction: 'left'}, 1000);
             ;
-            $('.zitat3').hide('slide', {direction:'right'}, 1000);
+            $('.zitat3').hide('slide', {direction: 'right'}, 1000);
             ;
         }
     });
@@ -661,17 +737,17 @@ function showCircles() {
         if (y > 4500) {
 
 //            $('.zitat1').fadeIn(800);
-            $('#circle5').show('slide', {direction:'up'}, 1000);
-            $('#circle6').show('slide', {direction:'left'}, 1000);
-            $('#circle7').show('slide', {direction:'right'}, 1000);
-            $('#circle8').show('slide', {direction:'down'}, 1000);
+            $('#circle5').show('slide', {direction: 'up'}, 1000);
+            $('#circle6').show('slide', {direction: 'left'}, 1000);
+            $('#circle7').show('slide', {direction: 'right'}, 1000);
+            $('#circle8').show('slide', {direction: 'down'}, 1000);
         }
         else {
 
-            $('#circle5').hide('slide', {direction:'up'}, 1000);
-            $('#circle6').hide('slide', {direction:'left'}, 1000);
-            $('#circle7').hide('slide', {direction:'right'}, 1000);
-            $('#circle8').hide('slide', {direction:'down'}, 1000);
+            $('#circle5').hide('slide', {direction: 'up'}, 1000);
+            $('#circle6').hide('slide', {direction: 'left'}, 1000);
+            $('#circle7').hide('slide', {direction: 'right'}, 1000);
+            $('#circle8').hide('slide', {direction: 'down'}, 1000);
         }
 
 
@@ -687,20 +763,20 @@ function showZitat4() {
         if (y > 3500) {
 
 //            $('.zitat1').fadeIn(800);
-            $('.zitat4').show('slide', {direction:'left'}, 1000);
+            $('.zitat4').show('slide', {direction: 'left'}, 1000);
 
-            $('#circle1').show('slide', {direction:'up'}, 1000);
-            $('#circle2').show('slide', {direction:'left'}, 1000);
-            $('#circle3').show('slide', {direction:'right'}, 1000);
-            $('#circle4').show('slide', {direction:'down'}, 1000);
+            $('#circle1').show('slide', {direction: 'up'}, 1000);
+            $('#circle2').show('slide', {direction: 'left'}, 1000);
+            $('#circle3').show('slide', {direction: 'right'}, 1000);
+            $('#circle4').show('slide', {direction: 'down'}, 1000);
         }
         else {
-            $('.zitat4').hide('slide', {direction:'left'}, 1000);
+            $('.zitat4').hide('slide', {direction: 'left'}, 1000);
 
-            $('#circle1').hide('slide', {direction:'up'}, 1000);
-            $('#circle2').hide('slide', {direction:'left'}, 1000);
-            $('#circle3').hide('slide', {direction:'right'}, 1000);
-            $('#circle4').hide('slide', {direction:'down'}, 1000);
+            $('#circle1').hide('slide', {direction: 'up'}, 1000);
+            $('#circle2').hide('slide', {direction: 'left'}, 1000);
+            $('#circle3').hide('slide', {direction: 'right'}, 1000);
+            $('#circle4').hide('slide', {direction: 'down'}, 1000);
         }
     });
 
