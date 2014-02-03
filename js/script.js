@@ -65,6 +65,8 @@ $(document).ready(function () {
 });
 
 
+
+
 // Diese Funktion liest die verschiedenen Artikel aus der "Dorf" Rubrik des content.json Files ein und erzeugt entsprechendes HTML
 
 function buildDorf(data) {
@@ -523,7 +525,7 @@ $('#section9 .imageWrap').on('click', function () {
 
     } else if ($(this).hasClass('chef1')) {
 
-        $('#section9 .leftSide img').attr('src', 'assets/AnneSchweisfurth.jpg');
+        $('#section9 .leftSide img').attr('src', 'assets/AnneSchweisfurth1.jpg');
         $('#section9 .details').html('Erster Vorstand und Pädagogische Leitung Sennerin, Bäckerin und Pädagogin, Leitungsteam Hafenmuseum Bremen');
         $('#section9 .zitat').html(' "Ich bin ein Fan von entdeckendem und selbstorganisiertem Lernen, bei dem die Kinder all ihre Sinne einsetzen und entwickeln können."');
         $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
@@ -531,7 +533,7 @@ $('#section9 .imageWrap').on('click', function () {
 
     } else if ($(this).hasClass('chef2')) {
 
-        $('#section9 .leftSide img').attr('src', 'assets/Claudia_Weisser.jpg');
+        $('#section9 .leftSide img').attr('src', 'assets/Claudia_Weisser1.jpg');
         $('#section9 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('#section9 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('#section9 .detailsWrapper').show('slide', {direction:'left'}, 1000)
@@ -680,6 +682,17 @@ function showZitat4() {
 
 
 }
+$(".imageWrap").click(function(event) {
+    $("h2").show();
+    $(".active h2").hide();
+});
+
+$(".imageWrap").hover(function() {
+    $(this).children().hide();
+}, function() {
+    $(this).children().show();
+    $(".active h2").hide();
+});
 
 
 

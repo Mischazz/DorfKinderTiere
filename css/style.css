@@ -721,22 +721,28 @@ a:hover {
     background-color: #8C9E8E;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+
+}
+.personal h2{
+    margin-top: 30%;
+}
+.chef h2{
+    margin-top: 30%;
 }
 .chef{
     background-color: #8C9E8E;
     position: absolute;
     width: 400px !important;
     height: 300px !important;
+    background-repeat: no-repeat;
 }
 .chef1:hover, .chef1.active{
     background-image: url(../assets/AnneSchweisfurth.jpg);
-    background-repeat: no-repeat;
 }
 .chef2:hover, .chef2.active{
     background-image: url(../assets/Claudia_Weisser.jpg);
-    background-repeat: no-repeat;
 }
-
 .person2, .person4{
     left: 200px;
 }
@@ -745,6 +751,7 @@ a:hover {
 }
 .person1:hover, .person1.active{
     background-image: url(../assets/ReinerEberlein.jpg);
+
 }
 .person2:hover, .person2.active{
     background-image: url(../assets/Angela_Florian.jpg);
