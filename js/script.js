@@ -459,7 +459,6 @@ $('#section9 .imageWrap').on('click', function () {
 
 
     if ($(this).hasClass('person1')) {
-        debugger;
         $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
 
         $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
