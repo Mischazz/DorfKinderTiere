@@ -1190,6 +1190,8 @@ a:hover {
     background: #fff;
     text-align: center;
     color: #EA5E0F;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .detailsWrapper {

@@ -13,8 +13,8 @@ $(document).ready(function () {
 
             buildDorf(data);
 
-           showFirstArticles();
-           showSecondArticles();
+            showFirstArticles();
+            showSecondArticles();
             showZitat1();
             showZitat2();
             showZitat4();
@@ -157,7 +157,9 @@ function showfirstImg() {
 
     $('.imageWrap.person1 ,.imageWrap.job1').addClass('active');
     buildJob1();
-    $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
+    $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg');
+    $('#section9 .name').html('Rainer');
+
     $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
     $('#section9 .zitat').html('"Es macht mir Spaß, begeisterte Kinderaugen zu sehen. Für mich ist wichtig, dass Kinder das "Leben" lernen und sich mit den Basics wie den Lebens-Mitteln vertraut machen. Es ist spannend, wie Kinder mit ihrer emotionalen Intelligenz umgehen und wie es ihnen gelingt, diese im Rahmen unserer Woche zu erhöhen."');
     $('.detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -564,13 +566,15 @@ $('#section9 .imageWrap').on('click', function () {
 
     if ($(this).children().hasClass('person1')) {
         $('#section9 .leftSide .img').attr('src', 'assets/ReinerEberlein.jpg')
-
+        $('#section9 .name').html('Rainer')
         $('#section9 .details').html('Heilerziehungspfleger, Erlebnispädagoge, Familientherapie i. A., Heilpraktiker i.A. und Teamtraining/ Supervision')
         $('#section9 .zitat').html('"Es macht mir Spaß, begeisterte Kinderaugen zu sehen. Für mich ist wichtig, dass Kinder das "Leben" lernen und sich mit den Basics wie den Lebens-Mitteln vertraut machen. Es ist spannend, wie Kinder mit ihrer emotionalen Intelligenz umgehen und wie es ihnen gelingt, diese im Rahmen unserer Woche zu erhöhen."');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
     } else if ($(this).children().hasClass('person2')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/Angela_Florian.jpg');
+        $('#section9 .name').html('Angela')
+
         $('#section9 .details').html('Sozialpädagogin, Reittherapeutin');
         $('#section9 .zitat').html('"Ich möchte gerne Kinder dabei unterstützen, sich selbst zu organisieren und ihnen dadurch die Möglichkeit geben, neue Erfahrungen in der Gemeinschaft zu sammeln – sei es beim Käsen, Marmelade kochen, Spielen oder im Dorfrat."');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -578,6 +582,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('person3')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/KathieMück.jpg');
+        $('#section9 .name').html('Kathie')
+
         $('#section9 .details').html('Pensionierte Bäuerin, Hauswirtschaftlerin');
         $('#section9 .zitat').html('"Für die Kinder bin ich wie eine Oma und ich liebe es, mit ihnen zu kochen und sie dabei näher kennen zu lernen."');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -587,6 +593,8 @@ $('#section9 .imageWrap').on('click', function () {
     else if ($(this).children().hasClass('person4')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/HildegardEmmerig.jpg');
+        $('#section9 .name').html('Hildegard')
+
         $('#section9 .details').html('Erzieherin, Hauswirtschaftlerin, Köchin für Schulmittagessen an der Grundschule Moosach, 3 Kinder');
         $('#section9 .zitat').html('"Mein Herzensanliegen ist es, Kindern eine Umgebung anzubieten, in der sie "selbsttätig" lebenspraktische Erfahrungen machen können. Beobachtungen, die ich bei der Entwicklung unserer drei eigenen Kinder machen durfte, bestärken mich in meinem Ziel." ');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -595,6 +603,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('person5')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/SeppWörndl.jpg');
+        $('#section9 .name').html('Sepp')
+
         $('#section9 .details').html('Pensionierter Volksschullehrer, 5 Enkelkinder');
         $('#section9 .zitat').html('"Im Dorf für Kinder und Tiere kann ich meine Liebe im Umgang mit den Kindern mit dem Gärtnerischen verbinden." ');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -604,6 +614,8 @@ $('#section9 .imageWrap').on('click', function () {
     else if ($(this).children().hasClass('person6')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/FranziskaW.jpg');
+        $('#section9 .name').html('Franziska')
+
         $('#section9 .details').html('Lehrerin, Älplerin, landwirtschaftliche Mitarbeiterin in der Symbiotischen Landwirtschaft, alleinerziehend, eine Tochte');
         $('#section9 .zitat').html('"Es war mir immer schon ein Anliegen, Pädagogik mit Landwirtschaft zu verbinden. Hier können die Kinder mit mir in der Symbiotischen Landwirtschaft arbeiten und einen respektvollen Umgang mit den Tieren, den Pflanzen und der Erde kennenlernen. Die Freude und das Selber Tun stehen dabei im Mittelpunkt." ');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -612,6 +624,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('person7')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/IngaBöger.jpg');
+        $('#section9 .name').html('Inga')
+
         $('#section9 .details').html('Grundschullehrerin an der Freien Kinderschule Bremen');
         $('#section9 .zitat').html('"Im Dorf für Kinder und Tiere genieße ich es, den ganzen Tag draußen in der Natur zu sein und die Kinder unterstützen zu können, in kurzer Zeit das Zusammenspiel zwischen ökologischer Landwirtschaft und der Natur zu erfahren. In nur einer Woche wird spürbar, dass alle Kinder ihren Teil zur Gemeinschaft beitragen. In kurzer Zeit wird hier in einer natürlichen - und nicht konstruierten – Umgebung ein kleiner Grundstein zum Demokratischen Handeln gelegt." ');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -620,6 +634,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('person8')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/AlexSchuhbauer.jpg');
+        $('#section9 .name').html('Alex')
+
         $('#section9 .details').html('Metzgermeister in Herrmannsdorf, Vater von 2 Kindern');
         $('#section9 .zitat').html('"Ich bin mit Leib und Seele Metzgermeister. Im Dorf für Kinder und Tiere kann ich die Qualität dieses Handwerksberuf den Kindern nahebringen: Sie erleben, wie die Tiere hier gelebt haben, sie erfahren, wie man mit Fleisch umgeht und sie lernen, mit den eigenen Händen das Fleisch zu bearbeiten und daraus Würstl zu drehen, die sie am Abend zusammen grillen und essen. Ein paar Kinder machen die Würstl für die ganze Klasse! Für viele ein großes Erfolgserlebnis." ');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -628,6 +644,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('chef1')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/AnneSchweisfurth1.jpg');
+        $('#section9 .name').html('Anne')
+
         $('#section9 .details').html('Erster Vorstand und Pädagogische Leitung Sennerin, Bäckerin und Pädagogin, Leitungsteam Hafenmuseum Bremen');
         $('#section9 .zitat').html(' "Ich bin ein Fan von entdeckendem und selbstorganisiertem Lernen, bei dem die Kinder all ihre Sinne einsetzen und entwickeln können."');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -636,6 +654,8 @@ $('#section9 .imageWrap').on('click', function () {
     } else if ($(this).children().hasClass('chef2')) {
 
         $('#section9 .leftSide img').attr('src', 'assets/Claudia_Weisser1.jpg');
+        $('#section9 .name').html('Claudia')
+
         $('#section9 .details').html('Geschäftsführerin Pädagogin, Journalistin für Umwelt und Ökologie, Körpertherapeutin');
         $('#section9 .zitat').html(' "Ich freue mich auf das neue Dorf nach der großen Renovierung und auf fröhliche Kinder."');
         $('#section9 .detailsWrapper').show('slide', {direction: 'left'}, 1000)
@@ -653,7 +673,7 @@ function showFirstArticles() {
 
         if (y > 1100) {
 
-           $('#DorfNav').addClass('active')
+            $('#DorfNav').addClass('active')
         }
 
     });
