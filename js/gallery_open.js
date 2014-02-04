@@ -199,6 +199,7 @@ $(document).ready(function () {
         $(".previewButton").fadeOut(100);
         $(".preview").animate({height:"0px"}, 2000);
         $(".previewImg").fadeOut(1900);
+        $(".album.active").removeClass('active');
         setTimeout(function () {
             removeImg();
             $(".preview").css("overflow-x", "hidden");

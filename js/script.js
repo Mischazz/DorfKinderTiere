@@ -13,8 +13,7 @@ $(document).ready(function () {
 
             buildDorf(data);
 
-           showFirstArticles();
-           showSecondArticles();
+           // setInterval(showFirstArticles, 1000);
             showZitat1();
             showZitat2();
             showZitat4();
@@ -303,7 +302,7 @@ $('#btn8').on('click', function () {
 
         $('#section2 .second').fadeIn(600)
 
-    }, 1000)
+    }, 100);
 
 
 })
@@ -646,35 +645,108 @@ $('#section9 .imageWrap').on('click', function () {
 
 });
 
-function showFirstArticles() {
+// function showFirstArticles() {
 
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
+//         $(".section").each(function() {
+//             if ($(".section:in-viewport").hasClass('active') == false) {
+//                 if ($(".section:in-viewport").hasClass('section1') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#DorfNav").addClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section2') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#VereinNav").addClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section3') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#WirNav").addClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section4') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#GalerieNav").addClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section5') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#SupporterNav").addClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section6') == true) {
+//                     $(".section:in-viewport").addClass('active');
+//                         $("#Andere").addClass('active');
+//                 };
+//             };
+//             if ($(".section:above-the-top").hasClass('active') == true) {
+//                 if ($(".section:in-viewport").hasClass('section1') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#DorfNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section2') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#VereinNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section3') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#WirNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section4') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#GalerieNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section5') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#SupporterNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section6') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#Andere").removeClass('active');
+//                 };
+//             };
+//             if ($(".section:above-the-top").hasClass('active') == true) {
+//                 if ($(".section:in-viewport").hasClass('section1') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#DorfNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section2') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#VereinNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section3') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#WirNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section4') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#GalerieNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section5') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#SupporterNav").removeClass('active');
+//                 };
+//                 if ($(".section:in-viewport").hasClass('section6') == true) {
+//                     $(".section:in-viewport").removeClass('active');
+//                         $("#Andere").removeClass('active');
+//                 };
+//             };
+//         });
 
-        if (y > 1100) {
+// }
 
-           $('#DorfNav').addClass('active')
-        }
 
-    });
+// function showSecondArticles() {
 
-}
-function showSecondArticles() {
+//     $(document).scroll(function () {
+//         var y = $(this).scrollTop();
 
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
+//         if (y > 2300) {
+//             $('#DorfNav').removeClass('active')
 
-        if (y > 2300) {
-            $('#DorfNav').removeClass('active')
+//             $('#VereinNav').addClass('active')
 
-            $('#VereinNav').addClass('active')
-
-        }
-        else {
-            $('.artikel4, .artikel5, .artikel6,.artikel7, .img4').fadeOut();
-        }
-    });
-}
+//         }
+//         else {
+//             $('.artikel4, .artikel5, .artikel6,.artikel7, .img4').fadeOut();
+//         }
+//     });
+// }
 
 function showZitat1() {
 

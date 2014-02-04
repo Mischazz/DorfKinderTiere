@@ -115,7 +115,7 @@ nav a {
     line-height: 35px;
 }
 #DorfNav:hover,#DorfNav.active{
-   color: #4a90ce
+   color: #4a90ce;
 }
 #VereinNav:hover,#VereinNav.active {
   color:  #fc4f4f;
@@ -132,7 +132,7 @@ color: #778899;
   color:  #99543D;
 }
 #AndereNav:hover,#AndereNav.active{
-color:#e9967a ;
+color:#e9967a;
 }
 .Navigation a {
 
