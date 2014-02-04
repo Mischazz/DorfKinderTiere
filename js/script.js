@@ -12,14 +12,9 @@ $(document).ready(function () {
 
 
             buildDorf(data);
-
+            showfirstImg();
 
            // setInterval(showFirstArticles, 1000);
-            showZitat1();
-            showZitat2();
-            showZitat4();
-            showImages();
-            showCircles();
 
 
 
