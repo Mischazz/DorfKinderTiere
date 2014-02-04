@@ -58,7 +58,7 @@ $(document).ready(function () {
 
                             _.each(data["album1"], function (value, key) {
 
-                                $("#imgBox").append('<img class="previewImg" src=http://s418944844.online.de/DorfKinderTiere/images/album1/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src="http://s418944844.online.de/DorfKinderTiere/images/album1/"' + value + '>');
 
                             })
 
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
                             _.each(data["album2"], function (value, key) {
 
-                                $("#imgBox").append('<img class="previewImg" src=http://s418944844.online.de/DorfKinderTiere/images/album2/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src="http://s418944844.online.de/DorfKinderTiere/images/album2/"' + value + '>');
 
                             })
 
@@ -136,7 +136,7 @@ $(document).ready(function () {
 
                             _.each(data["album3"], function (value, key) {
 
-                                $("#imgBox").append('<img class="previewImg" src=http://s418944844.online.de/DorfKinderTiere/images/album3/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src="http://s418944844.online.de/DorfKinderTiere/images/album3/"' + value + '>');
 
                             })
 
@@ -172,7 +172,7 @@ $(document).ready(function () {
 
                             _.each(data["album4"], function (value, key) {
 
-                                $("#imgBox").append('<img class="previewImg" src=http://s418944844.online.de/DorfKinderTiere/imagesalbum4/' + value + '>');
+                                $("#imgBox").append('<img class="previewImg" src="http://s418944844.online.de/DorfKinderTiere/imagesalbum4/"' + value + '>');
 
                             })
 
